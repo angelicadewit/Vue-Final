@@ -136,60 +136,88 @@ let products = {
         {
             name: "Etude House Moistfull Collagen Water Jelly Cream",
             skin: ["oily"], 
-            amazon:
-            notAmazonStore:
-            notAmazonURL:
+            amazon: `https://www.amazon.com/Etude-House-Moistfull-Collagen-Emulsion/dp/B016VTJ2XO/ref=sr_1_2_a_it?ie=UTF8&qid=1535090122&sr=8-2&keywords=Etude+House+Moistfull+Collagen+Water+Jelly+Cream`,
+            notAmazonStore: `Jolse`,
+            notAmazonURL: `http://jolse.com/product/etude-house-moistfull-collagen-emulsion-180ml/6256/?cate_no=108&display_group=1`,
+        },
+        {
+            name: "Tony Moly Chok Chok Watery Green Tea Cream",
+            skin: ["oily"], 
+            amazon: `https://www.amazon.com/TONYMOLY-Chok-Green-Watery-Cream/dp/B071X3P6XZ/ref=sr_1_2_a_it?ie=UTF8&qid=1535090270&sr=8-2&keywords=tony+moly+chok+chok+watery+cream`,
+            notAmazonStore: `Jolse`,
+            notAmazonURL: `http://jolse.com/product/detail.html?product_no=10655&cate_no=46&display_group=1`,
         },
         {
             name: "Rosette Ceramide Gel",
             skin: ["combo"],
-            amazon:
-            notAmazonStore:
-            notAmazonURL:
+            amazon: `https://www.amazon.com/ROSETTE-Skin-Care-Aqua-Ceramide/dp/B000FQNIX0/ref=sr_1_1_a_it?ie=UTF8&qid=1535090295&sr=8-1&keywords=Rosette+Ceramide+Gel`,
+            notAmazonStore: `ebay: kabukicatjapan (98.6%)`,
+            notAmazonURL: `https://www.ebay.com/itm/Rosette-Aqua-Ceramide-Gel-80g-Collagen-Hyaluronic-Acid-Sensitive-Skin-Free-ship/282310054829?hash=item41bafd93ad:g:Ks8AAOSwPCVX3js~`,
+        },
+        {
+            name: "Dr. Jart+ Ceramidin Cream",
+            skin: ["combo"],
+            amazon: `https://www.amazon.com/Dr-Jart-Ceramidin-Cream-Ounce/dp/B015RYQBIS/ref=sr_1_3_a_it?ie=UTF8&qid=1535091157&sr=8-3&keywords=Dr.+Jart%2B+Ceramidin+Cream`,
+            notAmazonStore: `Sephora`,
+            notAmazonURL: `https://www.sephora.com/product/ceramidin-tm-cream-P434363?skuId=2077840&keyword=Dr.%20Jart%2B%20Ceramidin%20Cream`,
         },
         {
             name: "Belif Aqua Bomb",
             skin: ["normal"],
-        amazon:
-            notAmazonStore:
-            notAmazonURL:
+            amazon: `https://www.amazon.com/belif-True-Cream-Aqua-Korean/dp/B00H4GOAZO/ref=sr_1_1_a_it?ie=UTF8&qid=1535091220&sr=8-1&keywords=Belif+Aqua+Bomb`,
+            notAmazonStore: `Jolse`,
+            notAmazonURL: `http://www.testerkorea.com/Product/l-belif-the-true-cream-aqua-bomb-75ml_35474`,
         },
         {
             name: "Beauty of Joseon Dynasty Cream",
             skin: ["dry"],
-            amazon:
-            notAmazonStore:
-            notAmazonURL:
+            amazon: `https://www.amazon.com/Joseon-Beauty-Dynasty-Wrinkles-Dryness/dp/B01M4GQO8W/ref=sr_1_2_a_it?ie=UTF8&qid=1535091305&sr=8-2&keywords=Beauty+of+Joseon+Dynasty+Cream`,
+            notAmazonStore: `Memebox`,
+            notAmazonURL: `https://us.memebox.com/product/5315/dynasty-cream`,
+        },
+        {
+            name: "Benton Snail Bee High Content Steam Cream",
+            skin: ["dry", "normal"],
+            amazon: `https://www.amazon.com/s/?ref=nb_sb_noss_2?url=search-alias%3Daps&field-keywords=Benton+Snail+Bee+High+Content+Steam+Cream&rh=i%3Aaps%2Ck%3ABenton+Snail+Bee+High+Content+Steam+Cream`,
+            notAmazonStore: `Jolse`,
+            notAmazonURL: `http://jolse.com/product/detail.html?product_no=8684&cate_no=102&display_group=1`,
         },
     ],
     sunscreen: [
         {
-            name: "Allie Extra UV Gel Mineral Moist SPF 50+ PA+++",
+            name: "Biore UV Aqua Rich Watery Essence SPF 50+ PA++++",
             skin: ["oily"], 
-            amazon:
-            notAmazonStore:
-            notAmazonURL:
+            amazon: `https://www.amazon.com/2017ver-Sarasara-Watery-Essence-Sunscreen/dp/B071X4W74G`,
+            notAmazonStore: `Yes Style`,
+            notAmazonURL: `https://www.yesstyle.com/en/kao-biore-uv-aqua-rich-watery-essence-spf-50-pa-2017-edition-50g/info.html/pid.1033325971`,
+        },
+        {
+            name: "Etude House Sunprise Mild Watery Light SPF50+ PA+++",
+            skin: ["oily", "combo"], 
+            amazon: `https://www.amazon.com/Etude-House-Sunprise-Watery-Light/dp/B00X3QMH2M/ref=sr_1_2_a_it?ie=UTF8&qid=1535093097&sr=8-2&keywords=Etude+House+Sunprise+Mild+Watery+Light+SPF50%2B+PA%2B%2B%2B`,
+            notAmazonStore: `Jolse`,
+            notAmazonURL: `http://jolse.com/product/etude-house-sunprise-mild-watery-light-50g/5157/?cate_no=50&display_group=1`,
         },
         {
             name: "Biore UV Aqua Rich Watery Essence SPF 50+ PA++++",
-            skin: ["combo"],
-            amazon:
-            notAmazonStore:
-            notAmazonURL:
-        },
-        {
-            name: "Karadium snail repair sun cream SPF 50+ PA+++",
-            skin: ["normal"],
-            amazon:
-            notAmazonStore:
-            notAmazonURL:
+            skin: ["combo", "normal"],
+            amazon: `https://www.amazon.com/Watery-Essence-2016ver-Facial-2sheet/dp/B071JXTP42/ref=sr_1_4_a_it?ie=UTF8&qid=1535093143&sr=8-4&keywords=Biore+UV+Aqua+Rich+Watery+Essence+SPF+50%2B+PA%2B%2B%2B%2B`,
+            notAmazonStore: `Yes Style`,
+            notAmazonURL: `https://www.yesstyle.com/en/kao-biore-uv-aqua-rich-watery-essence-spf-50-pa-2017-edition-japan/info.html/pid.1057650691`,
         },
         {
             name: "Biore UV Aqua Rich Watery Gel SPF 50+ PA++++",
             skin: ["dry"],
-            amazon:
-            notAmazonStore:
-            notAmazonURL:
+            amazon: `https://www.amazon.com/Biore-Smooth-Watery-Summer-Limited/dp/B01G11QB8Q/ref=sr_1_5_a_it?ie=UTF8&qid=1535093143&sr=8-5&keywords=Biore+UV+Aqua+Rich+Watery+Essence+SPF+50%2B+PA%2B%2B%2B%2B`,
+            notAmazonStore: `Yes Style`,
+            notAmazonURL: `https://www.yesstyle.com/en/kao-biore-uv-aqua-rich-watery-gel-spf-50-pa-2017-edition-90ml/info.html/pid.1057651156`,
+        },
+        {
+            name: "Missha All Around Safe Block Waterproof SUN SPF50 PA+++",
+            skin: ["dry", "normal"],
+            amazon: `https://www.amazon.com/MISSHA-All-around-Block-Waterproof-SPF50/dp/B00EBZCI9Q/ref=sr_1_6_a_it?ie=UTF8&qid=1535093387&sr=8-6&keywords=Missha+All+Around+Safe+Block`,
+            notAmazonStore: `Yes Style`,
+            notAmazonURL: `https://www.yesstyle.com/en/list.html?bpt=48&q=Biore%2BUV%2BAqua%2BRich%2BWatery%2Bgel`,
         },
     ],
 }
