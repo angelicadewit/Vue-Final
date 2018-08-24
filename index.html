@@ -20,19 +20,29 @@
 
 			<ul>
 				<li v-if="product.skin.includes(skinChosen)" v-for="product in products.firstCleansers">
-					{{product.name}} - {{product.upvotes}} upvotes
+					{{product.name}}<br>
+					<a :href="product.amazon">Amazon</a>
+					<a :href="product.notAmazonURL">{{product.notAmazonStore}}</a>
 				</li>
 				<li v-if="product.skin.includes(skinChosen)" v-for="product in products.secondCleansers">
-					{{product.name}} - {{product.upvotes}} upvotes
+					{{product.name}}<br>
+					<a :href="product.amazon">Amazon</a>
+					<a :href="product.notAmazonURL">{{product.notAmazonStore}}</a>
 				</li>
 				<li v-if="product.skin.includes(skinChosen)" v-for="product in products.hydratingToners">
-					{{product.name}} - {{product.upvotes}} upvotes
+					{{product.name}}<br>
+					<a :href="product.amazon">Amazon</a>
+					<a :href="product.notAmazonURL">{{product.notAmazonStore}}</a>
 				</li>
 				<li v-if="product.skin.includes(skinChosen)" v-for="product in products.moisturizers">
-					{{product.name}} - {{product.upvotes}} upvotes
+					{{product.name}}<br>
+					<a :href="product.amazon">Amazon</a>
+					<a :href="product.notAmazonURL">{{product.notAmazonStore}}</a>
 				</li>
 				<li v-if="product.skin.includes(skinChosen)" v-for="product in products.sunscreen">
-					{{product.name}} - {{product.upvotes}} upvotes
+					{{product.name}}<br>
+					<a :href="product.amazon">Amazon</a>
+					<a :href="product.notAmazonURL">{{product.notAmazonStore}}</a>
 				</li>
 			</ul>
 			
