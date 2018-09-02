@@ -1,7 +1,7 @@
 "use strict";
 
 var product = Vue.component('product', {
-    props: ["products", "skin-chosen"],
+    props: ["products", "skin-chosen", "skins"],
     data: function data() {
         return {};
     },
