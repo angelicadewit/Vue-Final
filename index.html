@@ -11,47 +11,20 @@
 		
 	</head>
 	<body>
-		
-		<div id="app">
-			<h1>What's Your Skin Type!</h1>
-			<select v-model="skinChosen">	
-				<option v-for="skin in skins" :value="skin"> {{ skin }} </option>
-			</select>
+		<div class="wrapper">
+			<h1>Let's get sheetfaced!</h1>
+			<div id="app">
+				<home></home>
+				
 
-			<ul>
-				<li v-if="product.skin.includes(skinChosen)" v-for="product in products.firstCleansers">
-					{{product.name}}<br>
-					<a :href="product.amazon">Amazon</a>
-					<a :href="product.notAmazonURL">{{product.notAmazonStore}}</a>
-				</li>
-				<li v-if="product.skin.includes(skinChosen)" v-for="product in products.secondCleansers">
-					{{product.name}}<br>
-					<a :href="product.amazon">Amazon</a>
-					<a :href="product.notAmazonURL">{{product.notAmazonStore}}</a>
-				</li>
-				<li v-if="product.skin.includes(skinChosen)" v-for="product in products.hydratingToners">
-					{{product.name}}<br>
-					<a :href="product.amazon">Amazon</a>
-					<a :href="product.notAmazonURL">{{product.notAmazonStore}}</a>
-				</li>
-				<li v-if="product.skin.includes(skinChosen)" v-for="product in products.moisturizers">
-					{{product.name}}<br>
-					<a :href="product.amazon">Amazon</a>
-					<a :href="product.notAmazonURL">{{product.notAmazonStore}}</a>
-				</li>
-				<li v-if="product.skin.includes(skinChosen)" v-for="product in products.sunscreen">
-					{{product.name}}<br>
-					<a :href="product.amazon">Amazon</a>
-					<a :href="product.notAmazonURL">{{product.notAmazonStore}}</a>
-				</li>
-			</ul>
-			
-
+			</div>
 		</div>
 
 		<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 		<script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
+		<script src="dist/js/homeComponent.js"></script>
 		<script src="dist/js/productData.js"></script>
+		<script src="dist/js/productComponent.js"></script>
 		<script src="dist/js/main.js"></script>
 
 	</body>
