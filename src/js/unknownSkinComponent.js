@@ -6,7 +6,17 @@ let unknownSkin = Vue.component('unknown-skin', {
     // },
 	template: `
 	<div>
-		Here is a quick guide to know what skin type you have.
+        <h2>What Skin Type Do I Have?</h2>
+        <p>First, wash your face with just water and your current cleanser. Pat dry and then wait for an hour</p>
+        <p>After the hour, does your skin feel:</p>
+        <h3>Itchy and Tight? Might even have some flaky patches?</h3>
+        <p>You have <span class="bold">Dry Skin</span>.</p>
+        <h3>Shiny and Greasy, especially on your forehead and nose?</h3>
+        <p>You have <span class="bold">Oily Skin</span>.</p>
+        <h3>Shiny and Greasy around your forehead and nose but seems dry around the cheeks and jawline?</h3>
+        <p>You have <span class="bold">Combination Skin</span>.</p>
+        <h3>Seems even and good?</h3>
+        <p>You have <span class="bold">Normal Skin</span>.</p>
 	</div>
 
     
