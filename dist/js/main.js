@@ -1,12 +1,26 @@
 'use strict';
 
-var routes = [{ path: '/', component: home },
-// { path: '/firstcleanser', component: firstcleanser },
-// { path: '/secondcleanser', component: secondcleanser },
-// { path: '/toner', component: toner },
-// { path: '/moisturizer', component: moisturizer },
-// { path: '/sunscreen', component: sunscreen },
-{ path: '/unknown-skin', component: unknownSkin }];
+var router = new VueRouter({
+	routes: [{ path: '/', component: home },
+	// { path: '/firstcleanser', component: firstcleanser },
+	// { path: '/secondcleanser', component: secondcleanser },
+	// { path: '/toner', component: toner },
+	// { path: '/moisturizer', component: moisturizer },
+	// { path: '/sunscreen', component: sunscreen },
+	{ path: '/unknown-skin', component: unknownSkin }, { path: '/tldr', component: tldr }]
+});
+
+// const router = new VueRouter({
+// 	routes: [
+// 		{ path: '/home', component: home,
+// 			children: [
+// 				{ path: '', component: home },
+// 				{ path: '/unknown-skin', component: unknownSkin },
+// 				{ path: '/tldr', component: tldr },
+// 			]
+// 		}
+// 	]
+// })
 
 var app = new Vue({
 	el: '#app',
@@ -24,7 +38,7 @@ var app = new Vue({
 	// 		return skins
 	// 	}
 	// },
-	routes: routes,
+	router: router,
 	data: {
 		message: 'Hello Vue!',
 		skins: ["oily", "combo", "normal", "dry"],

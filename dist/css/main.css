@@ -109,4 +109,17 @@ body {
 	padding: 30px;
 }
 
+#app .fade-enter-active, #app .fade-leave-active {
+	transition-property: opacity;
+	transition-duration: .25s;
+}
+
+#app .fade-enter-active {
+	transition-delay: .25s;
+}
+
+#app .fade-enter, #app .fade-leave-active {
+	opacity: 0;
+}
+
 /*# sourceMappingURL=main.css.map */

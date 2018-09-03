@@ -14,7 +14,9 @@
 		<div class="wrapper">
 			<h1>Let's get sheetfaced!</h1>
 			<div id="app">
-				<home></home>
+				<router-view>
+					<home :skin-chosen="skins.combo"></home>	
+				</router-view>
 				
 
 			</div>
@@ -26,6 +28,7 @@
 		<script src="dist/js/unknownSkinComponent.js"></script>
 		<script src="dist/js/productData.js"></script>
 		<script src="dist/js/productComponent.js"></script>
+		<script src="dist/js/tldrComponent.js"></script>
 		<script src="dist/js/main.js"></script>
 
 	</body>
