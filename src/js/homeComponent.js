@@ -12,6 +12,7 @@ let home = Vue.component('home', {
 		<p>This guide is meant to help you get started, with the first five core steps: Oil Cleanser, Second Cleanser, Hydrating Toner, Moisturizer and Sunscreen</p>
 		<h2>Ready To Start?</h2>
 		<p>Please select a skin type:</p>
+		<p>{{skinChosen}}</p>
 		
 		
 		<router-link to="/unknown-skin">I don't know my skin</router-link>
@@ -23,6 +24,6 @@ let home = Vue.component('home', {
     `
 })
 
-	// 	<select v-model="skinChosen">	
-    //         <option v-for="skin in skins" :value="skin"> {{ skin }} </option>
-    //     </select>
+// <select v-model="skinChosen">	
+//              <option v-for="skin in skins" :value="skin"> {{ skin }} </option>
+//          </select>

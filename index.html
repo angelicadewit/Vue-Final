@@ -15,11 +15,11 @@
 			<h1>Let's get sheetfaced!</h1>
 			<div id="app">
 				<transition name="fade">
-					<router-view>
-						<home :skin-chosen="skins.combo"></home>	
+					<router-view
+						:skin="skins"
+						:skin-chosen="skins.combo">	
 					</router-view>
 				</transition>
-				
 
 			</div>
 		</div>
@@ -29,7 +29,7 @@
 		<script src="dist/js/homeComponent.js"></script>
 		<script src="dist/js/unknownSkinComponent.js"></script>
 		<script src="dist/js/productData.js"></script>
-		<script src="dist/js/productComponent.js"></script>
+		<!-- <script src="dist/js/productComponent.js"></script> -->
 		<script src="dist/js/tldrComponent.js"></script>
 		<script src="dist/js/main.js"></script>
 
