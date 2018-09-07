@@ -1,4 +1,4 @@
-let firstCleanser = Vue.component('first-cleanser', {
+let hydratingToner = Vue.component('hydrating-toner', {
     props: ["products", "skin-chosen", "skins"],
     data: function () {
         return {
@@ -9,14 +9,14 @@ let firstCleanser = Vue.component('first-cleanser', {
     },
 	template: `
 	<div>
-        <h2>First Cleanser</h2>
+        <h2>Hydrating Toners</h2>
         <p>
-            This is were I will tell you all about what first cleansers are about.
-            But have you thought about googling what first cleansers are :)
+            This is were I will tell you all about what Hydrating Toner are about.
+            But have you thought about googling what Hydrating Toner are :)
         </p>
         <p>So you have <span>{{skinChosen}}</span> skin. These were the recommended products:</p>
         <ul>
-            <li class="product-card" v-if="product.skin.includes(skinChosen)" v-for="product in products.firstCleansers">
+            <li class="product-card" v-if="product.skin.includes(skinChosen)" v-for="product in products.hydratingToners">
                 <h4>{{product.name}}</h4>
                 <div class="img-size"><img :src="product.img"></div>
                 <p>Where to buy:</p>

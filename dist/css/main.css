@@ -74,12 +74,12 @@ table {
 }
 
 body {
-	background: #fafafa;
+	background: #F1EDE3;
 }
 
 .wrapper {
 	width: 80%;
-	background: #f48db4;
+	background: #F7A7BF;
 	margin: 0 auto;
 	font-family: "Montserrat";
 	font-size: 20px;
@@ -96,7 +96,7 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background: #fafafa;
+	background: #F1EDE3;
 }
 
 .wrapper .logo img {
@@ -125,7 +125,7 @@ body {
 
 #app ul h4 {
 	font-family: "Alegreya";
-	color: #454F61;
+	color: #51A7AD;
 	font-size: 1.2em;
 	text-align: center;
 	padding-bottom: 10px;
@@ -175,7 +175,7 @@ body {
 
 #app h3 {
 	font-family: "Alegreya";
-	color: #454F61;
+	color: #51A7AD;
 	font-size: 2em;
 	padding: 10px 30px 0px;
 }
