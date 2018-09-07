@@ -1,13 +1,14 @@
 const router = new VueRouter({
 	routes: [
 	{ path: '/', component: home },
-	// { path: '/firstcleanser', component: firstcleanser },
+	{ path: '/first-cleanser', component: firstCleanser },
 	// { path: '/secondcleanser', component: secondcleanser },
 	// { path: '/toner', component: toner },
 	// { path: '/moisturizer', component: moisturizer },
 	// { path: '/sunscreen', component: sunscreen },
 	{ path: '/unknown-skin', component: unknownSkin },
 	{ path: '/tldr', component: tldr },
+	{ path: '/product', component: product },
 	// { path: '/resources', component: resources },
 	]
 })
@@ -44,10 +45,13 @@ var app = new Vue({
 	data: {
 		message: 'Hello Vue!',
 		skins: ["oily", "combo", "normal", "dry"],
-		skinChosen: "dry",
+		skinChosen: "oily",
 		products: products
 	},
 	methods: {
-
+		selectedSkinType: function(skin) {
+			console.log('user picked their skin type in a child component ', skin)
+			this.skinChosen = skin;
+		}
 	}
 })

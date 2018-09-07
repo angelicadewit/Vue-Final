@@ -17,7 +17,7 @@ TABLE OF CONTENTS:
    v2.0 | 20110126
    License: none (public domain)
 */
-@import url("https://fonts.googleapis.com/css?family=Alegreya|Montserrat");
+@import url("https://fonts.googleapis.com/css?family=Alegreya|Montserrat|Princess+Sofia");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -74,29 +74,81 @@ table {
 }
 
 body {
-	background: #ccc;
+	background: #fafafa;
 }
 
 .wrapper {
 	width: 80%;
-	background: pink;
+	background: #f48db4;
 	margin: 0 auto;
-	height: 100vh;
 	font-family: "Montserrat";
 	font-size: 20px;
 }
 
 .wrapper h1 {
-	font-family: "Alegreya";
-	font-size: 5em;
+	font-family: "Princess Sofia";
+	font-size: 4em;
 	padding: 30px;
 }
 
+.wrapper .logo {
+	padding-top: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #fafafa;
+}
+
+.wrapper .logo img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
 /* 2. Content ================================= */
-#app ol li {
+#app {
+	padding-bottom: 30px;
+}
+
+#app ol ul {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+#app ol .product-card {
 	padding: 15px;
 	margin: 15px;
 	background: white;
+	display: flex;
+	flex-direction: column;
+	width: 30%;
+}
+
+#app ol h4 {
+	font-family: "Alegreya";
+	color: #454F61;
+	font-size: 1.2em;
+	text-align: center;
+	padding-bottom: 10px;
+}
+
+#app ol .links {
+	display: flex;
+	justify-content: space-around;
+	padding-bottom: 20px;
+}
+
+#app ol p {
+	padding: 0px 0px 10px;
+}
+
+#app ol img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+#app ol small {
+	font-size: 10px;
+	font-family: "tahoma";
 }
 
 #app p {
@@ -111,7 +163,8 @@ body {
 
 #app h3 {
 	font-family: "Alegreya";
-	font-size: 1.5em;
+	color: #454F61;
+	font-size: 2em;
 	padding: 10px 30px 0px;
 }
 
@@ -130,6 +183,34 @@ body {
 
 #app .fade-enter, #app .fade-leave-active {
 	opacity: 0;
+}
+
+#app .options {
+	display: flex;
+	justify-content: space-around;
+}
+
+#app .select-style {
+	border: 2px solid black;
+	width: 85%;
+	border-radius: 3px;
+	overflow: hidden;
+	background: transparent;
+}
+
+#app .select-style select {
+	padding: 5px 8px;
+	width: 100%;
+	border: none;
+	box-shadow: none;
+	background: transparent;
+	background-image: none;
+	-webkit-appearance: none;
+	font-size: 20px;
+}
+
+#app .select-style select:focus {
+	outline: none;
 }
 
 /*# sourceMappingURL=main.css.map */

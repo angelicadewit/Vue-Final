@@ -1,9 +1,16 @@
 let unknownSkin = Vue.component('unknown-skin', {
     props: ["products", "skin-chosen", "skins"],
-    // data: function () {
-    //     return {
-    //     }
-    // },
+    data: function () {
+        return {
+            localSkinChosen: ""
+        }
+    },
+    watch: {
+        localSkinChosen: function(skin) {
+            console.log(skin)
+            this.$emit('selectedskintype', this.localSkinChosen);
+        }
+    },
 	template: `
 	<div>
         <h2>What Skin Type Do I Have?</h2>
@@ -17,8 +24,15 @@ let unknownSkin = Vue.component('unknown-skin', {
         <p>You have <span class="bold">Combination Skin</span>.</p>
         <h3>Seems even and good?</h3>
         <p>You have <span class="bold">Normal Skin</span>.</p>
-	</div>
-
     
+        <div class="select-style">
+            <select v-model="localSkinChosen">	
+                <option value="">Choose a skin type</option>
+                <option v-for="skin in skins" :value="skin"> {{ skin }} </option>
+            </select>
+            <router-link to="/">I don't know my skin</router-link>
+        </div>
+        
+	</div>
     `
 })

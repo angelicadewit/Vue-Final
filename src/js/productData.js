@@ -3,6 +3,7 @@ let products = {
         {
             name: "Heimish Cleansing Balm",
             skin: ["oily"],
+            img: "/dist/img/heimishcleansingbalm.jpg",
             amazon: `https://www.amazon.com/Heimish-Clean-Balm-Cleansing-120ml/dp/B01CJ639SM/ref=sr_1_3_a_it?ie=UTF8&qid=1535079624&sr=8-3&keywords=Heimish+Cleansing+Balm`,
             notAmazonStore: "Yes Style",
             notAmazonURL: `https://www.yesstyle.com/en/list.html?bpt=48&q=Heimish+Cleansing+Balm`,
@@ -14,6 +15,7 @@ let products = {
         {
             name: "Kose Softymo Speedy Cleansing Oil",
             skin: ["combo","oily"],
+            img: "/dist/img/softymospeedy.jpg",
             amazon: `https://www.amazon.com/KOSE-SOFTYMO-Speedy-Cleansing-230ml/dp/B000V2FBAQ/ref=sr_1_1_a_it?ie=UTF8&qid=1535082521&sr=8-1&keywords=Kose+Softymo+Speedy+Cleansing+Oil`,
             notAmazonStore: "Yes Style",
             notAmazonURL: `https://www.yesstyle.com/en/kose-softymo-speedy-cleansing-oil-230ml/info.html/pid.1050599597`,
