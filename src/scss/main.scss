@@ -58,7 +58,7 @@ body {
 
 		img{
 			max-width: 100%;
-			max-height:100%;
+			max-height: 100%;
 		}
 	}
 }
@@ -72,13 +72,10 @@ body {
 #app {
 	padding-bottom: 30px;
 
-	ol {
-
-
-		ul{
-			display: flex;
-			justify-content: space-evenly;
-		}
+	ul{
+		display: flex;
+		justify-content: space-evenly;
+	
 
 		.product-card {
 			padding: 15px;
@@ -109,9 +106,21 @@ body {
 			padding: 0px 0px 10px;
 		}
 
-		img{
-			max-width: 100%;
-			max-height: 100%;
+		a{
+			padding: 5px;	
+			position: relative;
+			display: block;
+		}
+
+		.img-size{
+			align-self: center;
+			width: 220px;
+			height: 220px;
+
+			img{
+				max-width: 100%;
+				max-height: 100%;
+			}
 		}
 
 		small{
@@ -124,6 +133,8 @@ body {
 	p{
 		padding: .75em 30px;
 	}
+
+	
 
 	h2{
 		font-family: $headerText;
@@ -162,6 +173,8 @@ body {
 	}
 
 	.select-style {
+		display: block;
+		margin: 0 auto;
 		border: 2px solid black;
 		width: 85%;
 		
@@ -169,7 +182,7 @@ body {
 		overflow: hidden;
 		background: transparent;
 	
-	
+
 		select {
 			padding: 5px 8px;
 			width: 100%;
@@ -180,9 +193,10 @@ body {
 			-webkit-appearance: none;
 			font-size: 20px;
 		}
-	
+
 		select:focus {
 			outline: none;
 		}
 	}
-} 
+}
+

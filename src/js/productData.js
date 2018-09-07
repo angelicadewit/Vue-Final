@@ -27,6 +27,7 @@ let products = {
         {
             name: "DHC Cleansing Oil",
             skin: ["combo"],
+            img: "/dist/img/dhcoil.jpg",
             amazon: `https://www.amazon.com/DHC-Deep-Cleansing-Oil-4-1/dp/B00KHO5464/ref=sr_1_4_a_it?ie=UTF8&qid=1535082970&sr=8-4&keywords=dhc+cleansing+oil`,
             notAmazonURL: `http://www.testerkorea.com/Product/dhc-deep-cleansing-oil-70ml`,
             notAmazonStore: "Tester Korea",
@@ -37,6 +38,7 @@ let products = {
         {
             name: "Banila Clean It Zero",
             skin: ["normal"],
+            img: "/dist/img/ciz.jpg",
             amazon: `https://www.amazon.com/Cleansing-Original-cleanser-Testing-Parabens/dp/B07BQGZ8GK/ref=sr_1_2_a_it?ie=UTF8&qid=1535083099&sr=8-2&keywords=banila+co+clean+it+zero`,
             notAmazonURL: `http://jolse.com/product/detail.html?product_no=14236&cate_no=25&display_group=1`,
             notAmazonStore: `Jolse`,
@@ -47,6 +49,7 @@ let products = {
         {
             name: "The Face Shop Rice Water Bright Cleansing Rich Oil",
             skin: ["normal"],
+            img: "/dist/img/ricewater.jpg",
             amazon: `https://www.amazon.com/Facial-Cleanser-Natural-Cleansing-Moisturizer/dp/B00809ERAM/ref=sr_1_3_a_it?ie=UTF8&qid=1535083250&sr=8-3&keywords=Rice+Water+Bright+Cleansing`,
             notAmazonURL: `http://jolse.com/product/detail.html?product_no=4425&cate_no=58&display_group=1`,
             notAmazonStore: `Jolse`,
@@ -57,6 +60,7 @@ let products = {
         {
             name: "Kose Softymo Deep Cleansing Oil",
             skin: ["dry"],
+            img: "/dist/img/softymodeep.jpg",
             amazon: `https://www.amazon.com/KOSE-Softy-Deep-Treatment-7-8oz/dp/B000V2FB88/ref=sr_1_1_a_it?ie=UTF8&qid=1535083334&sr=8-1&keywords=Kose+Softymo+Deep+Cleansing+Oil`,
             notAmazonStore: `Yes Style`,
             notAmazonURL: `https://www.yesstyle.com/en/kose-softymo-deep-cleansing-oil-230ml/info.html/pid.1049136003`,
@@ -68,6 +72,7 @@ let products = {
         {
             name: "Chinoshio Natural Cleansing Oil",
             skin: ["dry"],
+            img: "/dist/img/chinosino.jpg",
             amazon: `https://www.amazon.com/s/?ref=nb_sb_noss?url=search-alias%3Daps&field-keywords=Chinoshio+Natural+Cleansing+Oil&rh=i%3Aaps%2Ck%3AChinoshio+Natural+Cleansing+Oil`,
             notAmazonStore: `Tester Korea`,
             notAmazonURL: `http://www.testerkorea.com/Product/chinoshio-natural-cleansing-oil-150ml`,
@@ -80,6 +85,7 @@ let products = {
         {
             name: "Hada Labo Gokujyn Hyaluronic Foam Cleanser",
             skin: ["oily","combo"],
+            img: "/dist/img/hadalabofoaming.jpg",
             amazon: `https://www.amazon.com/Hada-Labo-Gokujyn-Hyaluronic-Cleansing/dp/B01CE5P580/ref=sr_1_2_a_it?ie=UTF8&qid=1535084217&sr=8-2&keywords=Hada+Labo+Gokujyn+Hyaluronic+Foam+Cleanser`,
             notAmazonURL: `https://www.yesstyle.com/en/mentholatum-hada-labo-goku-jyun-super-hyaluronic-face-foam-160ml/info.html/pid.1053104279`,
             notAmazonStore: `Yes Style`,
@@ -90,6 +96,7 @@ let products = {
         {
             name: "Tosowoong Enzyme Powder Wash",
             skin: ["oily"],
+            img: "/dist/img/tosowoong.jpg",
             amazon: `https://www.amazon.com/Tosowoong-cleanser-blackheads-cleansing-cosmetics/dp/B00I76Q3XM/ref=sr_1_1_a_it?ie=UTF8&qid=1535087021&sr=8-1&keywords=Tosowoong+Enzyme+Powder+Wash`,
             notAmazonStore: `Jolse`,
             notAmazonURL: `http://jolse.com/product/detail.html?product_no=10658&cate_no=25&display_group=1`,
@@ -101,16 +108,18 @@ let products = {
         {
             name: "CeraVe Hydrating Cleanser",
             skin: ["normal","dry"],
+            img: "/dist/img/ceravehydrating.jpg",
             amazon: `https://www.amazon.com/CeraVe-Hydrating-Facial-Cleanser-Washing/dp/B01MSSDEPK/ref=sr_1_3_a_it?ie=UTF8&qid=1535087105&sr=8-3&keywords=CeraVe+Hydrating+Cleanser`,
             notAmazonStore: `Ulta`,
             notAmazonURL: `https://www.ulta.com/hydrating-face-cleanser-face-wash-normal-dry-skin?productId=xlsImpprod4190255`,
             ingredients: `Behentrimonium methosulfate, Disodium EDTA, Glycerine, Hyaluronic acid, Methylparaben, Polyoxyl 40 stearate, Polysorbate 20, Potassium phosphate dibasic, Potassium phosphate monobasic, Propylparaben, Stearyl alcohol, Water`,
-            cosDNALink: `https://www.skincarisma.com/products/cerave/hydrating-cleanser`,
-            skincarismaLink: `http://www.cosdna.com/eng/product.php?q=CeraVe+Hydrating+Cleanser`,
+            skincarismaLink: `https://www.skincarisma.com/products/cerave/hydrating-cleanser`,
+            cosDNALink: `http://www.cosdna.com/eng/product.php?q=CeraVe+Hydrating+Cleanser`,
         },
         { 
             name: "Innisfree Blueberry Rebalancing 5.5 Cleanser",
             skin: ["combo"], 
+            img: "/dist/img/innisfreeblueberry.jpg",
             amazon: `https://www.amazon.com/Innisfree-Blueberry-Rebalancing-Cleanser-100ml/dp/B019IHFR62/ref=sr_1_1_a_it?ie=UTF8&qid=1535087664&sr=8-1&keywords=Innisfree+Blueberry+Rebalancing+5.5+Cleanser`,
             notAmazonStore: `Jolse`,
             notAmazonURL: `https://www.amazon.com/Innisfree-Blueberry-Rebalancing-Cleanser-100ml/dp/B019IHFR62/ref=sr_1_1_a_it?ie=UTF8&qid=1535087664&sr=8-1&keywords=Innisfree+Blueberry+Rebalancing+5.5+Cleanser`,
@@ -121,6 +130,7 @@ let products = {
         {
             name: "Cosrx Good Morning Gel Cleanser",
             skin: ["normal"],
+            img: "/dist/img/cosrxgoodmorning.jpg",
             amazon: `https://www.amazon.com/COSRX-Good-Morning-Cleanser-150ml/dp/B016NRXO06/ref=sr_1_2_a_it?ie=UTF8&qid=1535087205&sr=8-2&keywords=Cosrx+Good+Morning+Gel+Cleanser`,
             notAmazonStore: `Jolse`,
             notAmazonURL: `http://jolse.com/product/detail.html?product_no=6250&cate_no=25&display_group=1`,
@@ -131,6 +141,7 @@ let products = {
         {
             name: "ACWELL PH Balancing Bubble Cleanser",
             skin: ["dry"],
+            img: "/dist/img/.jpg",
             amazon: `https://www.amazon.com/ACWELL-Bubble-Balancing-Cleanser-150ml/dp/B00OR977RE/ref=sr_1_2_a_it?ie=UTF8&qid=1535087340&sr=8-2&keywords=acwell+5.5`,
             notAmazonStore: `SokoGlam`,
             notAmazonURL: `https://sokoglam.com/products/acwell-bubble-free-ph-balancing-cleanser`,
@@ -144,6 +155,7 @@ let products = {
         {
             name: "Hada Labo Gokujyn Hyaluronic Acid Lotion",
             skin: ["oily"], 
+            img: "/dist/img/hadalabolotion.jpg",
             amazon: `https://www.amazon.com/Hada-Labo-Hadalabo-Gokujun-Hyaluronic/dp/B00BSNBO9O/ref=sr_1_2_a_it?rps=1&ie=UTF8&qid=1535087456&sr=8-2&keywords=Hada+Labo+Gokujyn+Hyaluronic+Acid+Lotion&refinements=p_85%3A2470955011`,
             notAmazonStore: `Yes Style`,
             notAmazonURL: `https://www.yesstyle.com/en/mentholatum-hada-labo-goku-jyun-hyaluronic-acid-lotion-moist-170ml/info.html/pid.1061871297`,
@@ -154,6 +166,7 @@ let products = {
         {
             name: "Kikumasamune sake high moist lotion",
             skin: ["combo", "oily", "dry", "normal"],
+            img: "/dist/img/kikumasamune.jpg",
             amazon: `https://www.amazon.com/Kikumasamune-Sake-Skin-Lotion-Moisture/dp/B00ECQCVK0/ref=sr_1_1_a_it?ie=UTF8&qid=1535087922&sr=8-1&keywords=Kikumasamune+sake+high+moist+lotion`,
             notAmazonStore: `Sasa`,
             notAmazonURL: `http://web1.sasa.com/SasaWeb/eng/product/viewProductDetail.jspa?itemno=107326902002`,
@@ -164,6 +177,7 @@ let products = {
         {
             name: "Dr. Jart+ Ceramidin Liquid",
             skin: ["combo"],
+            img: "/dist/img/drjartliquid.jpg",
             amazon: `https://www.amazon.com/Dr-Jart-Ceramidin-Liquid-Ounce/dp/B00AMANH58/ref=sr_1_2_a_it?ie=UTF8&qid=1535089255&sr=8-2&keywords=Dr.+Jart%2B+Ceramidin+Liquid`,
             notAmazonStore: `Sephora`,
             notAmazonURL: `https://www.sephora.com/product/ceramidin-tm-liquid-P434364?skuId=2077832&keyword=Dr.%20Jart%20Ceramidin%20Liquid`,
@@ -174,6 +188,7 @@ let products = {
         {
             name: "CEZANNE Skin Conditioner High Moist",
             skin: ["normal"],
+            img: "/dist/img/cezanne.jpg",
             amazon: `https://www.amazon.com/Japan-Health-Beauty-Humidity-conditioner/dp/B00RWMHTU8/ref=sr_1_1_a_it?ie=UTF8&qid=1535088049&sr=8-1&keywords=CEZANNE+Skin+Conditioner+High+Moist`,
             notAmazonStore: `Yes Style`,
             notAmazonURL: `https://www.yesstyle.com/en/cezanne-skin-conditioner-high-moist-500ml/info.html/pid.1059432890`,
@@ -184,18 +199,20 @@ let products = {
         {
             name: "Klairs Supple Preparation Toner",
             skin: ["dry"],
+            img: "/dist/img/klairssupple.jpg",
             amazon: `https://www.amazon.com/Preparation-moisturizer-without-paraben-alcohol/dp/B00PGOFYG0/ref=sr_1_1_a_it?ie=UTF8&qid=1535088349&sr=8-1&keywords=Klairs+Supple+Preparation+Toner`,
             notAmazonStore: `Soko Glam`,
             notAmazonURL: `https://sokoglam.com/products/klairs-supple-preparation-facial-toner-180ml`,
             ingredients: `Water, Butylene Glycol, Dimethyl Sulfone, Betaine, Caprylic/Capric Triglyceride, Natto Gum, Sodium Hyaluronate, Disodium EDTA, Centella Asiatica Extract, Glycyrrhiza Glabra (Licorice) Root Extract, Polyquaternium-51, Chlorphenesin, Tocopheryl Acetate, Carbomer, Panthenol, Arginine, Luffa Cylindrica Fruit/Leaf/Stem Extract, Beta-Glucan, Althaea Rosea Flower Extract, Aloe Barbadensis Leaf Extract, Hydroxyethylcellulose, Portulaca Oleracea Extract, Lysine HCL, Proline, Sodium Ascorbyl Phosphate, Acetyl Methionine, Theanine, Lavandula Angustifolia (Lavender) Oil, Eucalyptus Globulus Leaf Oil, Pelargonium Graveolens Flower Oil, Citrus Limon (Lemon) Peel Oil, Citrus Aurantium Dulcis (Orange) Peel Oil, Cananga Odorata Flower Oil, Copper Tripeptide-1`,
-            cosDNALink: `http://www.cosdna.com/eng/product.php?q=CEZANNE+Skin+Conditioner+High+Moist`,
-            skincarismaLink: `https://www.skincarisma.com/products/cezanne/skin-conditioner-high-moist`,
+            cosDNALink: `http://www.cosdna.com/eng/product.php?q=Klairs+Supple+Preparation+Toner`,
+            skincarismaLink: `https://www.skincarisma.com/products/klairs/supple-preparation-facial-toner`,
         },
     ],
     moisturizers: [
         {
             name: "Etude House Moistfull Collagen Water Jelly Cream",
             skin: ["oily"], 
+            img: "/dist/img/moistfullcollagen.jpg",
             amazon: `https://www.amazon.com/Etude-House-Moistfull-Collagen-Water/dp/B01HYI0X70/`,
             notAmazonStore: `Etude House`,
             notAmazonURL: `https://www.etudehouse.com/int/en/index.php/moistfull-collagen-water-jelly-cream.html`,
@@ -206,6 +223,7 @@ let products = {
         {
             name: "Tony Moly Chok Chok Watery Green Tea Cream",
             skin: ["oily"], 
+            img: "/dist/img/chokchok.jpg",
             amazon: `https://www.amazon.com/TONYMOLY-Chok-Green-Watery-Cream/dp/B071X3P6XZ/ref=sr_1_2_a_it?ie=UTF8&qid=1535090270&sr=8-2&keywords=tony+moly+chok+chok+watery+cream`,
             notAmazonStore: `Jolse`,
             notAmazonURL: `http://jolse.com/product/detail.html?product_no=10655&cate_no=46&display_group=1`,
@@ -217,6 +235,7 @@ let products = {
         {
             name: "Rosette Ceramide Gel",
             skin: ["combo"],
+            img: "/dist/img/rosetteceramide.jpg",
             amazon: `https://www.amazon.com/ROSETTE-Skin-Care-Aqua-Ceramide/dp/B000FQNIX0/ref=sr_1_1_a_it?ie=UTF8&qid=1535090295&sr=8-1&keywords=Rosette+Ceramide+Gel`,
             notAmazonStore: `ebay: kabukicatjapan (98.6%)`,
             notAmazonURL: `https://www.ebay.com/itm/Rosette-Aqua-Ceramide-Gel-80g-Collagen-Hyaluronic-Acid-Sensitive-Skin-Free-ship/282310054829?hash=item41bafd93ad:g:Ks8AAOSwPCVX3js~`,
@@ -227,6 +246,7 @@ let products = {
         {
             name: "Dr. Jart+ Ceramidin Cream",
             skin: ["combo"],
+            img: "/dist/img/drjartcream.jpg",
             amazon: `https://www.amazon.com/Dr-Jart-Ceramidin-Cream-Ounce/dp/B015RYQBIS/ref=sr_1_3_a_it?ie=UTF8&qid=1535091157&sr=8-3&keywords=Dr.+Jart%2B+Ceramidin+Cream`,
             notAmazonStore: `Sephora`,
             notAmazonURL: `https://www.sephora.com/product/ceramidin-tm-cream-P434363?skuId=2077840&keyword=Dr.%20Jart%2B%20Ceramidin%20Cream`,
@@ -237,6 +257,7 @@ let products = {
         {
             name: "Belif Aqua Bomb",
             skin: ["normal"],
+            img: "/dist/img/aquabomb.jpg",
             amazon: `https://www.amazon.com/belif-True-Cream-Aqua-Korean/dp/B00H4GOAZO/ref=sr_1_1_a_it?ie=UTF8&qid=1535091220&sr=8-1&keywords=Belif+Aqua+Bomb`,
             notAmazonStore: `Jolse`,
             notAmazonURL: `http://www.testerkorea.com/Product/l-belif-the-true-cream-aqua-bomb-75ml_35474`,
@@ -249,26 +270,29 @@ let products = {
             skin: ["dry"],
             amazon: `https://www.amazon.com/Joseon-Beauty-Dynasty-Wrinkles-Dryness/dp/B01M4GQO8W/ref=sr_1_2_a_it?ie=UTF8&qid=1535091305&sr=8-2&keywords=Beauty+of+Joseon+Dynasty+Cream`,
             notAmazonStore: `Memebox`,
+            img: "/dist/img/dynasty.jpg",
             notAmazonURL: `https://us.memebox.com/product/5315/dynasty-cream`,
             ingredients: `Water, Butylene Glycol, Niacinamide, Dipentaerythrityl Hexa C5-9 Acid Esters, Hyaluronic Acid, Xanthan Gum, Cyclopentasiloxane, Cyclohexasiloxane, Polyacrylate-13, Polyisobutene, Polysorbate 20, Hydrogenated Lecithin C14-28 Alkyl Acid, Stearyl Alcohol, Behenyl Alcohol, Dimethicone/Vinyl Dimethicone Crosspolymer, Dimethicone, Adenosine, Glyceryl Stearate SE, Cetearyl Alcohol, Polyglyceryl-3 Methylglucose Distearate, Cetyl Peg/Ppg-10/1 Dimethicone, Stearic Acid, Tocopheryl Acetate, Sodium Polyacrylate, Olea Europaea (Olive) Fruit Oil, Helianthus Annuus (Sunflower) Seed Oil, Centella Asiatica Extract, Hippophae Rhamnoides Oil, EGF 2-Nano, Argania Spinosa Kernel Oil, Butyrospermum Parkii (Shea) Butter, Ceramide 3, Trehalose, Calendula Officinalis Flower Extract, Caprylhydroxamic Acid, 1, 2-Hexanediol, Raphanus Sativus (Radish) Leaf Extract, Oryza Sativa (Rice) Bran Extract, Cucurbitaceae (Gourd) Extract, Orchid Extract, Panax Ginseng Root Extract, Carthamus Tinctorius (Safflower) Seed Oil, Butyrospermum Parkii (Shea) Butter, Phytosphingosine, Ceteareth-20, Glyceryl Citrate/Lactate/Linoleate/Oleate, Fragrance, Honey`,
             cosDNALink: `http://www.cosdna.com/eng/product.php?q=Beauty+of+Joseon+Dynasty+Cream`,
-            skincarismaLink: `https://www.skincarisma.com/search?utf8=%E2%9C%93&q=Beauty+of+Joseon+Dynasty+Cream`,
+            skincarismaLink: `https://www.skincarisma.com/products/beauty-of-joseon/dynasty-cream`,
         },
         {
             name: "Benton Snail Bee High Content Steam Cream",
             skin: ["dry", "normal"],
+            img: "/dist/img/bentonsnail.jpg",
             amazon: `https://www.amazon.com/s/?ref=nb_sb_noss_2?url=search-alias%3Daps&field-keywords=Benton+Snail+Bee+High+Content+Steam+Cream&rh=i%3Aaps%2Ck%3ABenton+Snail+Bee+High+Content+Steam+Cream`,
             notAmazonStore: `Jolse`,
             notAmazonURL: `http://jolse.com/product/detail.html?product_no=8684&cate_no=102&display_group=1`,
             ingredients: `Snail Secretion Filtrate, Glycerin, Butylene Glycol, Cetyl Ethylhexanoate, Cetearyl Olivate, Sorbitan Olivate, Sodium Hyaluronate, Niacinamide, Stearic Acid, Behenyl Alcohol, Phytosqualene, Human Ogliopeptide-1, Bee Venom, Arbutin, Adenosine, Helianthus Annus (Sunflower) Seed Oil, Carthamus Tinctorius (Safflower) Seed Oil, Argania Spinosa Kernal Oil, Glyceryl Stearate, Arginine, Carbomer, Urea, Tocopher Leaf Extract, Salix Alba (Willow Bark) Extract, Ulmus Campestris (Elm) Extract, Pentylene Glycol, Zanthoxylum Piperitum Fruit Extract, Pilsatilla Koreana Extract, Usnea Barbata (Lichen) Extract`,
             cosDNALink: `http://www.cosdna.com/eng/product.php?q=Benton+Snail+Bee+High+Content+Steam+Cream`,
-            skincarismaLink: `https://www.skincarisma.com/search?utf8=%E2%9C%93&q=Benton+Snail+Bee+High+Content+Steam+Cream`,
+            skincarismaLink: `https://www.skincarisma.com/products/benton/snail-bee-high-content-steam-cream`,
         },
     ],
     sunscreen: [
         {
             name: "Biore UV Aqua Rich Watery Essence SPF 50+ PA++++",
             skin: ["oily","combo", "normal"], 
+            img: "/dist/img/biorerich.jpg",
             amazon: `https://www.amazon.com/2017ver-Sarasara-Watery-Essence-Sunscreen/dp/B071X4W74G`,
             notAmazonStore: `Yes Style`,
             notAmazonURL: `https://www.yesstyle.com/en/kao-biore-uv-aqua-rich-watery-essence-spf-50-pa-2017-edition-50g/info.html/pid.1033325971`,
@@ -279,6 +303,7 @@ let products = {
         {
             name: "Etude House Sunprise Mild Watery Light SPF50+ PA+++",
             skin: ["oily", "combo"], 
+            img: "/dist/img/sunprise.jpg",
             amazon: `https://www.amazon.com/Etude-House-Sunprise-Watery-Light/dp/B00X3QMH2M/ref=sr_1_2_a_it?ie=UTF8&qid=1535093097&sr=8-2&keywords=Etude+House+Sunprise+Mild+Watery+Light+SPF50%2B+PA%2B%2B%2B`,
             notAmazonStore: `Jolse`,
             notAmazonURL: `http://jolse.com/product/etude-house-sunprise-mild-watery-light-50g/5157/?cate_no=50&display_group=1`,
@@ -289,18 +314,20 @@ let products = {
         {
             name: "Biore UV Aqua Rich Watery Gel SPF 50+ PA++++",
             skin: ["dry"],
+            img: "/dist/img/bioreuv.jpg",
             amazon: `https://www.amazon.com/Biore-Smooth-Watery-Summer-Limited/dp/B01G11QB8Q/ref=sr_1_5_a_it?ie=UTF8&qid=1535093143&sr=8-5&keywords=Biore+UV+Aqua+Rich+Watery+Essence+SPF+50%2B+PA%2B%2B%2B%2B`,
             notAmazonStore: `Yes Style`,
             notAmazonURL: `https://www.yesstyle.com/en/kao-biore-uv-aqua-rich-watery-gel-spf-50-pa-2017-edition-90ml/info.html/pid.1057651156`,
             skincarismaLink: `https://www.skincarisma.com/products/biore/uv-aqua-rich-watery-gel-spf50-pa`,
             cosDNALink: `http://www.cosdna.com/eng/product.php?q=Biore+UV+Aqua+Rich+Watery+Gel`,
-            skincarismaLink: `Water, ethanol, ethylhexyl methoxycinnamate, (lauryl methacrylate / methacrylic acid Na) crosspolymer, alkyl benzoate (C12-15), bis-ethylhexyloxyphenol methoxyphenyl triazine, diethylamino hydroxybenzoyl hexyl benzoate, dimethicone, ethylhexyl triazone dimethylsilyl silica, DPG, xylitol, dextrin palmitate, (acrylates / alkyl acrylate (C10-30)) crosspolymer, (dimethicone / vinyl dimethicone) crosspolymer, polysilicone-9, glyceryl stearate, AMP, ( vinyl dimethicone / methicone silsesquioxane) crosspolymer, agar, isoceteth -20, alkyl (C30-45) methicone, polyvinyl alcohol, olefin (C30-45), hydroxide Na BG, PG, hyaluronic acid Na, royal jelly, orange fruit extract, grapefruit fruit extract, lemon fruit extract, phenoxyethanol, EDTA-2Na, BHT, Fragrance.`,
+            ingredients: `Water, ethanol, ethylhexyl methoxycinnamate, (lauryl methacrylate / methacrylic acid Na) crosspolymer, alkyl benzoate (C12-15), bis-ethylhexyloxyphenol methoxyphenyl triazine, diethylamino hydroxybenzoyl hexyl benzoate, dimethicone, ethylhexyl triazone dimethylsilyl silica, DPG, xylitol, dextrin palmitate, (acrylates / alkyl acrylate (C10-30)) crosspolymer, (dimethicone / vinyl dimethicone) crosspolymer, polysilicone-9, glyceryl stearate, AMP, ( vinyl dimethicone / methicone silsesquioxane) crosspolymer, agar, isoceteth -20, alkyl (C30-45) methicone, polyvinyl alcohol, olefin (C30-45), hydroxide Na BG, PG, hyaluronic acid Na, royal jelly, orange fruit extract, grapefruit fruit extract, lemon fruit extract, phenoxyethanol, EDTA-2Na, BHT, Fragrance.`,
         },
         {
             name: "Missha All Around Safe Block Waterproof SUN SPF50 PA+++",
             skin: ["dry", "normal"],
             amazon: `https://www.amazon.com/MISSHA-All-around-Block-Waterproof-SPF50/dp/B00EBZCI9Q/ref=sr_1_6_a_it?ie=UTF8&qid=1535093387&sr=8-6&keywords=Missha+All+Around+Safe+Block`,
             notAmazonStore: `Missha`,
+            img: "/dist/img/misshaall.jpg",
             notAmazonURL: `https://www.misshaus.com/all-around-safe-block-waterproof-sun-spf50-pa.html`,
             ingredients: `Water(Aqua), Cyclopentasiloxane, Titanium Dioxide (Nano), Zinc Oxide (Nano), Butylene Glycol, Cyclohexasiloxane, PEG-10 Dimethicone, Dicaprylyl Carbonate, Hydrogenated Poly(C6-14 Olefin), Cocos Nucifera (Coconut) Oil, Aluminum Hydroxide, Stearic Acid, Dimethicone, Sodium Chloride, Disteardimonium Hectorite, Beeswax, Dimethicone/Vinyl Dimethicone Crosspolymer, Cetyl PEG/PPG-10/1 Dimethicone, Glyceryl Caprylate, Polyhydroxystearic Acid, Coco-Caprylate/Caprate, Triethoxycaprylylsilane, Aloe Barbadensis Leaf Extract, Gnaphalium Leontopodium Flower Extract, Portulaca Oleracea Extract, Glycerin, Artemisia Vulgaris Extract, Chrysanthemum Morifolium Flower Extract, Cinnamomum Cassia Bark Extract, Diospyros Kaki Leaf Extract, Morus Alba Fruit Extract, Pueraria Lobata Root Extract, VP/Hexadecene Copolymer, 1,2-Hexanediol, Acrylates/Dimethicone Copolymer, Disodium EDTA, Chlorphenesin, Fragrance(Parfum) 0418`,
             cosDNALink: `http://www.cosdna.com/eng/product.php?q=Missha+All+Around+Safe+Block+Waterproof+Sun`,

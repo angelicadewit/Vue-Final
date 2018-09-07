@@ -25,13 +25,15 @@ let unknownSkin = Vue.component('unknown-skin', {
         <h3>Seems even and good?</h3>
         <p>You have <span class="bold">Normal Skin</span>.</p>
     
+
         <div class="select-style">
             <select v-model="localSkinChosen">	
                 <option value="">Choose a skin type</option>
                 <option v-for="skin in skins" :value="skin"> {{ skin }} </option>
             </select>
-            <router-link to="/">I don't know my skin</router-link>
         </div>
+
+        <router-link to="/first-cleanser" active-class="main-link">Let's Go</router-link></router-link>
         
 	</div>
     `

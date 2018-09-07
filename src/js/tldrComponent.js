@@ -15,7 +15,7 @@ let tldr = Vue.component('tdlr', {
                 <ul>
                     <li class="product-card" v-if="product.skin.includes(skinChosen)" v-for="product in products.firstCleansers">
                         <h4>{{product.name}}</h4>
-                        <img :src="product.img">
+                        <div class="img-size"><img :src="product.img"></div>
                             <p>Where to buy:</p>
                             <div class="links">
                             <a :href="product.amazon" target="_blank">Amazon</a>
@@ -37,8 +37,8 @@ let tldr = Vue.component('tdlr', {
                 
                 <ul>
                     <li class="product-card" v-if="product.skin.includes(skinChosen)" v-for="product in products.secondCleansers">
-                        {{product.name}}<br>
-                    <img :src="product.img">
+                        <h4>{{product.name}}</h4>
+                        <div class="img-size"><img :src="product.img"></div>
                         <p>Where to buy:</p>
                         <div class="links">
                         <a :href="product.amazon" target="_blank">Amazon</a>
@@ -59,8 +59,8 @@ let tldr = Vue.component('tdlr', {
 
                 <ul>
                     <li class="product-card" v-if="product.skin.includes(skinChosen)" v-for="product in products.hydratingToners">
-                        {{product.name}}<br>
-                    <img :src="product.img">
+                    <h4>{{product.name}}</h4>
+                    <div class="img-size"><img :src="product.img"></div>
                         <p>Where to buy:</p>
                         <div class="links">
                         <a :href="product.amazon" target="_blank">Amazon</a>
@@ -81,8 +81,8 @@ let tldr = Vue.component('tdlr', {
 
                 <ul>
                     <li class="product-card" v-if="product.skin.includes(skinChosen)" v-for="product in products.moisturizers">
-                        {{product.name}}<br>
-                    <img :src="product.img">
+                    <h4>{{product.name}}</h4>
+                        <div class="img-size"><img :src="product.img"></div>
                         <p>Where to buy:</p>
                         <div class="links">
                         <a :href="product.amazon" target="_blank">Amazon</a>
@@ -103,8 +103,8 @@ let tldr = Vue.component('tdlr', {
 
                 <ul>
                     <li class="product-card" v-if="product.skin.includes(skinChosen)" v-for="product in products.sunscreen">
-                        {{product.name}}<br>
-                    <img :src="product.img">
+                    <h4>{{product.name}}</h4>
+                    <div class="img-size"><img :src="product.img"></div>
                         <p>Where to buy:</p>
                         <div class="links">
                         <a :href="product.amazon" target="_blank">Amazon</a>
