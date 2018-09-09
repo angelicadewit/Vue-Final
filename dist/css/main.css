@@ -168,6 +168,10 @@ body {
 	font-family: verdana;
 }
 
+#app span {
+	text-decoration: underline;
+}
+
 #app p {
 	padding: .75em 30px;
 }

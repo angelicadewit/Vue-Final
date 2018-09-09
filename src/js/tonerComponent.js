@@ -11,9 +11,13 @@ let hydratingToner = Vue.component('hydrating-toner', {
 	<div>
         <h2>Hydrating Toners</h2>
         <p>
-            This is were I will tell you all about what Hydrating Toner are about.
-            But have you thought about googling what Hydrating Toner are :)
+            If you are completely starting out a new routine, this would be the first step to introduce products.
         </p>
+        <p>
+           Asian Beauty toners are meant to soften your skin and allows subsequent products be absorbed to your skin. Most toners contain humectants, which are ingredients that draw moisture to the skin. You'll find that most of the common dry and oily skin issues are due to the lack of hydration of your skin.
+        </p>
+        
+        
         <p>So you have <span>{{skinChosen}}</span> skin. These were the recommended products:</p>
         <ul>
             <li class="product-card" v-if="product.skin.includes(skinChosen)" v-for="product in products.hydratingToners">
@@ -33,6 +37,8 @@ let hydratingToner = Vue.component('hydrating-toner', {
             </li>
         </ul>
 
+        <router-link to="/second-cleanser" active-class="main-link"><</router-link></router-link>
+        <router-link to="/moisturizer" active-class="main-link">></router-link></router-link>
 	</div>
     `
 })

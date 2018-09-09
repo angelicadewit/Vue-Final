@@ -22,7 +22,7 @@ let products = {
             ingredients: `Mineral Oil, Peg-8 Glyceryl Isostearate, Cethyl Ethylhexancate, Cyclomethicone, Water, Simmondsia Chinensis (Jojoba) Seed Oil, Isostearic Acid, Glycerin, Phenoxyethanol`,
             cosDNALink: `http://www.cosdna.com/eng/product.php?q=KOSE+SOFTYMO+Speedy+Cleansing+Oil`,
             skincarismaLink: `https://www.skincarisma.com/products/kose/softy-mo-speedy-cleansing-oil`,
-            isOpen: false,
+            isActive: false,
         },
         {
             name: "DHC Cleansing Oil",
