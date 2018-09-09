@@ -46,12 +46,14 @@ var app = new Vue({
 		message: 'Hello Vue!',
 		skins: ["oily", "combo", "normal", "dry"],
 		skinChosen: "oily",
-		products: products
+		products: products,
+
 	},
 	methods: {
 		selectedSkinType: function(skin) {
 			console.log('user picked their skin type in a child component ', skin)
 			this.skinChosen = skin;
-		}
-	}
+		},
+		
+	},
 })

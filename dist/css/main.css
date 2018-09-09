@@ -123,6 +123,10 @@ body {
 	width: 30%;
 }
 
+#app ul .is-collapsed span {
+	display: none;
+}
+
 #app ul h4 {
 	font-family: "Alegreya";
 	color: #51A7AD;
@@ -159,8 +163,9 @@ body {
 }
 
 #app ul small {
-	font-size: 10px;
-	font-family: "tahoma";
+	padding: 5px 0px;
+	font-size: 12px;
+	font-family: verdana;
 }
 
 #app p {

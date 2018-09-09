@@ -76,7 +76,6 @@ body {
 		display: flex;
 		justify-content: space-evenly;
 	
-
 		.product-card {
 			padding: 15px;
 			margin: 15px;
@@ -86,6 +85,11 @@ body {
 			width: 30%;
 		}
 
+		.is-collapsed {
+			span {
+				display: none;
+			}
+		}
 
 		h4{
 			font-family: $headerText;
@@ -124,8 +128,9 @@ body {
 		}
 
 		small{
-			font-size: 10px;
-			font-family: "tahoma";
+			padding: 5px 0px;
+			font-size: 12px;
+			font-family: verdana;
 		}
 	}
 

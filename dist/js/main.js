@@ -38,12 +38,14 @@ var app = new Vue({
 		skins: ["oily", "combo", "normal", "dry"],
 		skinChosen: "oily",
 		products: products
+
 	},
 	methods: {
 		selectedSkinType: function selectedSkinType(skin) {
 			console.log('user picked their skin type in a child component ', skin);
 			this.skinChosen = skin;
 		}
+
 	}
 });
 //# sourceMappingURL=main.js.map

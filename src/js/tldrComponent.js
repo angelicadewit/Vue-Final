@@ -2,6 +2,7 @@ let tldr = Vue.component('tdlr', {
 	props: ["products", "skin-chosen", "skins"],
     data: function () {
         return {
+            isOpen: false,
         }
     },
 	template: `
@@ -13,6 +14,7 @@ let tldr = Vue.component('tdlr', {
                     <h3>First Cleanser</h3>
                 </li>
                 <ul>
+
                     <li class="product-card" v-if="product.skin.includes(skinChosen)" v-for="product in products.firstCleansers">
                         <h4>{{product.name}}</h4>
                         <div class="img-size"><img :src="product.img"></div>
@@ -21,12 +23,12 @@ let tldr = Vue.component('tdlr', {
                             <a :href="product.amazon" target="_blank">Amazon</a>
                             <a :href="product.notAmazonURL" target="_blank">{{product.notAmazonStore}}</a>
                         </div>
-                        <p>Ingredients Links:</p>
-                        <!-- <div class="links"> -->
+                        <p>Ingredients:</p>
                             <a :href="product.cosDNALink" target="_blank">CosDNA Analysis</a>
                             <a :href="product.skincarismaLink" target="_blank">Skincarisma Analysis</a>
-                            <!-- </div>
-                                <small>{{product.ingredients}}</small> -->
+                            <button @click="toggle()">Show more</button>
+                            <span v-show="isOpen">{{product.ingredients}}</span>
+        
                     </li>
                     
                 </ul>
@@ -44,12 +46,12 @@ let tldr = Vue.component('tdlr', {
                         <a :href="product.amazon" target="_blank">Amazon</a>
                         <a :href="product.notAmazonURL" target="_blank">{{product.notAmazonStore}}</a>
                     </div>
-                    <p>Ingredients Links:</p>
+                    <p>Ingredients:</p>
                     <!-- <div class="links"> -->
-                        <a :href="product.cosDNALink" target="_blank">CosDNA Analysis</a>
-                        <a :href="product.skincarismaLink" target="_blank">Skincarisma Analysis</a>
-                        <!-- </div>
-                            <small>{{product.ingredients}}</small> -->
+                            <a :href="product.cosDNALink" target="_blank">CosDNA Analysis</a>
+                            <a :href="product.skincarismaLink" target="_blank">Skincarisma Analysis</a>
+                            <!-- </div>  -->
+                                <small>{{product.ingredients}}</small>
                     </li>
                 </ul>
 
@@ -66,12 +68,12 @@ let tldr = Vue.component('tdlr', {
                         <a :href="product.amazon" target="_blank">Amazon</a>
                         <a :href="product.notAmazonURL" target="_blank">{{product.notAmazonStore}}</a>
                     </div>
-                    <p>Ingredients Links:</p>
+                    <p>Ingredients:</p>
                     <!-- <div class="links"> -->
-                        <a :href="product.cosDNALink" target="_blank">CosDNA Analysis</a>
-                        <a :href="product.skincarismaLink" target="_blank">Skincarisma Analysis</a>
-                        <!-- </div>
-                            <small>{{product.ingredients}}</small> -->
+                            <a :href="product.cosDNALink" target="_blank">CosDNA Analysis</a>
+                            <a :href="product.skincarismaLink" target="_blank">Skincarisma Analysis</a>
+                            <!-- </div>  -->
+                                <small>{{product.ingredients}}</small>
                     </li>
                 </ul>
 
@@ -88,12 +90,12 @@ let tldr = Vue.component('tdlr', {
                         <a :href="product.amazon" target="_blank">Amazon</a>
                         <a :href="product.notAmazonURL" target="_blank">{{product.notAmazonStore}}</a>
                     </div>
-                    <p>Ingredients Links:</p>
+                    <p>Ingredients:</p>
                     <!-- <div class="links"> -->
-                        <a :href="product.cosDNALink" target="_blank">CosDNA Analysis</a>
-                        <a :href="product.skincarismaLink" target="_blank">Skincarisma Analysis</a>
-                        <!-- </div>
-                            <small>{{product.ingredients}}</small> -->
+                    <a :href="product.cosDNALink" target="_blank">CosDNA Analysis</a>
+                    <a :href="product.skincarismaLink" target="_blank">Skincarisma Analysis</a>
+                    <!-- </div>  -->
+                        <small>{{product.ingredients}}</small>
                     </li>
                 </ul>
                 
@@ -110,17 +112,23 @@ let tldr = Vue.component('tdlr', {
                         <a :href="product.amazon" target="_blank">Amazon</a>
                         <a :href="product.notAmazonURL" target="_blank">{{product.notAmazonStore}}</a>
                     </div>
-                    <p>Ingredients Links:</p>
+                    <p>Ingredients:</p>
                     <!-- <div class="links"> -->
-                        <a :href="product.cosDNALink" target="_blank">CosDNA Analysis</a>
-                        <a :href="product.skincarismaLink" target="_blank">Skincarisma Analysis</a>
-                        <!-- </div>
-                            <small>{{product.ingredients}}</small> -->
+                    <a :href="product.cosDNALink" target="_blank">CosDNA Analysis</a>
+                    <a :href="product.skincarismaLink" target="_blank">Skincarisma Analysis</a>
+                    <!-- </div>  -->
+                        <small>{{product.ingredients}}</small>
                     </li>
                 </ul>
             </ol>
 	</div>
 
     
-    `
+    `,
+    methods: {
+        toggle: function(){
+            console.log(`hllo`)
+            this.isOpen = !this.isOpen
+        }
+	}
 })

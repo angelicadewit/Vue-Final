@@ -33,7 +33,7 @@ let home = Vue.component('home', {
 	
 			
 		<router-link to="/first-cleanser">Let's Go</router-link></router-link>
-		<router-link to="/tldr">I already know my skin</router-link>
+		<router-link to="/tldr">I just want the products</router-link>
 		
 	</div>
 
