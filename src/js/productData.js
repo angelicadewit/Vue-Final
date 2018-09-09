@@ -10,7 +10,7 @@ let products = {
             ingredients: `Ethylhexyl Palmitate, Cetyl Ethylhexanoate, PEG-20 Glyceryl Triisostearate, Polyethylene, PEG-8 Isostearate, Butyrospermum Parkii (Shea) Butter, Cocos Nucifera (Coconut) Fruit Extract, Citrus Aurantifolia (Lime) Fruit Extract, Freesia Refracta Extract, Iris Versicolor Extract, Jasminum Officinale (Jasmine) Extract, Lilium Tigrinum Extract, Leontopodium Alpinum Extract, Nelumbium Speciosum Flower Extract, Narcissus Pseudo-Narcissus (Daffodil) Flower Extract, Rose Extract, Citrus Aurantium Dulcis (Orange) Peel Oil, Lavandula Angustifolia (Lavender) Oil, Pelargonium Graveolens Flower Oil, Amyris Balsamifera Bark Oil, Citrus Paradisi (Grapefruit) Peel Oil, Eucalyptus Globulus Leaf Oil, Melaleuca Alternifolia (Tea Tree) Leaf Oil, Juniperus Mexicana Oil, Boswellia Carterii Oil, Citrus Aurantium Bergamia (Bergamot) Fruit Oil, Tocopheryl Acetate, 1, 2-Hexanediol.`,
             cosDNALink: `http://www.cosdna.com/eng/product.php?q=Heimish+Cleansing+Balm`,
             skincarismaLink: `https://www.skincarisma.com/products/heimish/all-clean-balm`,
-            
+            isActive: false,
         },
         {
             name: "Kose Softymo Speedy Cleansing Oil",
@@ -22,7 +22,7 @@ let products = {
             ingredients: `Mineral Oil, Peg-8 Glyceryl Isostearate, Cethyl Ethylhexancate, Cyclomethicone, Water, Simmondsia Chinensis (Jojoba) Seed Oil, Isostearic Acid, Glycerin, Phenoxyethanol`,
             cosDNALink: `http://www.cosdna.com/eng/product.php?q=KOSE+SOFTYMO+Speedy+Cleansing+Oil`,
             skincarismaLink: `https://www.skincarisma.com/products/kose/softy-mo-speedy-cleansing-oil`,
-            
+            isOpen: false,
         },
         {
             name: "DHC Cleansing Oil",

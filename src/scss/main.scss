@@ -85,10 +85,8 @@ body {
 			width: 30%;
 		}
 
-		.is-collapsed {
-			span {
-				display: none;
-			}
+		.active{
+			display: block;
 		}
 
 		h4{

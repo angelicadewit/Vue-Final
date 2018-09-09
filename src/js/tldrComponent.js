@@ -2,7 +2,7 @@ let tldr = Vue.component('tdlr', {
 	props: ["products", "skin-chosen", "skins"],
     data: function () {
         return {
-            isOpen: false,
+            isActive: false,
         }
     },
 	template: `
@@ -15,19 +15,28 @@ let tldr = Vue.component('tdlr', {
                 </li>
                 <ul>
 
-                    <li class="product-card" v-if="product.skin.includes(skinChosen)" v-for="product in products.firstCleansers">
-                        <h4>{{product.name}}</h4>
-                        <div class="img-size"><img :src="product.img"></div>
-                            <p>Where to buy:</p>
-                            <div class="links">
-                            <a :href="product.amazon" target="_blank">Amazon</a>
-                            <a :href="product.notAmazonURL" target="_blank">{{product.notAmazonStore}}</a>
+                    <li 
+                        class="product-card"
+                        v-if="product.skin.includes(skinChosen)"
+                        v-for="(product, i) in products.firstCleansers"
+                        :class="{ activeclass: isActive }
+                    ">
+                        <div>
+                            <h4>{{product.name}}</h4>
+                            <div class="img-size"><img :src="product.img"></div>
+                                <p>Where to buy:</p>
+                                <div class="links">
+                                <a :href="product.amazon" target="_blank">Amazon</a>
+                                <a :href="product.notAmazonURL" target="_blank">{{product.notAmazonStore}}</a>
+                            </div>
+                            <p>Ingredients:</p>
+                                <a :href="product.cosDNALink" target="_blank">CosDNA Analysis</a>
+                                <a :href="product.skincarismaLink" target="_blank">Skincarisma Analysis</a>
                         </div>
-                        <p>Ingredients:</p>
-                            <a :href="product.cosDNALink" target="_blank">CosDNA Analysis</a>
-                            <a :href="product.skincarismaLink" target="_blank">Skincarisma Analysis</a>
-                            <button @click="toggle()">Show more</button>
-                            <span v-show="isOpen">{{product.ingredients}}</span>
+                            <button @click="toggle(item)">Show more</button>
+                        <div v-if="isActive">
+                            {{product.ingredients}}
+                        </div>
         
                     </li>
                     
@@ -126,9 +135,9 @@ let tldr = Vue.component('tdlr', {
     
     `,
     methods: {
-        toggle: function(){
-            console.log(`hllo`)
-            this.isOpen = !this.isOpen
+        toggle: function(i){
+            console.log(product.isActive)
+            this.isActive = !this.isActive
         }
 	}
 })

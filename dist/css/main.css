@@ -123,8 +123,8 @@ body {
 	width: 30%;
 }
 
-#app ul .is-collapsed span {
-	display: none;
+#app ul .active {
+	display: block;
 }
 
 #app ul h4 {
