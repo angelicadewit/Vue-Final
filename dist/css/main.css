@@ -68,6 +68,63 @@ table {
 	border-spacing: 0;
 }
 
+@keyframes ani-move-right {
+	0% {
+		transform: translateX(0%);
+	}
+	20% {
+		transform: translateX(-25%);
+	}
+	30% {
+		transform: translateX(25%);
+	}
+	40% {
+		transform: translateX(50%);
+	}
+	50% {
+		transform: translateX(0%);
+	}
+	60% {
+		transform: translateX(25%);
+	}
+	70% {
+		transform: translateX(50%);
+	}
+	80% {
+		transform: translateX(0%);
+	}
+}
+
+@keyframes ani-move-left {
+	0% {
+		transform: translateX(0%);
+	}
+	20% {
+		transform: translateX(25%);
+	}
+	30% {
+		transform: translateX(-25%);
+	}
+	40% {
+		transform: translateX(-50%);
+	}
+	50% {
+		transform: translateX(0%);
+	}
+	60% {
+		transform: translateX(-25%);
+	}
+	70% {
+		transform: translateX(-50%);
+	}
+	70% {
+		transform: translateX(-50%);
+	}
+	80% {
+		transform: translateX(0%);
+	}
+}
+
 /* 1. Main Layout ================================= */
 * {
 	box-sizing: border-box;
@@ -256,6 +313,14 @@ body {
 
 #app .next.disabled, #app .previous.disabled {
 	visibility: hidden;
+}
+
+#app .next:hover {
+	animation: ani-move-right 1s .2s;
+}
+
+#app .previous:hover {
+	animation: ani-move-left 1s .2s;
 }
 
 /*# sourceMappingURL=main.css.map */
