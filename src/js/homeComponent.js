@@ -21,7 +21,9 @@ let home = Vue.component('home', {
 		<p>This guide is meant to help you get started, with the first five core steps: Oil Cleanser, Second Cleanser, Hydrating Toner, Moisturizer and Sunscreen</p>
 		<h2>Ready To Start?</h2>
 
-		<router-link to="/unknown-skin">I don't know my skin</router-link>
+		<router-link to="/unknown-skin">
+			<button class="foo bar">I don't know my skin</button>
+		</router-link>
 		
 
 		<div class="select-style">
@@ -32,8 +34,14 @@ let home = Vue.component('home', {
 		</div>
 	
 			
-		<router-link to="/first-cleanser">Let's Go</router-link></router-link>
-		<router-link to="/tldr">I just want the products</router-link>
+		<router-link to="/tldr">
+			<button>Only Products</button>
+		</router-link>
+
+		<router-link to="/first-cleanser">
+		<button class="foo bar">Let's Go</button>
+		</router-link>
+
 		
 	</div>
     `

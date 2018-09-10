@@ -15,10 +15,11 @@ TABLE OF CONTENTS:
 
 /* 0. Reset ================================= */
 @import 'reset';
-@import url('https://fonts.googleapis.com/css?family=Alegreya|Montserrat|Princess+Sofia|Gloria+Hallelujah');
+@import url('https://fonts.googleapis.com/css?family=Alegreya|Montserrat|Princess+Sofia|Gloria+Hallelujah|Raleway');
 
 $headerText: "Alegreya";
 $bodyText: "Montserrat";
+$linkText: "Raleway";
 $headerColor: #51A7AD;
 $wrapperColor: #F7A7BF;
 // $wrapperColor: #F5ABB4;
@@ -290,6 +291,5 @@ body {
 	.previous:hover{
 		animation: ani-move-left 1s .2s;
 	}
-
 }
 

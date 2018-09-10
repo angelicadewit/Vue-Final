@@ -33,8 +33,9 @@ let unknownSkin = Vue.component('unknown-skin', {
             </select>
         </div>
 
-        <router-link to="/first-cleanser" active-class="main-link">Let's Go</router-link></router-link>
-        
+        <router-link to="/first-cleanser">
+			<button class="foo bar">Let's Go</button>
+		</router-link>
 	</div>
     `
 })
