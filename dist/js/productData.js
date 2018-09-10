@@ -106,7 +106,7 @@ var products = {
     }, {
         name: "CeraVe Hydrating Cleanser",
         skin: ["normal", "dry"],
-        img: "/dist/img/ceravehydrating.jpg",
+        img: "/dist/img/ceravehydrating.jpeg",
         amazon: "https://www.amazon.com/CeraVe-Hydrating-Facial-Cleanser-Washing/dp/B01MSSDEPK/ref=sr_1_3_a_it?ie=UTF8&qid=1535087105&sr=8-3&keywords=CeraVe+Hydrating+Cleanser",
         notAmazonStore: "Ulta",
         notAmazonURL: "https://www.ulta.com/hydrating-face-cleanser-face-wash-normal-dry-skin?productId=xlsImpprod4190255",
@@ -139,7 +139,7 @@ var products = {
     }, {
         name: "ACWELL PH Balancing Bubble Cleanser",
         skin: ["dry"],
-        img: "/dist/img/.jpg",
+        img: "/dist/img/acwellbubble.jpeg",
         amazon: "https://www.amazon.com/ACWELL-Bubble-Balancing-Cleanser-150ml/dp/B00OR977RE/ref=sr_1_2_a_it?ie=UTF8&qid=1535087340&sr=8-2&keywords=acwell+5.5",
         notAmazonStore: "SokoGlam",
         notAmazonURL: "https://sokoglam.com/products/acwell-bubble-free-ph-balancing-cleanser",
@@ -266,7 +266,7 @@ var products = {
         skin: ["dry"],
         amazon: "https://www.amazon.com/Joseon-Beauty-Dynasty-Wrinkles-Dryness/dp/B01M4GQO8W/ref=sr_1_2_a_it?ie=UTF8&qid=1535091305&sr=8-2&keywords=Beauty+of+Joseon+Dynasty+Cream",
         notAmazonStore: "Memebox",
-        img: "/dist/img/dynasty.jpg",
+        img: "/dist/img/dynasty.jpeg",
         notAmazonURL: "https://us.memebox.com/product/5315/dynasty-cream",
         ingredients: "Water, Butylene Glycol, Niacinamide, Dipentaerythrityl Hexa C5-9 Acid Esters, Hyaluronic Acid, Xanthan Gum, Cyclopentasiloxane, Cyclohexasiloxane, Polyacrylate-13, Polyisobutene, Polysorbate 20, Hydrogenated Lecithin C14-28 Alkyl Acid, Stearyl Alcohol, Behenyl Alcohol, Dimethicone/Vinyl Dimethicone Crosspolymer, Dimethicone, Adenosine, Glyceryl Stearate SE, Cetearyl Alcohol, Polyglyceryl-3 Methylglucose Distearate, Cetyl Peg/Ppg-10/1 Dimethicone, Stearic Acid, Tocopheryl Acetate, Sodium Polyacrylate, Olea Europaea (Olive) Fruit Oil, Helianthus Annuus (Sunflower) Seed Oil, Centella Asiatica Extract, Hippophae Rhamnoides Oil, EGF 2-Nano, Argania Spinosa Kernel Oil, Butyrospermum Parkii (Shea) Butter, Ceramide 3, Trehalose, Calendula Officinalis Flower Extract, Caprylhydroxamic Acid, 1, 2-Hexanediol, Raphanus Sativus (Radish) Leaf Extract, Oryza Sativa (Rice) Bran Extract, Cucurbitaceae (Gourd) Extract, Orchid Extract, Panax Ginseng Root Extract, Carthamus Tinctorius (Safflower) Seed Oil, Butyrospermum Parkii (Shea) Butter, Phytosphingosine, Ceteareth-20, Glyceryl Citrate/Lactate/Linoleate/Oleate, Fragrance, Honey",
         cosDNALink: "http://www.cosdna.com/eng/product.php?q=Beauty+of+Joseon+Dynasty+Cream",

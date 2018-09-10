@@ -27,7 +27,7 @@ let firstCleanser = Vue.component('first-cleanser', {
             <li 
                 class="product-card"
                 v-if="product.skin.includes(skinChosen)"
-                v-for="(product, i) in products.firstCleansers"
+                v-for="product in products.firstCleansers"
                 :class="{ activeclass: product.isActive }
             ">
                 <div>
