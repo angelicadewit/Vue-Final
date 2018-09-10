@@ -1,7 +1,9 @@
 'use strict';
 
 var router = new VueRouter({
-	routes: [{ path: '/', component: home }, { path: '/first-cleanser', component: firstCleanser }, { path: '/second-cleanser', component: secondCleanser }, { path: '/hydrating-toner', component: hydratingToner }, { path: '/moisturizer', component: moisturizer }, { path: '/sunscreen', component: sunscreen }, { path: '/unknown-skin', component: unknownSkin }, { path: '/tldr', component: tldr }, { path: '/product', component: product }]
+	routes: [{ path: '/', component: home }, { path: '/first-cleanser', component: firstCleanser }, { path: '/second-cleanser', component: secondCleanser }, { path: '/hydrating-toner', component: hydratingToner }, { path: '/moisturizer', component: moisturizer }, { path: '/sunscreen', component: sunscreen }, { path: '/unknown-skin', component: unknownSkin }, { path: '/tldr', component: tldr }, { path: '/product', component: product }],
+	linkActiveClass: "active",
+	linkExactActiveClass: "exact-active"
 });
 
 // const router = new VueRouter({

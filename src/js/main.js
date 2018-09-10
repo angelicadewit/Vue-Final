@@ -10,7 +10,9 @@ const router = new VueRouter({
 	{ path: '/tldr', component: tldr },
 	{ path: '/product', component: product },
 	// { path: '/resources', component: resources },
-	]
+	],
+	linkActiveClass: "active",	
+	linkExactActiveClass: "exact-active",
 })
 
 // const router = new VueRouter({

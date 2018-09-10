@@ -15,7 +15,7 @@ TABLE OF CONTENTS:
 
 /* 0. Reset ================================= */
 @import 'reset';
-@import url('https://fonts.googleapis.com/css?family=Alegreya|Montserrat|Princess+Sofia');
+@import url('https://fonts.googleapis.com/css?family=Alegreya|Montserrat|Princess+Sofia|Gloria+Hallelujah');
 
 $headerText: "Alegreya";
 $bodyText: "Montserrat";
@@ -50,7 +50,6 @@ body {
 	}
 
 	.logo{
-		padding-top: 50px;
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -75,6 +74,7 @@ body {
 	ul{
 		display: flex;
 		justify-content: space-evenly;
+		align-items: center;
 	
 		.product-card {
 			padding: 15px;
@@ -184,7 +184,6 @@ body {
 	.options{
 		display: flex;
 		justify-content: space-around;
-
 	}
 
 	.select-style {
@@ -214,21 +213,16 @@ body {
 		}
 	}
 
-	.prev{
-		width: 10%;
-		float: left;
-		height: 100%;
-	}
+	.next, .previous{
+		font-size: 5em;
+		font-family: "Gloria Hallelujah";
+		justify-content: center; 
+		align-items: center; 
+		cursor: pointer;
 
-	.main{
-		width: 80%;
-	height: 100%;
-		float: left;
-	}
-	.next{
-		width: 10%;
-		float: left;
-		height: 100%;
+		&.disabled{
+			visibility: hidden;
+		}
 	}
 }
 
