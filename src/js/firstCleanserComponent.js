@@ -2,13 +2,13 @@ let firstCleanser = Vue.component('first-cleanser', {
     props: ["products", "skin-chosen", "skins"],
     data: function () {
         return {
-            
+            isActive: false,
         }
     },
     watch: {
     },
-	template: `
-	<div>
+    template: `
+    <div>
         <h2>First Cleanser</h2>
         <p>
             One of the hallmarks of Asian Beauty is the idea of double cleansing.
@@ -20,23 +20,44 @@ let firstCleanser = Vue.component('first-cleanser', {
         </p>
         <p>since you have <span>{{skinChosen}}</span> skin. These were the recommended products:</p>
 
-            <ul>
-                <li class="product-card" v-if="product.skin.includes(skinChosen)" v-for="product in products.firstCleansers">
-                    <h4>{{product.name}}</h4>
-                    <div class="img-size"><img :src="product.img"></div>
-                    <p>Where to buy:</p>
-                    <div class="links">
-                    <a :href="product.amazon" target="_blank">Amazon</a>
-                    <a :href="product.notAmazonURL" target="_blank">{{product.notAmazonStore}}</a>
-                    </div>
-                    <p>Ingredients Links:</p>
-                
-                    <a :href="product.cosDNALink" target="_blank">CosDNA Analysis</a>
-                    <a :href="product.skincarismaLink" target="_blank">Skincarisma Analysis</a>
-                </li>
-            </ul>
-        <router-link to="/second-cleanser" active-class="main-link">></router-link></router-link>
-        
-	</div>
-    `
+                        <ul>
+                        <li 
+                            class="product-card"
+                            v-if="product.skin.includes(skinChosen)"
+                            v-for="(product, i) in products.firstCleansers"
+                            :class="{ activeclass: product.isActive }
+                            
+                        ">
+                            <div>
+                                <h4>{{product.name}}</h4>
+                                <div class="img-size"><img :src="product.img"></div>
+                                    <p>Where to buy:</p>
+                                    <div class="links">
+                                    <a :href="product.amazon" target="_blank">Amazon</a>
+                                    <a :href="product.notAmazonURL" target="_blank">{{product.notAmazonStore}}</a>
+                                </div>
+                                <p>Ingredients:</p>
+                                    <a :href="product.cosDNALink" target="_blank">CosDNA Analysis</a>
+                                    <a :href="product.skincarismaLink" target="_blank">Skincarisma Analysis</a>
+                            </div>
+                            <button @click="toggle(product)">Show more</button>
+                            <div v-if="product.isActive">
+                                {{product.ingredients}}
+                            </div>
+
+                            </li>
+                            </ul>
+                            
+                    <div class="next">
+                        <router-link to="/second-cleanser" active-class="main-link">></router-link></router-link>
+                    </div> 
+            </div>
+    `,
+    methods: {
+        toggle: function(product){
+            console.log(product.isActive)
+            product.isActive = !product.isActive
+            button.text = product.isActive ? 'Hide' : 'Show';
+        }
+	}
 })

@@ -34,6 +34,7 @@ let products = {
             ingredients: `Olea Europaea (olive) Fruit Oil, Caprylic/capric Triglyceride, Sorbeth-30 Tetraoleate, Pentylene Glycol, Phenoxyethanol, Tocopherol, Stearyl Glycyrrhetinate, Rosmarinus Officinalis (rosemary) Leaf Oil`,
             cosDNALink: `http://www.cosdna.com/eng/product.php?q=DHC+Cleansing+Oil`,
             skincarismaLink: `https://www.skincarisma.com/products/dhc/deep-cleansing-oil`,
+            isActive: false,
         },
         {
             name: "Banila Clean It Zero",
@@ -45,6 +46,7 @@ let products = {
             ingredients: `Ethylhexyl Palmitate, Cetyl Ethylhexanoate, PEG-20 Glyceryl Triisostearate , PEG-10 Isostearate, Synthetic Wax, Onsen-Sui, Phenoxyethanol, Butylene Glycol, Lithospermum Erythrorhizon Root Extract, Tocopheryl Acetate, Fragrance, Ethylhexylglycerin, Water, 1,2-Hexanediol, Bambusa Vulgaris Leaf/Stem Extract Aspalathus Linearis Extract, Angelica Archangelica Root Extract, Malpighia Glabra (Acerola) Fruit Extract, Polydiethyleneglycol Adipate/IPDI Copolymer, Acrylates/Ammonium Methacrylate Copolymer, Acrylates/Methoxy PEG-15 Methacrylate Copolymer.`,
             cosDNALink: `http://www.cosdna.com/eng/product.php?q=Banila+Co+-+Clean+It+Zero+Original`,
             skincarismaLink: `https://www.skincarisma.com/products/banila-co/clean-it-zero`,
+            isActive: false,
         },
         {
             name: "The Face Shop Rice Water Bright Cleansing Rich Oil",
@@ -56,6 +58,7 @@ let products = {
             ingredients: `Cetyl Ethylhexanoate, Caprylic/CapricTriglyceride, Isopropyl Myristate, Sorbeth-30, Tetraoleate, Polyglyceryl-10, Diisostearate, Glycerin, Oryza Sativa (Rice) Bran Oil, Aleurites Moluccana Seed Oil, Canola Oil, Butylene Glycol, Oryza Sativa (Rice) Extract, Saponaria Officinalis Leaf Extract, Water/Eau, Parfum/Fragrance, Hexyl Cinnamal, Hydroxyisohexyl 3-Cyclohexene, Carboxaldehyde`,
             cosDNALink: `http://www.cosdna.com/eng/product.php?q=The+Face+Shop+Rice+Water+Bright+Cleansing+Rich+Oil`,
             skincarismaLink: `https://www.skincarisma.com/products/the-face-shop/rice-water-bright-rich-cleansing-oil`,
+            isActive: false,
         },
         {
             name: "Kose Softymo Deep Cleansing Oil",
@@ -68,6 +71,7 @@ let products = {
             cosDNALink: `http://www.cosdna.com/eng/product.php?q=Kose+Softymo+Deep+Cleansing+Oil`,
             skincarismaLink: `https://www.skincarisma.com/products/kose/softymo-deep-cleansing-oil`,
             
+            isActive: false,
         },
         {
             name: "Chinoshio Natural Cleansing Oil",
@@ -79,6 +83,7 @@ let products = {
             ingredients: `Laurate Methyl Heptyl, Dioleic Acid Polyglyceryl -10, Sesquicaprylic Acid Polyglyceryl -2, Jojoba Seed Oil, Bergamot Fruit Oil, Glycerin, Tocopherol`,
             cosDNALink: `http://www.cosdna.com/eng/product.php?q=Chinoshio+Natural+Cleansing+Oil`,
             skincarismaLink: `https://www.skincarisma.com/search?utf8=%E2%9C%93&q=Chinoshio+Natural+Cleansing+Oil`,
+            isActive: false,
         },
     ],
     secondCleansers: [
@@ -92,6 +97,7 @@ let products = {
             ingredients: `Water, Peg-8, Butylene Glycol, Polyglyceryl-10 Laurate, Tea-cocoyl Alaninate, Sodium Cocoamphoacetate, Glycerine, Disodium Cocoyl Glutamate, Hydroxypropyltrimonium Hyaluronate, Methylparaben, Sodium Acetylated Hyaluronate, Sodium Cocoyl Glutamate, Starch Hydroxypropyltrimonium Chloride, Succinic Acid`,
             cosDNALink: `http://www.cosdna.com/eng/product.php?q=Hada+Labo+Foaming`,
             skincarismaLink: `https://www.skincarisma.com/products/hada-labo/gokujyun-foaming-wash`,
+            isActive: false,
         },
         {
             name: "Tosowoong Enzyme Powder Wash",
@@ -104,6 +110,7 @@ let products = {
             cosDNALink: `http://www.cosdna.com/eng/product.php?q=Tosowoong+Enzyme+Powder+Wash`,
             skincarismaLink: `https://www.skincarisma.com/products/tosowoong/enzyme-powder-wash-cleanser`,
             
+            isActive: false,
         },
         {
             name: "CeraVe Hydrating Cleanser",
@@ -115,6 +122,7 @@ let products = {
             ingredients: `Behentrimonium Methosulfate, Disodium Edta, Glycerine, Hyaluronic Acid, Methylparaben, Polyoxyl 40 Stearate, Polysorbate 20, Potassium Phosphate Dibasic, Potassium Phosphate Monobasic, Propylparaben, Stearyl Alcohol, Water`,
             skincarismaLink: `https://www.skincarisma.com/products/cerave/hydrating-cleanser`,
             cosDNALink: `http://www.cosdna.com/eng/product.php?q=CeraVe+Hydrating+Cleanser`,
+            isActive: false,
         },
         { 
             name: "Innisfree Blueberry Rebalancing 5.5 Cleanser",
@@ -126,6 +134,7 @@ let products = {
             ingredients: `Water, Sodium Cocoyl Isethionate, Diglycerin, Diethylhexyl Sodium Sulfosuccinate, Hydroxypropyl Starch Phosphate, Sodium Methyl Cocoyl Taurate, Benzyl Glycol, Citrus Aurantium Dulcis (Orange) Peel Oil, Potassium Cocoyl Glycinate, Potassium Cocoate, Citric Acid, Lavandula Angustifolia (Lavender) Oil, Sodium Chloride, Ethylhexylglycerin, Butylene Glycol, Allantoin, Disodium EDTA, Raspberry Ketone, 1, 2-Hexanediol, Vaaccinium Angustifolium (Blueberry) Fruit Extract, Poly C10-30 Alkyl Acrylate, Polyquaternium-67, Sodium Acetate, Isoporyl Alcohol`,
             cosDNALink: `http://www.cosdna.com/eng/product.php?q=Innisfree+Blueberry+Rebalancing+5.5+Cleanser`,
             skincarismaLink: `https://www.skincarisma.com/products/innisfree/blueberry-rebalancing-5-5-cleanser`,
+            isActive: false,
         },
         {
             name: "Cosrx Good Morning Gel Cleanser",
@@ -137,6 +146,7 @@ let products = {
             ingredients: `Water, Cocamidopropyl Betaine, Sodium Lauroyl Methyl Isethionate, Polysorbate 20, Styrax Japonicus Branch/Fruit/Leaf Extract, Butylene Glycol, Saccharomyces Ferment, Cryptomeria Japonica Leaf Extract, Nelumbo Nucifera Leaf Extract, Pinus Palustris Leaf Extract, Ulmus Davidiana Root Extract, Oenothera Biennis (Evening Primrose) Flower Extract, Pueraria Lobata Root Extract, Melaleuca Alternifolia (Tea Tree) Leaf Oil, Allantoin, Caprylyl Glycol, Ethylhexylglycerin, Betaine Salicylate, Citric Acid, Ethyl Hexanediol, 1,2-Hexanediol, Trisodium Ethylenediamine Disuccinate, Sodium Benzoate, Disodium EDTA`,
             cosDNALink: `http://www.cosdna.com/eng/product.php?q=Cosrx+Good+Morning+Gel+Cleanser`,
             skincarismaLink: `https://www.skincarisma.com/products/cosrx/low-ph-good-morning-cleanser`,
+            isActive: false,
         },
         {
             name: "ACWELL PH Balancing Bubble Cleanser",
@@ -149,6 +159,7 @@ let products = {
             cosDNALink: `http://www.cosdna.com/eng/product.php?q=ACWELL+PH+Balancing+Bubble+Cleanser`,
             skincarismaLink: `https://www.skincarisma.com/products/acwell/bubble-free-ph-balancing-cleanser`,
 
+            isActive: false,
         },
     ],
     hydratingToners: [
@@ -162,6 +173,7 @@ let products = {
             ingredients: `Water, Butylene Glycol, Glycerin, Disodium Succinate, Hydrolyzed Hyaluronic Acid, Hydroxyethlcellulose, Methylparaben, PPG-10 Methyl Glucose Ether, Sodium Acetylated Hyaluronate, Sodium Hyaluronate, Succinic Acid `,
             cosDNALink: `http://www.cosdna.com/eng/product.php?q=Hada+Labo+Gokujyn+Hyaluronic+Acid+Lotion`,
             skincarismaLink: `https://www.skincarisma.com/products/hada-labo/gokujyn-hyaluronic-acid-lotion`,
+            isActive: false,
         },
         {
             name: "Kikumasamune sake high moist lotion",
@@ -173,6 +185,7 @@ let products = {
             ingredients: `Water, Glycerin, Butylene Glycol, Rice Ferment Filtrate (sake), Glutamate, Arginine, Leucine, Ceramide 3, Ceramide 6 II, Placenta Extract, Arbutin, Glycyrrhizic Acid, Soy Protein, Maltitol, Methyl Gluceth-10, Peg-60 Hydrogenated Castor Oil, Hydroxyethyl Cellulose, Alkyl Styrene/acrylic Acid Copolymer, Citric Acid, Sodium Citrate, Phenoxyethanol, Methylparaben, Fragrance`,
             cosDNALink: `http://www.cosdna.com/eng/product.php?q=Kikumasamune+sake+high+moist+lotion`,
             skincarismaLink: `https://www.skincarisma.com/products/kiku-masamune/sake-skin-lotion-high-moisture`,
+            isActive: false,
         },
         {
             name: "Dr. Jart+ Ceramidin Liquid",
@@ -184,6 +197,7 @@ let products = {
             ingredients: `Water, Glycerin, Methylpropanediol, Alcohol, Betaine, Glycosyl Trehalose, Pentylene Glycol, Erythritol, Hydrogenated Starch Hydrolysate, Caprylic/Capric Triglyceride, Cyclopentasiloxane, Dimethiconol, Phenoxyethanol, Tocopheryl Acetate, Panthenol, PEG-40 Hydrogenated Castor Oil, Bifida Ferment Lysate, Butylene Glycol, Acrylates/C10-30 Alkyl Acrylate Crosspolymer, Centella Asiatic Extract, Ficus Carica (Fig) Fruit Extract, Tromethamine, Polysorbate 60, Hydrogenated Lecithin, Portulaca Oleracea Extract, Pueraria Thunbergiana Root Extract, Cnidium Officinale Root Extract, Glycyrrhiza Glabra (Licorice) Root Extract, Paeonia Lactiflora Root Extract, Amaranthus Caudatus Seed Extract, Ulmus Davidiana Root Extract, Ethylhexylglycerin, Benzophenone-4, Dipotassium Glycyrrhizate, Soluble Collagen, Carbomer, Disodium EDTA, Steareth-21, Aloe Barbadensis Leaf Juice, Ceramide NP, 1, 2-Hexanediol, Cellulose Gum, Cetyl Alcohol, Steareth-2, Isohexadecane, Caramel, Citrus Auranthium Bergamia (Bergamot) Fruit Oil, Pelargonium Graveolens Flower Oil, Stearic Acid, Sodium Hyaluronate, Cholesterol, Propylene Glycol, PEG-30 Dipolyhydroxystearate, Xanthan Gum, Acacia Senegal Gum, Salvia Officinalis (Sage) Oil, Pogostemon Cablin Oil, Acetic Acid, Lactic Acid, Glyceryl Polymethacrylate.`,
             cosDNALink: `http://www.cosdna.com/eng/product.php?q=r.+Jart%2B+Ceramidin+Liquid`,
             skincarismaLink: `https://www.skincarisma.com/products/dr-jart/ceramidin-liquid`,
+            isActive: false,
         },
         {
             name: "CEZANNE Skin Conditioner High Moist",
@@ -195,6 +209,7 @@ let products = {
             ingredients: `Water, Glycerin, Butylene Glycol, Coix Lacryma-Jobi Ma-yuen Seed Extract, Ceramide AP, Ceramide NP, Ceramide EOP, Phytospingosine, Sodium Hyaluronate, Sodium Acetylated Hyaluronate, Hydrolyzed Hyaluronic Acid, Succinoyl Atelocollagen, Glycine Soja (Soybean) Seed Extract, Glutamic Acid, Aloe Barbadensis Leaf Juice, Citrus Limon (Lemon) Fruit Extract, Pinus Sylvestris Cone Extract, Equisetum Arvense Extract, Sodium PCA, Serine, Lysine, Glycine, Alanine, Arginine, Threonine, Proline, Cholesterol, Betaine, Allantoin, Sorbitol, Citric Acid, Sodium Citrate, Sodium EDTA, Hydroxyethylcellulose, Xanthan Gum, Sodium Lauroyl Lactylate, Carbomer, Styrene/VP Copolymer, Methylparaben, Propylparaben`,
             cosDNALink: `http://www.cosdna.com/eng/product.php?q=CEZANNE+Skin+Conditioner+High+Moist`,
             skincarismaLink: `https://www.skincarisma.com/products/cezanne/skin-conditioner-high-moist`,
+            isActive: false,
         },
         {
             name: "Klairs Supple Preparation Toner",
@@ -206,6 +221,7 @@ let products = {
             ingredients: `Water, Butylene Glycol, Dimethyl Sulfone, Betaine, Caprylic/Capric Triglyceride, Natto Gum, Sodium Hyaluronate, Disodium EDTA, Centella Asiatica Extract, Glycyrrhiza Glabra (Licorice) Root Extract, Polyquaternium-51, Chlorphenesin, Tocopheryl Acetate, Carbomer, Panthenol, Arginine, Luffa Cylindrica Fruit/Leaf/Stem Extract, Beta-Glucan, Althaea Rosea Flower Extract, Aloe Barbadensis Leaf Extract, Hydroxyethylcellulose, Portulaca Oleracea Extract, Lysine HCL, Proline, Sodium Ascorbyl Phosphate, Acetyl Methionine, Theanine, Lavandula Angustifolia (Lavender) Oil, Eucalyptus Globulus Leaf Oil, Pelargonium Graveolens Flower Oil, Citrus Limon (Lemon) Peel Oil, Citrus Aurantium Dulcis (Orange) Peel Oil, Cananga Odorata Flower Oil, Copper Tripeptide-1`,
             cosDNALink: `http://www.cosdna.com/eng/product.php?q=Klairs+Supple+Preparation+Toner`,
             skincarismaLink: `https://www.skincarisma.com/products/klairs/supple-preparation-facial-toner`,
+            isActive: false,
         },
     ],
     moisturizers: [
@@ -219,6 +235,7 @@ let products = {
             ingredients: `Hydrolyzed Collagen, Water, Propanediol, Butylene Glycol, Dipropylene Glycol, Adansonia Digitata Fruit Extract, Adansonia Digitata Seed Oil, Spirulina Platensis Extract, Menthoxypropanediol, Biosaccharide Gum-1, Glycerin, Glyceryl Polymethacrylate, Caprylyl Glycol, Sodium Acrylate/Vinyl Alcohol Copolymer, Acrylates/C10-30 Alkyl Acrylate Crosspolymer, Poloxamer 407, Ammonium Acryloyldimethyltaurate/Vp Copolymer, Polysorbate 20, Hexanediol, Sodium Acrylic Acid/Ma Copolymer, Phytantriol, Alcohol, Tromethamine, Disodium Edta, Phenoxyethanol, Fragrance`,
             cosDNALink: `http://www.cosdna.com/eng/product.php?q=Etude+House+Moistfull+Collagen+Water+Jelly+Cream`,
             skincarismaLink: `https://www.skincarisma.com/products/etude-house/moistfull-collagen-water-jelly-cream`,
+            isActive: false,
         },
         {
             name: "Tony Moly Chok Chok Watery Green Tea Cream",
@@ -231,6 +248,7 @@ let products = {
             cosDNALink: `http://www.cosdna.com/eng/product.php?q=Tony+Moly+Chok+Chok+Watery+Green+Tea+Cream`,
             ingredients: `Camellia Sinensis Leaf Extract, Cyclomethicone, Propanediol, Glycerin, Glycereth-26 Pantaerythrityl Teraethylhexanoate Buthylene Glycol Dicaprylate/Dicaprate Sorbitan Olivate Cetearyl Olivate 1,2-Hexanediol Polyacrylate Crosspolymer-6 Polysilicone-11 Phytosterly/Octyldodecyl Lauroyl Glutamate Ammonium Acryloyldimethyltaurate/VP Copolymer Aniba Rosaeodora (Rosewood) Wood Oil Citrus Limon (Lemon) Seed Oil Disodium EDTA 3-O-Ethyl Ascorbic Acid`,
             
+            isActive: false,
         },
         {
             name: "Rosette Ceramide Gel",
@@ -242,6 +260,7 @@ let products = {
             skincarismaLink: `https://www.skincarisma.com/products/rosette/ceramide-gel`,
             cosDNALink: `http://www.cosdna.com/eng/product.php?q=Rosette+Ceramide+Gel`,
             ingredients: `Water (Purified Water), BG, Glycerin, Betaine, Macadamia Nut Oil, PEG -400, Imperata Cylindrica Root Extract, PVM/MA Decadiene Crosspolymer, Sodium Lauroyl Lactylate, Ceramide 1, Ceramide 3, Ceramide 6II, Phytosphingosine, Cholesterol, Soluble Collagen, Sodium Hyaluronate, Potassium Hydroxide, Xanthane Gum, PEG -8, Carbomer, Parabens`,
+            isActive: false,
         },
         {
             name: "Dr. Jart+ Ceramidin Cream",
@@ -253,6 +272,7 @@ let products = {
             ingredients: `Water/Aqua/Eau, Glycerin, Dipropylene Glycol, Caprylic/Capric Triglyceride, Hydrogenated Poly(C6-14 Olefin), Hydrogenated Polydecene, Cetearyl Alcohol,1,2-Hexanediol, Dimethicone, Cyclomethicone, Vegetable Oil, Bifida Ferment Lysate, Glyceryl Stearate SE, Dimethiconol, Cyclopentasiloxane, Ulmus Davidiana Root Extract, Amaranthus Caudatus Seed Extract, Piper Methysticum Leaf/Root/Stem Extract, Beta Vulgaris (Beet) Root Extract, Algae Extract, Artemisia Vulgaris Extract, Portulaca Oleracea Extract, Pueraria Thunbergiana Root Extract, Glycyrrhiza Glabra (Licorice) Root Extract, Paeonia Lactiflora Root Extract, Cnidium Officinale Root Extract, Hydrogenated Lecithin, Sodium Hyaluronate, Citrus Aurantium Bergamia (Bergamot) Fruit Oil, Soluble Collagen, Pelargonium Graveolens Flower Oil, Aloe Barbadensis Leaf Juice, Salvia Officinalis (Sage) Oil, Pogostemon Cablin Oil, Cetearyl Glucoside, Cetearyl Olivate, Sorbitan Olivate, C12-16 Alcohols, Ceramide 3, Microcrystalline Cellulose, Hydroxyethyl Acrylate/Sodium Acryloyldimethyl Taurate, Copolymer, Squalane, Glyceryl Stearate,Peg-100 Stearate, Hydrolyzed Corn Starch, Palmitic Acid, Coco-Caprylate/Caprate, Polysorbate 60, Caramel, Cellulose Gum, Propylene Glycol, Butylene Glycol, Disodium EDTA, Panthenol, Acacia Senegal Gum, Folic Acid, Acetic Acid, Cholesterol, Raffinose, Lactic Acid, Xanthan Gum, Tromethamine, Palmitoyl Pentapeptide-4`,
             cosDNALink: `http://www.cosdna.com/eng/product.php?q=Dr.+Jart%2B+Ceramidin+Cream`,
             skincarismaLink: `https://www.skincarisma.com/products/dr-jart/ceramidin-cream`,
+            isActive: false,
         },
         {
             name: "Belif Aqua Bomb",
@@ -264,6 +284,7 @@ let products = {
             ingredients: `Water, Dipropylene Glycol, Glycerin, Methl Trimethicone, Alcohol Denat, Dimethicone, Cyclopentasiloxane, 1,2-Hexanediol, Malakite Extract, Caprylic/Capric Triglyceride, Pentaerythrityl Tetraethylhexanoate, PEG/PPG/Polybutylene Glycol-8/5/3 Glycerin, Alchemilla Vulgaris Leaf Extract*, Equisetum Arvense Leaf Extract*, Stellaria Media (Chickweed) Extract*, Urtica Dioica (Nettle) Leaf Extract*, Plantago Lanceolata Leaf Extract*, Avena Sativa (Oat) Kernel Extract**, Calendula Officinalis Flower Extract**, Nepeta Cataria Extract**, Rubus Idaeus (Raspberry) Leaf Extract**, Baptisia Tinctoria Root Extract**, Dimethiconol, Polymethylsilsesquioxane, Sodium Acrylate/Acryloyldimethyltaurate/Dimethylacrylamide Crosspolymer, Isohexadecane, Polysorbate 60, Ceramide 3, Cholesterol, Butyrospermum Parkii (Shea) Butter, Phenl Trimethicone, Pentaerythrityl Tetraisostearate, Panthenol, Squalane, Triethylhexanoin, Macadamia Ternifolia Seed Oil, PEG-150, PEG-40 Hydrogenated Castor Oil, Acrylates/C10-30 Alkyl Acrylate Crosspolymer, C14-22 Alcohols, Arachidyl Glucoside, Hydrogenated Lecithin, PEG-100 Stearate, Stearic Acid, Glyceryl Stearate, Carbomer, Tromethamine, Trisodium EDTA, Fragrance+, Citronellol, Limonene, Citral, Geraniol, Linalool`,
             cosDNALink: `http://www.cosdna.com/eng/product.php?q=Belif+Aqua+Bomb`,
             skincarismaLink: `https://www.skincarisma.com/products/belif/the-true-cream-aqua-bomb`,
+            isActive: false,
         },
         {
             name: "Beauty of Joseon Dynasty Cream",
@@ -275,6 +296,7 @@ let products = {
             ingredients: `Water, Butylene Glycol, Niacinamide, Dipentaerythrityl Hexa C5-9 Acid Esters, Hyaluronic Acid, Xanthan Gum, Cyclopentasiloxane, Cyclohexasiloxane, Polyacrylate-13, Polyisobutene, Polysorbate 20, Hydrogenated Lecithin C14-28 Alkyl Acid, Stearyl Alcohol, Behenyl Alcohol, Dimethicone/Vinyl Dimethicone Crosspolymer, Dimethicone, Adenosine, Glyceryl Stearate SE, Cetearyl Alcohol, Polyglyceryl-3 Methylglucose Distearate, Cetyl Peg/Ppg-10/1 Dimethicone, Stearic Acid, Tocopheryl Acetate, Sodium Polyacrylate, Olea Europaea (Olive) Fruit Oil, Helianthus Annuus (Sunflower) Seed Oil, Centella Asiatica Extract, Hippophae Rhamnoides Oil, EGF 2-Nano, Argania Spinosa Kernel Oil, Butyrospermum Parkii (Shea) Butter, Ceramide 3, Trehalose, Calendula Officinalis Flower Extract, Caprylhydroxamic Acid, 1, 2-Hexanediol, Raphanus Sativus (Radish) Leaf Extract, Oryza Sativa (Rice) Bran Extract, Cucurbitaceae (Gourd) Extract, Orchid Extract, Panax Ginseng Root Extract, Carthamus Tinctorius (Safflower) Seed Oil, Butyrospermum Parkii (Shea) Butter, Phytosphingosine, Ceteareth-20, Glyceryl Citrate/Lactate/Linoleate/Oleate, Fragrance, Honey`,
             cosDNALink: `http://www.cosdna.com/eng/product.php?q=Beauty+of+Joseon+Dynasty+Cream`,
             skincarismaLink: `https://www.skincarisma.com/products/beauty-of-joseon/dynasty-cream`,
+            isActive: false,
         },
         {
             name: "Benton Snail Bee High Content Steam Cream",
@@ -286,6 +308,7 @@ let products = {
             ingredients: `Snail Secretion Filtrate, Glycerin, Butylene Glycol, Cetyl Ethylhexanoate, Cetearyl Olivate, Sorbitan Olivate, Sodium Hyaluronate, Niacinamide, Stearic Acid, Behenyl Alcohol, Phytosqualene, Human Ogliopeptide-1, Bee Venom, Arbutin, Adenosine, Helianthus Annus (Sunflower) Seed Oil, Carthamus Tinctorius (Safflower) Seed Oil, Argania Spinosa Kernal Oil, Glyceryl Stearate, Arginine, Carbomer, Urea, Tocopher Leaf Extract, Salix Alba (Willow Bark) Extract, Ulmus Campestris (Elm) Extract, Pentylene Glycol, Zanthoxylum Piperitum Fruit Extract, Pilsatilla Koreana Extract, Usnea Barbata (Lichen) Extract`,
             cosDNALink: `http://www.cosdna.com/eng/product.php?q=Benton+Snail+Bee+High+Content+Steam+Cream`,
             skincarismaLink: `https://www.skincarisma.com/products/benton/snail-bee-high-content-steam-cream`,
+            isActive: false,
         },
     ],
     sunscreen: [
@@ -299,6 +322,7 @@ let products = {
             ingredients: `Ethylhexyl Methoxycinnamate, Cross-polymer Of (lauryl Methacrylate / Sodium Methacrylate), Alkyl Benzoate (C12-15), Bisethylhexyloxyphenol Methoxyphenyl Triazine, Hexyl Diethylaminohydroxybenzoylbenzoate, Dimethicone, Ethylhexyl Triazone , Dimethylsilylated Silica, DPG, Xylitol, Dextrin Palmitate, (acrylates / Alkyl (C10-30)) Crosspolymer, (dimethicone / Vinyldimethicone) Crosspolymer, Polysilicone-9, Glyceryl Stearate, AMP, Vinyl Dimethicone / Methicone Silsesquioxane) Crosspolymer, Agar, Isoceteth-20, Alkyl (C30-45) Methicone, Polyvinyl Alcohol, Olefin (C30-45), Sodium Hydroxide BG, PG, Hyaluronic Acid Na, Royal Jelly, Orange Fruit Extract, Grapefruit Fruit Extract, Lemon Fruit Extract, Phenoxyethanol, EDTA-2Na, BHT, Perfume`,
             cosDNALink: `http://www.cosdna.com/eng/product.php?q=Biore+UV+Aqua+Rich+Watery+Essence`,
             skincarismaLink: `https://www.skincarisma.com/products/biore/uv-aqua-rich-watery-essence-spf50-pa-2017-version`,
+            isActive: false,
         },
         {
             name: "Etude House Sunprise Mild Watery Light SPF50+ PA+++",
@@ -310,6 +334,7 @@ let products = {
             ingredients: `Water Ethylhexyl Methoxycinnamate, Homosalate, Ethylhexyl Salicylate, Diethylamino Hydroxybenzoyl Hexyl Benzoate, Alcohol, Butylene Glycol, Dicaprylyl Carbonate, Cyclopentasiloxane, Octocrylene, C20-22 Alkyl Phosphate, C20-22 Alcohols, Silica, 1,2-Hexanediol, Cetyl Alcohol, Viscum Album (Mistletoe) Leaf Extract, Portulaca Oleracea Extract, Centella Asiatica Extract, Glyceryl Stearate, Methyl Methacrylate Crosspolymer, Tromethamine, Dimethicone/Vinyl Dimethicone Crosspolymer, Phenoxyethanol, Octyldodecanol, Polyacrylate Crosspolymer-6, Opuntia Ficus-Indica Extract, Aloe Barbadensis Leaf Juice, Glycine Soja (Soybean) Lipids, Microcrystalline Cellulose, Xanthan Gum, Sodium Acrylate/Sodium Acryloyldimethyl Taurate Copolymer, Polyisobutene, Carex Humillis Root Extract, Citrus Aurantium Bergamia (Bergamot) Fruit Oil, Citrus Limon (Lemon) Peel Oil, Eucalyptus Globulus Leaf Oil, Pinus Sylvestris Leaf Oil, Citrus Aurantifolia (Lime) Oil, Citrus Aurantium Dulcis (Orange) Peel Oil, Echium Plantagineum Seed Oil, Euterpe Oleracea Fruit Extract, Malpighia Emarginata (Acerola) Fruit Extract, Terminalia Ferdinandiana Fruit Extract, Cellulose Gum, Adansonia Digitata Seed Oil, Hyaluronic Acid, Sorbitan Oleate, Caprylyl/Capryl Glucoside, Helianthus Annuus (Sunflower) Seed Oil, Cardiospermum Halicacabum Flower/Leaf/Vine Extract, Helianthus Annuus (Sunflower) Seed Oil Unsaponifiables, Isoceteth-10, Isoceteth-25`,
             cosDNALink: `http://www.cosdna.com/eng/product.php?q=Etude+House+Sunprise+Mild+Watery+Light`,
             skincarismaLink: `https://www.skincarisma.com/products/etude-house/sunprise-mild-watery-light`,
+            isActive: false,
         },
         {
             name: "Biore UV Aqua Rich Watery Gel SPF 50+ PA++++",
@@ -321,6 +346,7 @@ let products = {
             skincarismaLink: `https://www.skincarisma.com/products/biore/uv-aqua-rich-watery-gel-spf50-pa`,
             cosDNALink: `http://www.cosdna.com/eng/product.php?q=Biore+UV+Aqua+Rich+Watery+Gel`,
             ingredients: `Water, Ethanol, Ethylhexyl Methoxycinnamate, (lauryl Methacrylate / Methacrylic Acid Na) Crosspolymer, Alkyl Benzoate (C12-15), Bis-ethylhexyloxyphenol Methoxyphenyl Triazine, Diethylamino Hydroxybenzoyl Hexyl Benzoate, Dimethicone, Ethylhexyl Triazone Dimethylsilyl Silica, DPG, Xylitol, Dextrin Palmitate, (acrylates / Alkyl Acrylate (C10-30)) Crosspolymer, (dimethicone / Vinyl Dimethicone) Crosspolymer, Polysilicone-9, Glyceryl Stearate, AMP, ( Vinyl Dimethicone / Methicone Silsesquioxane) Crosspolymer, Agar, Isoceteth -20, Alkyl (C30-45) Methicone, Polyvinyl Alcohol, Olefin (C30-45), Hydroxide Na BG, PG, Hyaluronic Acid Na, Royal Jelly, Orange Fruit Extract, Grapefruit Fruit Extract, Lemon Fruit Extract, Phenoxyethanol, EDTA-2Na, BHT, Fragrance.`,
+            isActive: false,
         },
         {
             name: "Missha All Around Safe Block Waterproof SUN SPF50 PA+++",
@@ -332,6 +358,7 @@ let products = {
             ingredients: `Water(Aqua), Cyclopentasiloxane, Titanium Dioxide (Nano), Zinc Oxide (Nano), Butylene Glycol, Cyclohexasiloxane, PEG-10 Dimethicone, Dicaprylyl Carbonate, Hydrogenated Poly(C6-14 Olefin), Cocos Nucifera (Coconut) Oil, Aluminum Hydroxide, Stearic Acid, Dimethicone, Sodium Chloride, Disteardimonium Hectorite, Beeswax, Dimethicone/Vinyl Dimethicone Crosspolymer, Cetyl PEG/PPG-10/1 Dimethicone, Glyceryl Caprylate, Polyhydroxystearic Acid, Coco-Caprylate/Caprate, Triethoxycaprylylsilane, Aloe Barbadensis Leaf Extract, Gnaphalium Leontopodium Flower Extract, Portulaca Oleracea Extract, Glycerin, Artemisia Vulgaris Extract, Chrysanthemum Morifolium Flower Extract, Cinnamomum Cassia Bark Extract, Diospyros Kaki Leaf Extract, Morus Alba Fruit Extract, Pueraria Lobata Root Extract, VP/Hexadecene Copolymer, 1,2-Hexanediol, Acrylates/Dimethicone Copolymer, Disodium EDTA, Chlorphenesin, Fragrance(Parfum) 0418`,
             cosDNALink: `http://www.cosdna.com/eng/product.php?q=Missha+All+Around+Safe+Block+Waterproof+Sun`,
             skincarismaLink: `https://www.skincarisma.com/products/missha/all-around-safe-block-waterproof-sun-spf50-pa`,
+            isActive: false,
         },
     ],
 }

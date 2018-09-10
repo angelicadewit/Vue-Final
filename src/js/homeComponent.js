@@ -36,7 +36,5 @@ let home = Vue.component('home', {
 		<router-link to="/tldr">I just want the products</router-link>
 		
 	</div>
-
-    
     `
 })

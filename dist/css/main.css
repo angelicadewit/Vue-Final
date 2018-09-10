@@ -127,6 +127,13 @@ body {
 	display: block;
 }
 
+#app ul button {
+	width: 100px;
+	padding: 10px;
+	justify-content: center;
+	margin: auto;
+}
+
 #app ul h4 {
 	font-family: "Alegreya";
 	color: #51A7AD;
@@ -152,9 +159,11 @@ body {
 }
 
 #app ul .img-size {
-	align-self: center;
+	justify-content: center;
+	align-items: center;
 	width: 220px;
 	height: 220px;
+	margin: auto;
 }
 
 #app ul .img-size img {
@@ -234,6 +243,24 @@ body {
 
 #app .select-style select:focus {
 	outline: none;
+}
+
+#app .prev {
+	width: 10%;
+	float: left;
+	height: 100%;
+}
+
+#app .main {
+	width: 80%;
+	height: 100%;
+	float: left;
+}
+
+#app .next {
+	width: 10%;
+	float: left;
+	height: 100%;
 }
 
 /*# sourceMappingURL=main.css.map */

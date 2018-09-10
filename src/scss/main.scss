@@ -89,6 +89,13 @@ body {
 			display: block;
 		}
 
+		button{
+			width: 100px;
+			padding: 10px;
+			justify-content: center; 
+			margin: auto;
+		}
+
 		h4{
 			font-family: $headerText;
 			color: $headerColor;
@@ -114,9 +121,11 @@ body {
 		}
 
 		.img-size{
-			align-self: center;
+			justify-content: center; 
+			align-items: center; 
 			width: 220px;
 			height: 220px;
+			margin: auto;
 
 			img{
 				max-width: 100%;
@@ -203,6 +212,23 @@ body {
 		select:focus {
 			outline: none;
 		}
+	}
+
+	.prev{
+		width: 10%;
+		float: left;
+		height: 100%;
+	}
+
+	.main{
+		width: 80%;
+	height: 100%;
+		float: left;
+	}
+	.next{
+		width: 10%;
+		float: left;
+		height: 100%;
 	}
 }
 
