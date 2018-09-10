@@ -37,7 +37,7 @@ let tldr = Vue.component('tdlr', {
                                 <a :href="product.skincarismaLink" target="_blank">Skincarisma Analysis</a>
                         </div>
                         
-                        <button @click="toggle(product)">Show more</button>
+                        <button class="btn-more-ingredients" @click="toggle(product)">Show More</button>
                         <div v-if="product.isActive">
                             {{product.ingredients}}
                         </div>
@@ -70,7 +70,7 @@ let tldr = Vue.component('tdlr', {
                                 <a :href="product.cosDNALink" target="_blank">CosDNA Analysis</a>
                                 <a :href="product.skincarismaLink" target="_blank">Skincarisma Analysis</a>
                         </div>
-                        <button @click="toggle(product)">Show more</button>
+                        <button class="btn-more-ingredients" @click="toggle(product)">Show More</button>
                         <div v-if="product.isActive">
                             {{product.ingredients}}
                         </div>
@@ -103,7 +103,7 @@ let tldr = Vue.component('tdlr', {
                                 <a :href="product.cosDNALink" target="_blank">CosDNA Analysis</a>
                                 <a :href="product.skincarismaLink" target="_blank">Skincarisma Analysis</a>
                         </div>
-                        <button @click="toggle(product)">Show more</button>
+                        <button class="btn-more-ingredients" @click="toggle(product)">Show More</button>
                         <div v-if="product.isActive">
                             {{product.ingredients}}
                         </div>
@@ -135,7 +135,7 @@ let tldr = Vue.component('tdlr', {
                                 <a :href="product.cosDNALink" target="_blank">CosDNA Analysis</a>
                                 <a :href="product.skincarismaLink" target="_blank">Skincarisma Analysis</a>
                         </div>
-                        <button @click="toggle(product)">Show more</button>
+                        <button class="btn-more-ingredients" @click="toggle(product)">Show More</button>
                         <div v-if="product.isActive">
                             {{product.ingredients}}
                         </div>

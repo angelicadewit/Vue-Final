@@ -184,8 +184,8 @@ body {
 	height: auto;
 }
 
-#app ul button {
-	width: 100px;
+#app ul .btn-more-ingredients {
+	width: fit-content;
 	padding: 10px;
 	justify-content: center;
 	margin: auto;
@@ -321,6 +321,13 @@ body {
 
 #app .previous:hover {
 	animation: ani-move-left 1s .2s;
+}
+
+#app button {
+	font-family: "raleway";
+	padding: 20px 20px;
+	font-size: 16px;
+	width: 100%;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -147,8 +147,8 @@ body {
 			height: auto;
 		}
 
-		button{
-			width: 100px;
+		.btn-more-ingredients{
+			width: fit-content;
 			padding: 10px;
 			justify-content: center; 
 			margin: auto;
@@ -290,6 +290,13 @@ body {
 
 	.previous:hover{
 		animation: ani-move-left 1s .2s;
+	}
+
+	button{
+		font-family: "raleway";
+		padding: 20px 20px;
+		font-size: 16px;
+		width: 100%;
 	}
 }
 
