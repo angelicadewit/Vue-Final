@@ -24,6 +24,10 @@ let secondCleanser = Vue.component('second-cleanser', {
         </p>
         <p>So you have <span>{{skinChosen}}</span> skin. These were the recommended products:</p>
         <ul>
+            <div class="previous">
+                <router-link to="/first-cleanser" ctive-class="active" tag="previous"><</router-link></router-link>
+            </div>
+
             <li 
                 class="product-card"
                 v-if="product.skin.includes(skinChosen)"
@@ -48,10 +52,12 @@ let secondCleanser = Vue.component('second-cleanser', {
                     {{product.ingredients}}
                 </div>
             </li>
-            
+            <div class="next">
+                <router-link to="/hydrating-toner" active-class="active" tag="next">></router-link></router-link>
+            </div>
         </ul>
-        <router-link to="/first-cleanser" active-class="main-link"><</router-link></router-link>
-        <router-link to="/hydrating-toner" active-class="main-link">></router-link></router-link>
+    
+        
 	</div>
     `,
     methods: {

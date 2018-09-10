@@ -17,8 +17,10 @@ let sunscreen = Vue.component('sunscreen', {
         <p><span>Please wear sunscreen even though you live in a cloudy area. There are still UV rays even though there is no sun</span></p>
         <p>So you have <span>{{skinChosen}}</span> skin. These were the recommended products:</p>
         <ul>
-        <ul>
-            <li 
+        <div class="previous">
+            <router-link to="/moisturizer" tag="previous"><</router-link></router-link>
+        </div>
+                <li 
                 class="product-card"
                 v-if="product.skin.includes(skinChosen)"
                 v-for="(product, i) in products.sunscreen"
@@ -43,6 +45,9 @@ let sunscreen = Vue.component('sunscreen', {
                 </div>
         
             </li>
+            <div class="next disabled">
+                <router-link to="/home" tag="previous"><</router-link></router-link>
+            </div>
         </ul>
 
 	</div>

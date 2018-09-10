@@ -17,6 +17,10 @@ let moisturizer = Vue.component('moisturizer', {
         </p>
         <p>So you have <span>{{skinChosen}}</span> skin. These were the recommended products:</p>
         <ul>
+
+        <div class="previous">
+            <router-link to="/hydrating-toner" tag="previous"><</router-link></router-link>
+        </div>
             <li 
                 class="product-card"
                 v-if="product.skin.includes(skinChosen)"
@@ -42,9 +46,12 @@ let moisturizer = Vue.component('moisturizer', {
                 </div>
 
             </li>
+
+            <div class="next">
+                <router-link to="/sunscreen" active-class="active" tag="next">></router-link></router-link>
+            </div>
         </ul>
-        <router-link to="/hydrating-toner" active-class="main-link"><</router-link></router-link>
-        <router-link to="/sunscreen" active-class="main-link">></router-link></router-link>
+
 	</div>
     `,
     methods: {

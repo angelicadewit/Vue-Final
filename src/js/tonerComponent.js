@@ -19,7 +19,11 @@ let hydratingToner = Vue.component('hydrating-toner', {
         
         
         <p>So you have <span>{{skinChosen}}</span> skin. These were the recommended products:</p>
+
         <ul>
+            <div class="previous">
+                <router-link to="/second-cleanser" tag="previous"><</router-link></router-link>
+            </div>
             <li 
                 class="product-card"
                 v-if="product.skin.includes(skinChosen)"
@@ -45,10 +49,10 @@ let hydratingToner = Vue.component('hydrating-toner', {
                 </div>
 
             </li>
+            <div class="next">
+                <router-link to="/moisturizer" active-class="active" tag="next">></router-link></router-link>
+            </div>
         </ul>
-
-        <router-link to="/second-cleanser" active-class="main-link"><</router-link></router-link>
-        <router-link to="/moisturizer" active-class="main-link">></router-link></router-link>
 	</div>
     `,
     methods: {
