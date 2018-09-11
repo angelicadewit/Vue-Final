@@ -165,12 +165,12 @@ body {
 	padding-bottom: 30px;
 }
 
-#app ul {
+#app .product-list {
 	display: flex;
 	justify-content: space-evenly;
 }
 
-#app ul .product-card {
+#app .product-list .product-card {
 	padding: 15px;
 	margin: 15px;
 	background: white;
@@ -179,19 +179,19 @@ body {
 	width: 30%;
 }
 
-#app ul .active {
+#app .product-list .active {
 	display: block;
 	height: auto;
 }
 
-#app ul .btn-more-ingredients {
+#app .product-list .btn-more-ingredients {
 	width: fit-content;
 	padding: 10px;
 	justify-content: center;
 	margin: auto;
 }
 
-#app ul h4 {
+#app .product-list h4 {
 	font-family: "Alegreya";
 	color: #51A7AD;
 	font-size: 1.2em;
@@ -199,23 +199,23 @@ body {
 	padding-bottom: 10px;
 }
 
-#app ul .links {
+#app .product-list .links {
 	display: flex;
 	justify-content: space-around;
 	padding-bottom: 20px;
 }
 
-#app ul p {
+#app .product-list p {
 	padding: 0px 0px 10px;
 }
 
-#app ul a {
+#app .product-list a {
 	padding: 5px;
 	position: relative;
 	display: block;
 }
 
-#app ul .img-size {
+#app .product-list .img-size {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -224,18 +224,18 @@ body {
 	margin: auto;
 }
 
-#app ul .img-size img {
+#app .product-list .img-size img {
 	max-width: 100%;
 	max-height: 100%;
 }
 
-#app ul small {
+#app .product-list small {
 	padding: 5px 0px;
 	font-size: 12px;
 	font-family: verdana;
 }
 
-#app ul .btn-more-ingredients {
+#app .product-list .btn-more-ingredients {
 	align-content: center;
 	padding: 10px 25px;
 	font-family: "raleway", sans-serif;
@@ -249,7 +249,7 @@ body {
 	font-size: 18px;
 }
 
-#app ul .btn-more-ingredients:hover {
+#app .product-list .btn-more-ingredients:hover {
 	background: #000;
 	color: #fff;
 }

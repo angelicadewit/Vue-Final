@@ -19,7 +19,7 @@ let firstCleanser = Vue.component('first-cleanser', {
             People with dry skin might want to skip this step or use another type of makeup and sunscreen removers such as micellar water as they feel like it dries out their skin
         </p>
         <p>since you have <span>{{skinChosen}}</span> skin. These were the recommended products:</p>
-            <ul>
+            <ul class="product-list">
             <div class="previous disabled">
                 <router-link to="/second-cleanser" active-class="active"><</router-link></router-link>
             </div>

@@ -16,7 +16,7 @@ let tldr = Vue.component('tdlr', {
                 <li class="header">
                     <h3>First Cleanser</h3>
                 </li>
-                <ul>
+                <ul class="product-list">
                     <li 
                         class="product-card"
                         v-if="product.skin.includes(skinChosen)"
@@ -50,7 +50,7 @@ let tldr = Vue.component('tdlr', {
                     <h3>Second Cleanser</h3>
                 </li>
                 
-                <ul>
+                <ul class="product-list">
                     <li 
                         class="product-card"
                         v-if="product.skin.includes(skinChosen)"
@@ -85,7 +85,7 @@ let tldr = Vue.component('tdlr', {
                     <h3>Hydrating Toner</h3>
                 </li>
 
-                <ul>
+                <ul class="product-list">
                     <li 
                         class="product-card"
                         v-if="product.skin.includes(skinChosen)"
@@ -118,7 +118,7 @@ let tldr = Vue.component('tdlr', {
                     <h3>Moisturizer</h3>
                 </li>
 
-                <ul>
+                <ul class="product-list">
                     <li 
                         class="product-card"
                         v-if="product.skin.includes(skinChosen)"
@@ -150,7 +150,7 @@ let tldr = Vue.component('tdlr', {
                     <h3>Sunscreen</h3>
                 </li>
 
-                <ul>
+                <ul class="product-list">
                     <li 
                         class="product-card"
                         v-if="product.skin.includes(skinChosen)"

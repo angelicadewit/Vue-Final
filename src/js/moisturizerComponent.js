@@ -16,7 +16,7 @@ let moisturizer = Vue.component('moisturizer', {
             Typically, moisturizers help most people who have <span>dehydrated</span> skin to figure out what their skin type is. Please take the time to read the ingredients as some moisturizers provide extra benefits such as ceramides and niacinamide.
         </p>
         <p>So you have <span>{{skinChosen}}</span> skin. These were the recommended products:</p>
-        <ul>
+        <ul class="product-list">
 
         <div class="previous">
             <router-link to="/hydrating-toner"><</router-link></router-link>

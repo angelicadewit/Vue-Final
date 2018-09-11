@@ -23,7 +23,7 @@ let secondCleanser = Vue.component('second-cleanser', {
             <span>Please stop testing your product if you find that your face feel "too clean" like squeaky clean to the point that it feels like your face had been stripped of all oil. You should not feel that your face is too clean.</span>
         </p>
         <p>So you have <span>{{skinChosen}}</span> skin. These were the recommended products:</p>
-        <ul>
+        <ul class="product-list">
             <div class="previous">
                 <router-link to="/first-cleanser" active-class="active"><</router-link></router-link>
             </div>

@@ -38,6 +38,7 @@ var app = new Vue({
 	data: {
 		message: 'Hello Vue!',
 		skins: ["oily", "combo", "normal", "dry"],
+		routineStep: ["firstCleanser", "secondCleanser", "hydratingToner", "moisturizer", "sunscreen"],
 		skinChosen: "oily",
 		products: products
 

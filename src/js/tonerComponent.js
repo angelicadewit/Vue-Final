@@ -20,7 +20,7 @@ let hydratingToner = Vue.component('hydrating-toner', {
         
         <p>So you have <span>{{skinChosen}}</span> skin. These were the recommended products:</p>
 
-        <ul>
+        <ul class="product-list">
             <div class="previous">
                 <router-link to="/second-cleanser" active-class="active"><</router-link></router-link>
             </div>

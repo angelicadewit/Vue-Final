@@ -16,7 +16,7 @@ let sunscreen = Vue.component('sunscreen', {
         </p>
         <p><span>Please wear sunscreen even though you live in a cloudy area. There are still UV rays even though there is no sun</span></p>
         <p>So you have <span>{{skinChosen}}</span> skin. These were the recommended products:</p>
-        <ul>
+        <ul class="product-list">
         <div class="previous">
             <router-link to="/moisturizer"><</router-link></router-link>
         </div>
