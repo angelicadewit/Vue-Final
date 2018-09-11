@@ -43,7 +43,7 @@ let hydratingToner = Vue.component('hydrating-toner', {
                         <a :href="product.cosDNALink" target="_blank">CosDNA Analysis</a>
                         <a :href="product.skincarismaLink" target="_blank">Skincarisma Analysis</a>
                 </div>
-                <button class="btn-more-ingredients" @click="toggle(product)">Show More</button>
+                <button class="btn-more-ingredients" @click="toggle(product)">Show Ingredients</button>
                 <div v-if="product.isActive">
                     {{product.ingredients}}
                 </div>

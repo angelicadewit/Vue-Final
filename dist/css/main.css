@@ -235,6 +235,25 @@ body {
 	font-family: verdana;
 }
 
+#app ul .btn-more-ingredients {
+	align-content: center;
+	padding: 10px 25px;
+	font-family: "raleway", sans-serif;
+	margin: 10px;
+	background: transparent;
+	cursor: pointer;
+	transition: all 0.3s ease;
+	position: relative;
+	display: inline-block;
+	border: 2px solid #000;
+	font-size: 18px;
+}
+
+#app ul .btn-more-ingredients:hover {
+	background: #000;
+	color: #fff;
+}
+
 #app span {
 	text-decoration: underline;
 }
@@ -337,7 +356,7 @@ body {
 	position: relative;
 }
 
-#app button {
+#app .home-component {
 	color: #eb1777;
 	background: transparent;
 	border-width: 2px;
@@ -354,7 +373,7 @@ body {
 	font-size: 20px;
 }
 
-#app button:before, #app button:after {
+#app .home-component:before, #app .home-component:after {
 	content: '';
 	display: block;
 	position: absolute;
@@ -367,26 +386,26 @@ body {
 	cursor: pointer;
 }
 
-#app button:before {
+#app .home-component:before {
 	top: -6px;
 	left: -6px;
 	border-width: 2px 0 0 2px;
 	z-index: 5;
 }
 
-#app button:after {
+#app .home-component:after {
 	bottom: -6px;
 	right: -6px;
 	border-width: 0 2px 2px 0;
 }
 
-#app button:hover:before, #app button:hover:after {
+#app .home-component:hover:before, #app .home-component:hover:after {
 	width: calc(100% + 12px);
 	height: calc(100% + 12px);
 	border-color: #eb1777;
 }
 
-#app button:hover {
+#app .home-component:hover {
 	color: #fff;
 	background-color: #eb1777;
 	border-color: #eb1777;

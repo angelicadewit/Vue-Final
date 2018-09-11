@@ -41,8 +41,8 @@ let firstCleanser = Vue.component('first-cleanser', {
                     <p>Ingredients:</p>
                         <a :href="product.cosDNALink" target="_blank">CosDNA Analysis</a>
                         <a :href="product.skincarismaLink" target="_blank">Skincarisma Analysis</a>
+                    <button class="btn-more-ingredients" @click="toggle(product)">Show Ingredients</button>
                 </div>
-                <button class="btn-more-ingredients" @click="toggle(product)"><span class="button-span">Show More</span></button>
                 <div v-if="product.isActive">
                     {{product.ingredients}}
                 </div>

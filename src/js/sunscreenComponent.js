@@ -38,8 +38,9 @@ let sunscreen = Vue.component('sunscreen', {
                     <p>Ingredients:</p>
                         <a :href="product.cosDNALink" target="_blank">CosDNA Analysis</a>
                         <a :href="product.skincarismaLink" target="_blank">Skincarisma Analysis</a>
+
+                        <button class="btn-more-ingredients" @click="toggle(product)">Show Ingredients</button>
                 </div>
-                <button class="btn-more-ingredients" @click="toggle(product)">Show More</button>
                 <div v-if="product.isActive">
                     {{product.ingredients}}
                 </div>

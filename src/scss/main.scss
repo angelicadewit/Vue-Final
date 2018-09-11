@@ -197,6 +197,25 @@ body {
 			font-size: 12px;
 			font-family: verdana;
 		}
+
+		.btn-more-ingredients {
+			align-content: center;
+			padding: 10px 25px;
+			font-family: "raleway", sans-serif;
+			margin: 10px;
+			background: transparent;
+			cursor: pointer;
+			transition: all 0.3s ease;
+			position: relative;
+			display: inline-block;
+			border: 2px solid #000;
+			font-size: 18px;
+	
+			&:hover {
+				background: #000;
+				color: #fff;
+			}
+		}	
 	}
 
 	span{
@@ -306,31 +325,7 @@ body {
 		position: relative;
 	}
 
-	// button {  
-	// 	border: 6px solid transparent;
-	// 	border-image: linear-gradient(to right, #FC5C7D 0%, #6A82FB 100%);
-	// 	border-image-slice: 1;
-	// 	background: #fff;
-	// 	font-family: "raleway";
-	// 	font-size: 16px;
-	// 	padding: 5px 10px;
-	// 	text-decoration: none;
-	// 	font-weight: bold;
-	// 	text-transform: uppercase;
-	// 	cursor: pointer;
-	// 	transition: .1s ease all;
-	// 	margin-right: 10px;
-
-	// 	&:hover {
-	// 		background-color: white;
-	// 		background: linear-gradient(to right, #FC5C7D, #6A82FB);
-	// 		color: #fff;
-	// 		border: 6px solid white;
-	// 	}
-
-	// }
-	
-	button {
+	.home-component {
 		color:#eb1777;
 		background: transparent;
 		border-width: 2px;
@@ -382,6 +377,5 @@ body {
 			border-color: #eb1777;
 		}
 	}
-	
 }
 
