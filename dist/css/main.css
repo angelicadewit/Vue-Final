@@ -184,13 +184,6 @@ body {
 	height: auto;
 }
 
-#app .product-list .btn-more-ingredients {
-	width: fit-content;
-	padding: 10px;
-	justify-content: center;
-	margin: auto;
-}
-
 #app .product-list h4 {
 	font-family: "Alegreya";
 	color: #51A7AD;
@@ -236,6 +229,9 @@ body {
 }
 
 #app .product-list .btn-more-ingredients {
+	width: fit-content;
+	padding: 10px;
+	justify-content: center;
 	align-content: center;
 	padding: 10px 25px;
 	font-family: "raleway", sans-serif;
@@ -254,7 +250,7 @@ body {
 	color: #fff;
 }
 
-#app .product-list a {
+#app .product-list .card-link {
 	position: relative;
 	display: inline-block;
 	font-size: 20px;
@@ -267,16 +263,16 @@ body {
 	width: fit-content;
 }
 
-#app .product-list a:hover {
+#app .product-list .card-link:hover {
 	color: #f7a3c9;
 }
 
-#app .product-list a:hover::after, #app .product-list a:hover::before {
+#app .product-list .card-link:hover::after, #app .product-list .card-link:hover::before {
 	width: 100%;
 	left: 0;
 }
 
-#app .product-list a::after, #app .product-list a::before {
+#app .product-list .card-link::after, #app .product-list .card-link::before {
 	content: '';
 	position: absolute;
 	top: calc(100% + 5px);
@@ -285,12 +281,12 @@ body {
 	height: 3px;
 }
 
-#app .product-list a::before {
+#app .product-list .card-link::before {
 	transition: width 0.4s cubic-bezier(0.51, 0.18, 0, 0.88) 0.1s;
 	background: #17eb21;
 }
 
-#app .product-list a::after {
+#app .product-list .card-link::after {
 	transition: width 0.2s cubic-bezier(0.29, 0.18, 0.26, 0.83);
 	background: #17e1eb;
 }
@@ -410,7 +406,6 @@ body {
 	transition: all 0.3s ease-in-out;
 	text-align: center;
 	font-family: "raleway";
-	font-weight: bold;
 	font-size: 20px;
 }
 
@@ -452,14 +447,28 @@ body {
 	border-color: #eb1777;
 }
 
-#app .unknown-skin-link {
-	color: #eb1777;
+#app h4 {
+	font-size: 2em;
 	text-align: center;
-	font-size: 2.3em;
+	padding-bottom: 15px;
 }
 
-#app .unknown-skin-link:hover {
-	background: black;
+#app h4 a {
+	text-decoration: none;
+	color: #eb1777;
+	font-family: "raleway";
+	font-size: 40px;
+	display: inline-block;
+	position: relative;
+	overflow: hidden;
+	text-decoration: none;
+	box-shadow: inset 0 0 0 0 #eb1777;
+	transition: all 0.4s ease-in-out 0s;
+}
+
+#app h4 a:hover {
+	box-shadow: inset 500px 0 0 0 #eb1777;
+	color: white;
 }
 
 /*# sourceMappingURL=main.css.map */
