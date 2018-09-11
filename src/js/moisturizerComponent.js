@@ -19,7 +19,7 @@ let moisturizer = Vue.component('moisturizer', {
         <ul>
 
         <div class="previous">
-            <router-link to="/hydrating-toner" tag="previous"><</router-link></router-link>
+            <router-link to="/hydrating-toner"><</router-link></router-link>
         </div>
             <li 
                 class="product-card"
@@ -48,7 +48,7 @@ let moisturizer = Vue.component('moisturizer', {
             </li>
 
             <div class="next">
-                <router-link to="/sunscreen" active-class="active" tag="next">></router-link></router-link>
+                <router-link to="/sunscreen" active-class="active">></router-link></router-link>
             </div>
         </ul>
 

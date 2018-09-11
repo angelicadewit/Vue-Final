@@ -22,7 +22,7 @@ let home = Vue.component('home', {
 		<h2>Ready To Start?</h2>
 
 		<router-link to="/unknown-skin">
-			<button class="foo bar">I don't know my skin</button>
+			I don't know my skin
 		</router-link>
 		
 
@@ -33,14 +33,16 @@ let home = Vue.component('home', {
 			</select>
 		</div>
 	
-			
-		<router-link to="/tldr">
-			<button>Only Products</button>
-		</router-link>
 
-		<router-link to="/first-cleanser">
-		<button class="foo bar">Let's Go</button>
-		</router-link>
+		<div class="buttons">
+			<router-link to="/tldr">
+				<button>View Products Only</button>
+			</router-link>
+
+			<router-link to="/first-cleanser">
+				<button>Let's Go</button>
+			</router-link>
+		</div>	
 
 		
 	</div>

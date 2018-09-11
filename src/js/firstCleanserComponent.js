@@ -21,7 +21,7 @@ let firstCleanser = Vue.component('first-cleanser', {
         <p>since you have <span>{{skinChosen}}</span> skin. These were the recommended products:</p>
             <ul>
             <div class="previous disabled">
-                <router-link to="/second-cleanser" class="next-button" tag="next"><</router-link></router-link>
+                <router-link to="/second-cleanser" active-class="active"><</router-link></router-link>
             </div>
             
             <li 
@@ -42,14 +42,14 @@ let firstCleanser = Vue.component('first-cleanser', {
                         <a :href="product.cosDNALink" target="_blank">CosDNA Analysis</a>
                         <a :href="product.skincarismaLink" target="_blank">Skincarisma Analysis</a>
                 </div>
-                <button class="btn-more-ingredients" @click="toggle(product)">Show More</button>
+                <button class="btn-more-ingredients" @click="toggle(product)"><span class="button-span">Show More</span></button>
                 <div v-if="product.isActive">
                     {{product.ingredients}}
                 </div>
 
                 </li>
                 <div class="next">
-                    <router-link to="/second-cleanser" active-class="active" tag="next">></router-link></router-link>
+                    <router-link to="/second-cleanser" active-class="active">></router-link></router-link>
                 </div>
                 </ul>
 

@@ -273,14 +273,19 @@ body {
 	}
 
 	.next, .previous{
-		font-size: 5em;
-		font-family: "Gloria Hallelujah";
 		justify-content: center; 
 		align-self: center; 
-		cursor: pointer;
 
 		&.disabled{
 			visibility: hidden;
+		}
+
+		a{
+			font-size: 5em;
+			font-family: "Gloria Hallelujah";
+			cursor: pointer;
+			text-decoration: none;
+			color: black;
 		}
 	}
 
@@ -292,11 +297,91 @@ body {
 		animation: ani-move-left 1s .2s;
 	}
 
-	button{
-		font-family: "raleway";
-		padding: 20px 20px;
-		font-size: 16px;
-		width: 100%;
+	.buttons{
+		padding-top: 20px;
+		width: 85%;
+		margin: auto;
+		display: flex;
+		justify-content: flex-end;
+		position: relative;
 	}
+
+	// button {  
+	// 	border: 6px solid transparent;
+	// 	border-image: linear-gradient(to right, #FC5C7D 0%, #6A82FB 100%);
+	// 	border-image-slice: 1;
+	// 	background: #fff;
+	// 	font-family: "raleway";
+	// 	font-size: 16px;
+	// 	padding: 5px 10px;
+	// 	text-decoration: none;
+	// 	font-weight: bold;
+	// 	text-transform: uppercase;
+	// 	cursor: pointer;
+	// 	transition: .1s ease all;
+	// 	margin-right: 10px;
+
+	// 	&:hover {
+	// 		background-color: white;
+	// 		background: linear-gradient(to right, #FC5C7D, #6A82FB);
+	// 		color: #fff;
+	// 		border: 6px solid white;
+	// 	}
+
+	// }
+	
+	button {
+		color:#eb1777;
+		background: transparent;
+		border-width: 2px;
+		border-style: solid;
+		border-color: #eb1777;
+		position:relative;
+		margin: .5em;
+		display: inline-block;
+		padding: 0.5em 1em;
+		transition: all 0.3s ease-in-out;
+		text-align:center;
+		font-family: "raleway";
+		font-weight: bold;
+		font-size: 20px;
+	
+		&:before, &:after {
+			content: '';
+			display: block;
+			position: absolute;
+			border-color: #eb1777;
+			box-sizing: border-box;
+			border-style: solid;
+			width: 1em;
+			height: 1em;
+			transition: all 0.3s ease-in-out;
+			cursor: pointer;
+		}
+	
+		&:before {
+			top: -6px;
+			left: -6px;
+			border-width: 2px 0 0 2px;
+			z-index: 5;
+		}
+
+		&:after {
+			bottom: -6px;
+			right: -6px;
+			border-width: 0 2px 2px 0;
+		}
+		&:hover:before, &:hover:after {
+			width: calc(100% + 12px);
+			height: calc(100% + 12px);
+			border-color: #eb1777;
+		}
+		&:hover {
+			color :#fff;
+			background-color: #eb1777;
+			border-color: #eb1777;
+		}
+	}
+	
 }
 

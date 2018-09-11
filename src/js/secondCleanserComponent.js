@@ -25,7 +25,7 @@ let secondCleanser = Vue.component('second-cleanser', {
         <p>So you have <span>{{skinChosen}}</span> skin. These were the recommended products:</p>
         <ul>
             <div class="previous">
-                <router-link to="/first-cleanser" ctive-class="active" tag="previous"><</router-link></router-link>
+                <router-link to="/first-cleanser" active-class="active"><</router-link></router-link>
             </div>
 
             <li 
@@ -53,7 +53,7 @@ let secondCleanser = Vue.component('second-cleanser', {
                 </div>
             </li>
             <div class="next">
-                <router-link to="/hydrating-toner" active-class="active" tag="next">></router-link></router-link>
+                <router-link to="/hydrating-toner" active-class="active">></router-link></router-link>
             </div>
         </ul>
     
