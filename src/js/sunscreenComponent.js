@@ -21,7 +21,7 @@ let sunscreen = Vue.component('sunscreen', {
         <p>So you have <span>{{skinChosen}}</span> skin. These were the recommended products:</p>
         <ul class="product-list">
         <div class="previous">
-            <router-link to="/moisturizer"><<span class="next-span">Sunscreen</span></router-link>
+            <router-link to="/moisturizer"><<span class="previous-span">Moisturizer</span></router-link>
         </div>
             <product 
                 :product="product"
@@ -30,7 +30,7 @@ let sunscreen = Vue.component('sunscreen', {
             >
             </product>
             <div class="next disabled">
-                <router-link to="/home"><</router-link></router-link>
+                <router-link to="/home"><</router-link>
             </div>
         </ul>
 

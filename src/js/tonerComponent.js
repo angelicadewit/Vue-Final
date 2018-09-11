@@ -25,7 +25,7 @@ let hydratingToner = Vue.component('hydrating-toner', {
 
         <ul class="product-list">
             <div class="previous">
-                <router-link to="/second-cleanser" active-class="active"><<span class="next-span">Second</span><span class="next-span">Cleanser</span></router-link>
+                <router-link to="/second-cleanser" active-class="active"><<span class="previous-span">Second</span><span class="previous-span">Cleanser</span></router-link>
             </div>
             <product 
                 :product="product"
