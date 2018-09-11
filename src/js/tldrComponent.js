@@ -17,32 +17,12 @@ let tldr = Vue.component('tdlr', {
                     <h3>First Cleanser</h3>
                 </li>
                 <ul class="product-list">
-                    <li 
-                        class="product-card"
-                        v-if="product.skin.includes(skinChosen)"
-                        v-for="(product, i) in products.firstCleansers"
-                        :class="{ activeclass: product.isActive }
-                        
-                    ">
-                        <div>
-                            <h4>{{product.name}}</h4>
-                            <div class="img-size"><img :src="product.img"></div>
-                                <p>Where to buy:</p>
-                                <div class="links">
-                                <a :href="product.amazon" target="_blank" class="card-link">Amazon</a>
-                                <a :href="product.notAmazonURL" target="_blank" class="card-link">{{product.notAmazonStore}}</a>
-                            </div>
-                            <p>Ingredients:</p>
-                                <a :href="product.cosDNALink" target="_blank" class="card-link">CosDNA Analysis</a>
-                                <a :href="product.skincarismaLink" target="_blank" class="card-link">Skincarisma Analysis</a>
-                                <button class="btn-more-ingredients" @click="toggle(product)">Show Ingredients</button>
-                        </div>
-                        
-                        <div v-if="product.isActive">
-                            {{product.ingredients}}
-                        </div>
-        
-                    </li>
+                <product 
+                    :product="product"
+                    v-if="product.skin.includes(skinChosen)"
+                    v-for="product in products.firstCleansers"
+                >
+                </product>
                     
                 </ul>
 
@@ -51,33 +31,13 @@ let tldr = Vue.component('tdlr', {
                 </li>
                 
                 <ul class="product-list">
-                    <li 
-                        class="product-card"
-                        v-if="product.skin.includes(skinChosen)"
-                        v-for="(product, i) in products.secondCleansers"
-                        :class="{ activeclass: product.isActive }
-                        
-                    ">
-                        <div>
-                            <h4>{{product.name}}</h4>
-                            <div class="img-size"><img :src="product.img"></div>
-                                <p>Where to buy:</p>
-                                <div class="links">
-                                <a :href="product.amazon" target="_blank" class="card-link">Amazon</a>
-                                <a :href="product.notAmazonURL" target="_blank" class="card-link">{{product.notAmazonStore}}</a>
-                            </div>
-                            <p>Ingredients:</p>
-                                <a :href="product.cosDNALink" target="_blank" class="card-link">CosDNA Analysis</a>
-                                <a :href="product.skincarismaLink" target="_blank" class="card-link">Skincarisma Analysis</a>
-                                <button class="btn-more-ingredients" @click="toggle(product)">Show Ingredients</button>
-                                
-                        </div>
-
-                        <div v-if="product.isActive">
-                            {{product.ingredients}}
-                        </div>
+                <product 
+                    :product="product"
+                    v-if="product.skin.includes(skinChosen)"
+                    v-for="product in products.secondCleansers"
+                >
+                </product>
                 
-                    </li>
                     
                 </ul>
 
@@ -86,32 +46,13 @@ let tldr = Vue.component('tdlr', {
                 </li>
 
                 <ul class="product-list">
-                    <li 
-                        class="product-card"
-                        v-if="product.skin.includes(skinChosen)"
-                        v-for="(product, i) in products.hydratingToners"
-                        :class="{ activeclass: product.isActive }
-                        
-                    ">
-                        <div>
-                            <h4>{{product.name}}</h4>
-                            <div class="img-size"><img :src="product.img"></div>
-                                <p>Where to buy:</p>
-                                <div class="links">
-                                <a :href="product.amazon" target="_blank" class="card-link">Amazon</a>
-                                <a :href="product.notAmazonURL" target="_blank" class="card-link">{{product.notAmazonStore}}</a>
-                            </div>
-                            <p>Ingredients:</p>
-                                <a :href="product.cosDNALink" target="_blank" class="card-link">CosDNA Analysis</a>
-                                <a :href="product.skincarismaLink" target="_blank" class="card-link">Skincarisma Analysis</a>
-                        
-                            <button class="btn-more-ingredients" @click="toggle(product)">Show Ingredients</button>
-                        </div>
-                        <div v-if="product.isActive">
-                            {{product.ingredients}}
-                        </div>
+                <product 
+                    :product="product"
+                    v-if="product.skin.includes(skinChosen)"
+                    v-for="product in products.hydratingToners"
+                >
+                </product>
                 
-                    </li>
                 </ul>
 
                 <li class="header">
@@ -119,31 +60,12 @@ let tldr = Vue.component('tdlr', {
                 </li>
 
                 <ul class="product-list">
-                    <li 
-                        class="product-card"
-                        v-if="product.skin.includes(skinChosen)"
-                        v-for="(product, i) in products.moisturizers"
-                        :class="{ activeclass: product.isActive }
-                        
-                    ">
-                        <div>
-                            <h4>{{product.name}}</h4>
-                            <div class="img-size"><img :src="product.img"></div>
-                                <p>Where to buy:</p>
-                                <div class="links">
-                                <a :href="product.amazon" target="_blank" class="card-link">Amazon</a>
-                                <a :href="product.notAmazonURL" target="_blank" class="card-link">{{product.notAmazonStore}}</a>
-                            </div>
-                            <p>Ingredients:</p>
-                                <a :href="product.cosDNALink" target="_blank" class="card-link">CosDNA Analysis</a>
-                                <a :href="product.skincarismaLink" target="_blank" class="card-link">Skincarisma Analysis</a>
-                                <button class="btn-more-ingredients" @click="toggle(product)">Show Ingredients</button>
-                        </div>
-                        <div v-if="product.isActive">
-                            {{product.ingredients}}
-                        </div>
-                
-                    </li>
+                <product 
+                    :product="product"
+                    v-if="product.skin.includes(skinChosen)"
+                    v-for="product in products.moisturizers"
+                >
+                </product>
                 </ul>
                 
                 <li class="header">
@@ -151,31 +73,12 @@ let tldr = Vue.component('tdlr', {
                 </li>
 
                 <ul class="product-list">
-                    <li 
-                        class="product-card"
-                        v-if="product.skin.includes(skinChosen)"
-                        v-for="(product, i) in products.sunscreen"
-                        :class="{ activeclass: product.isActive }
-                        
-                    ">
-                        <div>
-                            <h4>{{product.name}}</h4>
-                            <div class="img-size"><img :src="product.img"></div>
-                                <p>Where to buy:</p>
-                                <div class="links">
-                                <a :href="product.amazon" target="_blank" class="card-link">Amazon</a>
-                                <a :href="product.notAmazonURL" target="_blank" class="card-link">{{product.notAmazonStore}}</a>
-                            </div>
-                            <p>Ingredients:</p>
-                                <a :href="product.cosDNALink" target="_blank" class="card-link">CosDNA Analysis</a>
-                                <a :href="product.skincarismaLink" target="_blank" class="card-link">Skincarisma Analysis</a>
-                            <button class="btn-more-ingredients" @click="toggle(product)">Show Ingredients</button>
-                        </div>
-                        <div v-if="product.isActive">
-                            {{product.ingredients}}
-                        </div>
-
-                    </li>
+                <product 
+                    :product="product"
+                    v-if="product.skin.includes(skinChosen)"
+                    v-for="product in products.sunscreen"
+                >
+                </product>
                 </ul>
             </ol>
 	</div>

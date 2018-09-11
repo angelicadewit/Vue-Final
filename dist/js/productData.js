@@ -66,7 +66,6 @@ var products = {
         ingredients: "Oryza Sativa (rice) Bran Oil, Mineral Oil, Sorbeth-30 Tetraoleate, Triethyl Hexanoine, Cyclomethicone, Orange Oil, Tocopherol, Simmondsia Chinensis (jojoba) Seed Oil, Glycerin, Polyglyceryl-2 Diisostearate, Trilaureth-4 Phosphate, Water, Phenoxyethanol",
         cosDNALink: "http://www.cosdna.com/eng/product.php?q=Kose+Softymo+Deep+Cleansing+Oil",
         skincarismaLink: "https://www.skincarisma.com/products/kose/softymo-deep-cleansing-oil",
-
         isActive: false
     }, {
         name: "Chinoshio Natural Cleansing Oil",
@@ -101,7 +100,6 @@ var products = {
         ingredients: "Zea Mays (Corn) Starch, Sodium Lauroyl Aspartate, Sodium Cocoyl Isethionate, Sodium Palmitate, Sodium Laureth Sulfate, Titanium Dioxide, Dipotassium Glycyrrhizate, 1,2-Hexanediol, Phenoxyethanol, Papain(and) Maltodextrin",
         cosDNALink: "http://www.cosdna.com/eng/product.php?q=Tosowoong+Enzyme+Powder+Wash",
         skincarismaLink: "https://www.skincarisma.com/products/tosowoong/enzyme-powder-wash-cleanser",
-
         isActive: false
     }, {
         name: "CeraVe Hydrating Cleanser",
@@ -146,7 +144,6 @@ var products = {
         ingredients: "Water, PEG-7 Glyceryl Cocoate, Dipropylene Glycol, Alcohol, PEG-11 Methyl Ether Dimethicone, Benzyl Alcohol, Acrylic acid/Phosphorylcholine Glycol Acrylate Crosspolymer, Triethanolamine, Aloe Barbadensis Leaf Juice, Centella Asiatica Extract, Hamamelis Virginiana (Witch Hazel) Extract, Dehydroacetic Acid, Dipotassium Glycyrrhizate, Disodium EDTA, Glycyrrhiza Glabra (Licorice) Root Extract, Paeonia Albiflora Root Extract, Cimicifuga Dahurica Root Extract, Pueraria Lobata Root Extract, Salicylic Acid, Farnesyl Acetate, Farnesol, Panthenyl Triacetate, Fragrance",
         cosDNALink: "http://www.cosdna.com/eng/product.php?q=ACWELL+PH+Balancing+Bubble+Cleanser",
         skincarismaLink: "https://www.skincarisma.com/products/acwell/bubble-free-ph-balancing-cleanser",
-
         isActive: false
     }],
     hydratingToners: [{
@@ -226,7 +223,6 @@ var products = {
         skincarismaLink: "https://www.skincarisma.com/products/tonymoly/the-chok-chok-green-tea-watery-moisture-cream",
         cosDNALink: "http://www.cosdna.com/eng/product.php?q=Tony+Moly+Chok+Chok+Watery+Green+Tea+Cream",
         ingredients: "Camellia Sinensis Leaf Extract, Cyclomethicone, Propanediol, Glycerin, Glycereth-26 Pantaerythrityl Teraethylhexanoate Buthylene Glycol Dicaprylate/Dicaprate Sorbitan Olivate Cetearyl Olivate 1,2-Hexanediol Polyacrylate Crosspolymer-6 Polysilicone-11 Phytosterly/Octyldodecyl Lauroyl Glutamate Ammonium Acryloyldimethyltaurate/VP Copolymer Aniba Rosaeodora (Rosewood) Wood Oil Citrus Limon (Lemon) Seed Oil Disodium EDTA 3-O-Ethyl Ascorbic Acid",
-
         isActive: false
     }, {
         name: "Rosette Ceramide Gel",

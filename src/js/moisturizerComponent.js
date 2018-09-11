@@ -15,37 +15,21 @@ let moisturizer = Vue.component('moisturizer', {
             People with oily skin might want to look into more watery moisturizers such as lotions since their face overproduce these types of oils. The dry skinned folks would gravitate towards heavy creams to seal in the moisture that their skin can't produce.
             Typically, moisturizers help most people who have <span>dehydrated</span> skin to figure out what their skin type is. Please take the time to read the ingredients as some moisturizers provide extra benefits such as ceramides and niacinamide.
         </p>
+        <p>
+            Where to use in the routine: Third AM / Fourth PM
+        </p>
         <p>So you have <span>{{skinChosen}}</span> skin. These were the recommended products:</p>
         <ul class="product-list">
 
         <div class="previous">
             <router-link to="/hydrating-toner"><</router-link></router-link>
         </div>
-            <li 
-                class="product-card"
-                v-if="product.skin.includes(skinChosen)"
-                v-for="(product, i) in products.moisturizers"
-                :class="{ activeclass: product.isActive }
-                
-            ">
-                <div>
-                    <h4>{{product.name}}</h4>
-                    <div class="img-size"><img :src="product.img"></div>
-                        <p>Where to buy:</p>
-                        <div class="links">
-                        <a :href="product.amazon" target="_blank" class="card-link">Amazon</a>
-                        <a :href="product.notAmazonURL" target="_blank" class="card-link">{{product.notAmazonStore}}</a>
-                    </div>
-                    <p>Ingredients:</p>
-                        <a :href="product.cosDNALink" target="_blank" class="card-link">CosDNA Analysis</a>
-                        <a :href="product.skincarismaLink" target="_blank" class="card-link">Skincarisma Analysis</a>
-                <button class="btn-more-ingredients" @click="toggle(product)">Show Ingredients</button>
-                </div>
-                <div v-if="product.isActive">
-                    {{product.ingredients}}
-                </div>
-
-            </li>
+        <product 
+            :product="product"
+            v-if="product.skin.includes(skinChosen)"
+            v-for="product in products.moisturizers"
+        >
+        </product>
 
             <div class="next">
                 <router-link to="/sunscreen" active-class="active">></router-link></router-link>

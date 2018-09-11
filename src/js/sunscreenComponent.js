@@ -14,38 +14,21 @@ let sunscreen = Vue.component('sunscreen', {
             Probably the most important part of your routine. This helps protect you against UV rays. There are two types of sunscreen: Chemical and Physical. Chemical are organic whereas physical are inorganic. If a sunscreen contains either zinc oxide or titanium dioxide, its most likely to be physical.
             The other difference is that physical tend to leave a white cast on your face (meaning a slight white tint on your skin) while chemical can give you a reaction.
         </p>
+        <p>
+            Where to use in the routine: First AM / No PM
+        </p>
         <p><span>Please wear sunscreen even though you live in a cloudy area. There are still UV rays even though there is no sun</span></p>
         <p>So you have <span>{{skinChosen}}</span> skin. These were the recommended products:</p>
         <ul class="product-list">
         <div class="previous">
             <router-link to="/moisturizer"><</router-link></router-link>
         </div>
-                <li 
-                class="product-card"
+            <product 
+                :product="product"
                 v-if="product.skin.includes(skinChosen)"
-                v-for="(product, i) in products.sunscreen"
-                :class="{ activeclass: product.isActive }
-                
-            ">
-                <div>
-                    <h4>{{product.name}}</h4>
-                    <div class="img-size"><img :src="product.img"></div>
-                        <p>Where to buy:</p>
-                        <div class="links">
-                        <a :href="product.amazon" target="_blank" class="card-link">Amazon</a>
-                        <a :href="product.notAmazonURL" target="_blank" class="card-link">{{product.notAmazonStore}}</a>
-                    </div>
-                    <p>Ingredients:</p>
-                        <a :href="product.cosDNALink" target="_blank" class="card-link">CosDNA Analysis</a>
-                        <a :href="product.skincarismaLink" target="_blank" class="card-link">Skincarisma Analysis</a>
-
-                        <button class="btn-more-ingredients" @click="toggle(product)">Show Ingredients</button>
-                </div>
-                <div v-if="product.isActive">
-                    {{product.ingredients}}
-                </div>
-        
-            </li>
+                v-for="product in products.sunscreen"
+            >
+            </product>
             <div class="next disabled">
                 <router-link to="/home"><</router-link></router-link>
             </div>

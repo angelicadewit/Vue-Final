@@ -18,34 +18,21 @@ let firstCleanser = Vue.component('first-cleanser', {
             Common fears include people with oily skin who might be hesitant to do this because the oil will add to the oiliness to their face, this does help remove the "bad" oil.
             People with dry skin might want to skip this step or use another type of makeup and sunscreen removers such as micellar water as they feel like it dries out their skin
         </p>
+        <p>
+            Where to use in the routine: No AM / First PM
+        </p>
         <p>since you have <span>{{skinChosen}}</span> skin. These were the recommended products:</p>
             <ul class="product-list">
             <div class="previous disabled">
                 <router-link to="/second-cleanser" active-class="active"><</router-link></router-link>
             </div>
             
-            <li 
-                class="product-card"
-                v-if="product.skin.includes(skinChosen)"
-                v-for="product in products.firstCleansers"
-                :class="{ activeclass: product.isActive }
-            ">
-                <div>
-                    <h4>{{product.name}}</h4>
-                    <div class="img-size"><img :src="product.img"></div>
-                        <p>Where to buy:</p>
-                        <div class="links">
-                        <a :href="product.amazon" target="_blank" class="card-link">Amazon</a>
-                        <a :href="product.notAmazonURL" target="_blank" class="card-link">{{product.notAmazonStore}}</a>
-                    </div>
-                    <p>Ingredients:</p>
-                        <a :href="product.cosDNALink" target="_blank" class="card-link">CosDNA Analysis</a>
-                        <a :href="product.skincarismaLink" target="_blank" class="card-link">Skincarisma Analysis</a>
-                    <button class="btn-more-ingredients" @click="toggle(product)">Show Ingredients</button>
-                </div>
-                <div v-if="product.isActive">
-                    {{product.ingredients}}
-                </div>
+            <product 
+                    :product="product"
+                    v-if="product.skin.includes(skinChosen)"
+                    v-for="product in products.firstCleansers"
+                >
+                </product>
 
                 </li>
                 <div class="next">

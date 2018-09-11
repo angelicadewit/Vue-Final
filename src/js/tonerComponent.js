@@ -16,7 +16,10 @@ let hydratingToner = Vue.component('hydrating-toner', {
         <p>
             Asian Beauty toners are meant to soften your skin and allows subsequent products be absorbed to your skin. Most toners contain humectants, which are ingredients that draw moisture to the skin. You'll find that most of the common dry and oily skin issues are due to the lack of hydration of your skin.
         </p>
-        
+
+        <p>
+            Where to use in the routine: Second AM / Third PM
+        </p>
         
         <p>So you have <span>{{skinChosen}}</span> skin. These were the recommended products:</p>
 
@@ -24,31 +27,12 @@ let hydratingToner = Vue.component('hydrating-toner', {
             <div class="previous">
                 <router-link to="/second-cleanser" active-class="active"><</router-link></router-link>
             </div>
-            <li 
-                class="product-card"
+            <product 
+                :product="product"
                 v-if="product.skin.includes(skinChosen)"
-                v-for="(product, i) in products.hydratingToners"
-                :class="{ activeclass: product.isActive }
-                
-            ">
-                <div>
-                    <h4>{{product.name}}</h4>
-                    <div class="img-size"><img :src="product.img"></div>
-                        <p>Where to buy:</p>
-                        <div class="links">
-                        <a :href="product.amazon" target="_blank" class="card-link">Amazon</a>
-                        <a :href="product.notAmazonURL" target="_blank" class="card-link">{{product.notAmazonStore}}</a>
-                    </div>
-                    <p>Ingredients:</p>
-                        <a :href="product.cosDNALink" target="_blank" class="card-link">CosDNA Analysis</a>
-                        <a :href="product.skincarismaLink" target="_blank" class="card-link">Skincarisma Analysis</a>
-                </div>
-                <button class="btn-more-ingredients" @click="toggle(product)">Show Ingredients</button>
-                <div v-if="product.isActive">
-                    {{product.ingredients}}
-                </div>
-
-            </li>
+                v-for="product in products.hydratingToners"
+            >
+            </product>
             <div class="next">
                 <router-link to="/moisturizer" active-class="active">></router-link></router-link>
             </div>
