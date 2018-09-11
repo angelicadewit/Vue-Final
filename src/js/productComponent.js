@@ -27,5 +27,12 @@ let product = Vue.component('product', {
                 {{product.ingredients}}
             </div>
         </li>
-    `
+    `,
+    methods: {
+        toggle: function(product){
+            console.log(product.isActive)
+            product.isActive = !product.isActive
+            // button.text = product.isActive ? 'Hide' : 'Show';
+        }
+	}
 })

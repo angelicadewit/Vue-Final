@@ -30,22 +30,22 @@ $backgroundColor: #F1EDE3;
 		transform: translateX(0%);
 	}
 	20%{
-		transform: translateX(-25%);
+		transform: translateX(-5%);
 	}
 	30%{
-		transform: translateX(25%);
+		transform: translateX(5%);
 	}
 	40%{
-		transform: translateX(50%);
+		transform: translateX(10%);
 	}
 	50%{
 		transform: translateX(0%);
 	}	
 	60%{
-		transform: translateX(25%);
+		transform: translateX(10%);
 	}
 	70%{
-		transform: translateX(50%);
+		transform: translateX(20%);
 	}
 	80%{
 		transform: translateX(0%);
@@ -57,25 +57,22 @@ $backgroundColor: #F1EDE3;
 		transform: translateX(0%);
 	}
 	20%{
-		transform: translateX(25%);
+		transform: translateX(5%);
 	}
 	30%{
-		transform: translateX(-25%);
+		transform: translateX(-5%);
 	}
 	40%{
-		transform: translateX(-50%);
+		transform: translateX(-10%);
 	}
 	50%{
 		transform: translateX(0%);
 	}	
 	60%{
-		transform: translateX(-25%);
+		transform: translateX(-10%);
 	}
 	70%{
-		transform: translateX(-50%);
-	}
-	70%{
-		transform: translateX(-50%);
+		transform: translateX(-20%);
 	}
 	80%{
 		transform: translateX(0%);
@@ -193,9 +190,6 @@ body {
 
 		.btn-more-ingredients {
 			width: fit-content;
-			padding: 10px;
-			justify-content: center; 
-			align-content: center;
 			padding: 10px 25px;
 			font-family: "raleway", sans-serif;
 			margin: 10px;
@@ -206,6 +200,8 @@ body {
 			display: inline-block;
 			border: 2px solid #000;
 			font-size: 18px;
+			bottom: 0px;
+			
 	
 			&:hover {
 				background: #000;
@@ -342,6 +338,13 @@ body {
 			cursor: pointer;
 			text-decoration: none;
 			color: black;
+		}
+
+		.next-span,
+		.previous-span{
+			font-size: 24px;
+			display: block;
+			text-decoration: none;
 		}
 	}
 

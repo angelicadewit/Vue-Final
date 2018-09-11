@@ -85,11 +85,4 @@ let tldr = Vue.component('tdlr', {
 
     
     `,
-    methods: {
-        toggle: function(product){
-            console.log(product.isActive)
-            product.isActive = !product.isActive
-            button.text = product.isActive ? 'Hide' : 'Show';
-        }
-	}
 })
