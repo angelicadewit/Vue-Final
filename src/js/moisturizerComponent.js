@@ -11,7 +11,14 @@ let moisturizer = Vue.component('moisturizer', {
 	<div>
         <h2>Moisturizers</h2>
         <p>
-            This step helps seal in the moisture you added back to you skin. If this is the first time that you are taking care of your skin, there is a high chance that you had messed up your moisture barrier.
+            This step helps seal in the moisture you added back to you skin.
+        </p>
+            
+        <p>
+            If this is the first time that you are taking care of your skin, there is a high chance that you had messed up your moisture barrier.
+        </p>
+
+        <p>
             People with oily skin might want to look into more watery moisturizers such as lotions since their face overproduce these types of oils. The dry skinned folks would gravitate towards heavy creams to seal in the moisture that their skin can't produce.
             Typically, moisturizers help most people who have <span>dehydrated</span> skin to figure out what their skin type is. Please take the time to read the ingredients as some moisturizers provide extra benefits such as ceramides and niacinamide.
         </p>

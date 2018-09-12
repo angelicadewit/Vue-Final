@@ -20,7 +20,7 @@ TABLE OF CONTENTS:
 $headerText: "Alegreya";
 $bodyText: "Montserrat";
 $linkText: "Raleway";
-$headerColor: #51A7AD;
+$headerColor: #295356;
 $wrapperColor: #F7A7BF;
 // $wrapperColor: #F5ABB4;
 $backgroundColor: #F1EDE3;
@@ -405,7 +405,7 @@ body {
 			right: -6px;
 			border-width: 0 2px 2px 0;
 		}
-		&:hover:before, &:hover:after {
+		&:hover:before, &:hover:after{
 			width: calc(100% + 12px);
 			height: calc(100% + 12px);
 			border-color: #eb1777;
@@ -414,6 +414,21 @@ body {
 			color :#fff;
 			background-color: #eb1777;
 			border-color: #eb1777;
+		}
+
+		&:disabled {
+			opacity: 0.5;
+			border-color: black;
+			background-color: black;
+			color: white;
+			cursor: not-allowed;
+
+			&:disabled:before, &:disabled:after{
+				width: calc(100% + 12px);
+				height: calc(100% + 12px);
+				border-color: black;
+				cursor: not-allowed;
+			}
 		}
 	}
 

@@ -39,11 +39,11 @@ let home = Vue.component('home', {
 
 		<div class="buttons">
 			<router-link to="/tldr">
-				<button class="home-component">View Products Only</button>
+				<button class="home-component" :disabled="localSkinChosen === ''">View Products Only</button>
 			</router-link>
 
 			<router-link to="/first-cleanser">
-				<button class="home-component">Let's Go</button>
+				<button class="home-component" :disabled="localSkinChosen === ''">Let's Go</button>
 			</router-link>
 		</div>	
 

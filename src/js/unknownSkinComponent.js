@@ -63,7 +63,7 @@ let unknownSkin = Vue.component('unknown-skin', {
 
         <div class="buttons">
             <router-link to="/first-cleanser">
-                <button class="home-component">Let's Go</button>
+                <button class="home-component" :disabled="localSkinChosen === ''">Let's Go</button>
             </router-link>
         </div>
 	</div>

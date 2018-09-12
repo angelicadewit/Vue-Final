@@ -20,7 +20,10 @@ let product = Vue.component('product', {
                 <p>Ingredients:</p>
                     <a :href="product.cosDNALink" target="_blank" class="card-link">CosDNA Analysis</a>
                     <a :href="product.skincarismaLink" target="_blank" class="card-link">Skincarisma Analysis</a>
-                <button class="btn-more-ingredients" @click="toggle(product)">Show Ingredients</button>
+                <button class="btn-more-ingredients" @click="toggle(product)">
+                    <span v-if="product.isActive">Hide Ingredients</span>
+                    <span v-else>Show Ingredients</span>
+                </button>
             </div>
             
             <div v-if="product.isActive">
@@ -32,7 +35,6 @@ let product = Vue.component('product', {
         toggle: function(product){
             console.log(product.isActive)
             product.isActive = !product.isActive
-            // button.text = product.isActive ? 'Hide' : 'Show';
         }
 	}
 })
