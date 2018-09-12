@@ -264,6 +264,7 @@ body {
 
 	h2{
 		font-family: $headerText;
+		color: $headerColor;
 		font-size: 3em;
 		padding: 30px;
 	}
@@ -417,7 +418,7 @@ body {
 		}
 
 		&:disabled {
-			opacity: 0.5;
+			opacity: 0.2;
 			border-color: black;
 			background-color: black;
 			color: white;
