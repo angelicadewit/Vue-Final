@@ -122,6 +122,24 @@ table {
 	}
 }
 
+@keyframes ani-panel-move-right {
+	0% {
+		clip-path: polygon(0 0, 13% 0, 44% 100%, 0% 100%);
+	}
+	25% {
+		clip-path: polygon(0 0, 69% 0, 44% 100%, 0% 100%);
+	}
+	50% {
+		clip-path: polygon(0 0, 69% 0, 82% 100%, 0% 100%);
+	}
+	75% {
+		clip-path: polygon(0 0, 100% 0, 82% 100%, 0% 100%);
+	}
+	100% {
+		clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+	}
+}
+
 /* 1. Main Layout ================================= */
 * {
 	box-sizing: border-box;
@@ -159,7 +177,7 @@ body {
 
 /* 2. Content ================================= */
 #app {
-	padding-bottom: 30px;
+	padding: 30px 0px;
 }
 
 #app .product-list {
@@ -456,14 +474,13 @@ body {
 	border-color: black;
 	background-color: black;
 	color: white;
-	cursor: not-allowed;
 }
 
 #app .home-component:disabled:disabled:before, #app .home-component:disabled:disabled:after {
 	width: calc(100% + 12px);
 	height: calc(100% + 12px);
 	border-color: black;
-	cursor: not-allowed;
+	cursor: none;
 }
 
 #app h4 {
@@ -488,6 +505,36 @@ body {
 #app h4 a:hover {
 	box-shadow: inset 500px 0 0 0 #eb1777;
 	color: white;
+}
+
+#app .info-wrapper {
+	width: 80%;
+	margin: auto;
+}
+
+#app .first-cleanser {
+	background: #F491AE;
+	padding-bottom: 20px;
+}
+
+#app .second-cleanser {
+	background: #96DEC8;
+	padding-bottom: 20px;
+}
+
+#app .moisturizer {
+	background: #90E1F5;
+	padding-bottom: 20px;
+}
+
+#app .hydrating-toner {
+	background: #FFDB9A;
+	padding-bottom: 20px;
+}
+
+#app .sunscreen {
+	background: #B7A7F7;
+	padding-bottom: 20px;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -79,6 +79,24 @@ $backgroundColor: #F1EDE3;
 	}	
 }
 
+@keyframes ani-panel-move-right{
+	0%{
+		clip-path: polygon(0 0, 13% 0, 44% 100%, 0% 100%);
+	}
+	25%{
+		clip-path: polygon(0 0, 69% 0, 44% 100%, 0% 100%);
+	}
+	50%{
+		clip-path: polygon(0 0, 69% 0, 82% 100%, 0% 100%);
+	}
+	75%{
+		clip-path: polygon(0 0, 100% 0, 82% 100%, 0% 100%);
+	}
+	100%{
+		clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+	}
+}
+
 
 
 /* 1. Main Layout ================================= */
@@ -124,7 +142,7 @@ body {
 
 
 #app {
-	padding-bottom: 30px;
+	padding: 30px 0px;
 
 	.product-list{
 		display: flex;
@@ -293,6 +311,7 @@ body {
 		opacity: 0
 	}
 
+
 	.options{
 		display: flex;
 		justify-content: space-around;
@@ -422,13 +441,12 @@ body {
 			border-color: black;
 			background-color: black;
 			color: white;
-			cursor: not-allowed;
 
 			&:disabled:before, &:disabled:after{
 				width: calc(100% + 12px);
 				height: calc(100% + 12px);
 				border-color: black;
-				cursor: not-allowed;
+				cursor: none;
 			}
 		}
 	}
@@ -455,6 +473,36 @@ body {
 				color: white;
 			}
 		}	
-	}	
+	}
+	
+	.info-wrapper{
+		width: 80%;
+		margin: auto;
+	}
+
+	.first-cleanser{
+		background: #F491AE;
+		padding-bottom: 20px;
+	}
+
+	.second-cleanser{
+		background: #96DEC8;
+		padding-bottom: 20px;
+	}
+
+	.moisturizer{
+		background: #90E1F5;
+		padding-bottom: 20px;
+	}
+
+	.hydrating-toner{
+		background: #FFDB9A;
+		padding-bottom: 20px;
+	}
+
+	.sunscreen{
+		background: #B7A7F7;
+		padding-bottom: 20px;
+	}
 }
 
