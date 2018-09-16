@@ -199,7 +199,7 @@ body {
 
 			@include desktop{
 				display: flex;
-				width: 30%;
+				width: 45%;
 				flex-direction: column;
 			}
 		}
@@ -555,7 +555,7 @@ body {
 			transition: all 0.4s ease-in-out 0s;
 		
 			&:hover{
-				box-shadow: inset 500px 0 0 0 #eb1777;
+				box-shadow: inset 0 100px 0 0 #eb1777;
 				color: white;
 			}
 		}	
