@@ -199,7 +199,7 @@ body {
 
 			@include desktop{
 				display: flex;
-				width: 45%;
+				width: 30%;
 				flex-direction: column;
 			}
 		}
@@ -333,7 +333,6 @@ body {
 		color: $headerColor;
 		font-size: 3em;
 		
-
 		@include tablet{
 			padding: 30px 0px;
 		}
@@ -348,6 +347,18 @@ body {
 		@include desktop{
 			padding: 10px 0px;
 			text-align: left;
+		}
+
+		a{
+			color: $headerColor;
+			text-decoration: none;
+			transition: all .2s;
+
+			&:hover{
+				transform: skewX(-10deg);
+				color: #eb1777;
+				transition: .2s;
+			}
 		}
 	}
 	

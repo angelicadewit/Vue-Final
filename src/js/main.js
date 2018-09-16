@@ -9,7 +9,7 @@ const router = new VueRouter({
 	{ path: '/unknown-skin', component: unknownSkin },
 	{ path: '/tldr', component: tldr },
 	{ path: '/product', component: product },
-	// { path: '/resources', component: resources },
+	{ path: '/resources', component: resources },
 	],
 	linkActiveClass: "active",	
 	linkExactActiveClass: "exact-active",

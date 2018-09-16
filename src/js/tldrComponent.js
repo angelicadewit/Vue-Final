@@ -82,8 +82,13 @@ let tldr = Vue.component('tdlr', {
                 </product>
                 </ul>
             </ol>
+
+            <div class="buttons">
+                <router-link to="/resources">
+                    <button class="home-component">Lets Check Out More Resources</button>
+                </router-link>
+            </div>
         </div>
-	</div>
 
     
     `,

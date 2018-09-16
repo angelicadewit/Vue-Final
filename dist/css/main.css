@@ -222,7 +222,7 @@ body {
 @media only screen and (min-width: 1200px) {
 	#app .product-card {
 		display: flex;
-		width: 45%;
+		width: 30%;
 		flex-direction: column;
 	}
 }
@@ -370,6 +370,18 @@ h3 {
 		padding: 10px 0px;
 		text-align: left;
 	}
+}
+
+h3 a {
+	color: #295356;
+	text-decoration: none;
+	transition: all .2s;
+}
+
+h3 a:hover {
+	transform: skewX(-10deg);
+	color: #eb1777;
+	transition: .2s;
 }
 
 .bold {
