@@ -97,6 +97,29 @@ $backgroundColor: #F1EDE3;
 	}
 }
 
+$tablet-breakpoint: 740px;
+$desktop-breakpoint: 900px;
+$bigger-desktop-breakpoint: 1200px;
+
+
+@mixin tablet{
+	@media only screen and (min-width: $tablet-breakpoint){
+		@content;
+	}
+}
+
+@mixin desktop{
+	@media only screen and (min-width: $desktop-breakpoint){
+		@content;
+	}
+}
+
+@mixin bigger-desktop{
+	@media only screen and (min-width: $bigger-desktop-breakpoint){
+		@content;
+	}
+}
+
 
 
 /* 1. Main Layout ================================= */
@@ -110,23 +133,36 @@ body {
 }
 
 .wrapper{
-	width: 80%;	
 	background: $wrapperColor;
 	margin: 0 auto;
 	font-family: $bodyText;
 	font-size: 20px;
 
+	@include tablet{
+		width: 80%;	
+	}
+
 	h1{
 		font-family: "Princess Sofia";
-		font-size: 4em;
-		padding: 30px;
+		font-size: 2.5em;
+		padding: 0px 0px 30px;
+
+		@include tablet{
+			font-size: 4em;
+			padding: 30px;
+		}
 	}
 
 	.logo{
 		display: flex;
+		flex-direction: column;
 		justify-content: center;
 		align-items: center;
 		background: $backgroundColor;
+
+		@include tablet{
+			flex-direction: row;	
+		}
 
 		img{
 			max-width: 100%;
@@ -145,16 +181,26 @@ body {
 	padding: 30px 0px;
 
 	.product-list{
-		display: flex;
-		justify-content: space-evenly;
+	
+
+		@include tablet{
+			display: flex;
+			justify-content: space-evenly;
+		}
+	}
 	
 		.product-card {
-			padding: 15px;
-			margin: 15px;
 			background: white;
 			display: flex;
-			flex-direction: column;
-			width: 30%;
+			flex-direction: row;
+			padding: 15px;
+			margin-bottom: 40px;
+			max-height: 1000px;
+
+			@include tablet{
+				width: 30%;
+				flex-direction: column;
+			}
 		}
 
 		.active{
@@ -278,13 +324,18 @@ body {
 
 	p{
 		padding: .75em 30px;
+		line-height: 1.35em;
 	}
 
 	h2{
 		font-family: $headerText;
 		color: $headerColor;
 		font-size: 3em;
-		padding: 30px;
+		
+
+		@include tablet{
+			padding: 30px;
+		}
 	}
 
 	h3{
@@ -299,6 +350,7 @@ body {
 	}
 
 	.fade-enter-active, .fade-leave-active {
+		transform: translateY(100%, 0);
 		transition-property: opacity;
 		transition-duration: .25s;
 	}
@@ -308,8 +360,22 @@ body {
 	}
 	
 	.fade-enter, .fade-leave-active {
-		opacity: 0
+		transform: translateY(100%, 0);
+		opacity: 0;
 	}
+
+	// .slide-enter {
+	// 	transform: translate(100%, 0);
+	// }
+	
+	// .slide-leave-to {
+	// 	transform: translate(-100%, 0);
+	// }
+
+	// .slide-leave-active,
+	// .slide-enter-active {
+	// 	transition: 1s;
+	// }
 
 
 	.options{
@@ -345,8 +411,17 @@ body {
 	}
 
 	.next, .previous{
-		justify-content: center; 
-		align-self: center; 
+
+		position: relative;
+		left: 40%;
+		padding-bottom: 20px;
+
+
+		@include desktop{
+			justify-content: center; 
+			align-self: center; 
+		}
+		
 
 		&.disabled{
 			visibility: hidden;
@@ -478,7 +553,7 @@ body {
 	.info-wrapper{
 		width: 80%;
 		margin: auto;
-	}
+	
 
 	.first-cleanser{
 		background: #F491AE;

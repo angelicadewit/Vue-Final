@@ -9,9 +9,10 @@ let tldr = Vue.component('tdlr', {
         }
     },
 	template: `
-	<div>
+    <div>
+    <div class="info-wrapper">
         <p>Based on your {{skinChosen}} skin, these are the recommended products for you to try</p>
-        <p>Please practice YMMV (Your milage may vary). Every skin is unique and just because these products are popular for {{skinChosen}} skin based on replies from the Asian Beauty subreddit, it doesnt mean that it's guaranteed to work for you.</p>
+        <p>Please practice YMMV (Your mileage may vary). Every skin is unique and just because these products are popular for {{skinChosen}} skin based on replies from the Asian Beauty subreddit, it doesnt mean that it's guaranteed to work for you.</p>
             <ol>
                 <li class="header">
                     <h3>First Cleanser</h3>
@@ -81,6 +82,7 @@ let tldr = Vue.component('tdlr', {
                 </product>
                 </ul>
             </ol>
+        </div>
 	</div>
 
     

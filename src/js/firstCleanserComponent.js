@@ -18,11 +18,10 @@ let firstCleanser = Vue.component('first-cleanser', {
                     <p>
                         A first cleanser is meant to remove makeup, moisturizers, sunscreen and other oil-based products. 
                     </p>
-                    <p>While it seems counterintuitive, the idea is that "like removes like". </p>
+                    <p>While it seems counterintuitive, the idea is that "like removes like". So, effectively what you’re doing  is dissolving and wiping away all the icky dirty oil from your face and replenishing it with clean, nourishing oil.</p>
 
                     <p>
-                        People with oily skin who might be hesitant to do this because the cleanser will add to the already oily-feeling to their face,
-                        oil cleansing helps remove some of that. People with dry skin might want to skip this step or use another type of makeup and sunscreen removers such as micellar water as they feel like it dries out their skin
+                        People with oily skin might be hesitant to do this because the cleanser will add to the already oily-feeling to their face. People with dry skin might want to skip this step or use another type of makeup and sunscreen removers such as micellar water as they feel like it dries out their skin
                     </p>
                     <p>
                         Where to use in the routine: No AM / First PM

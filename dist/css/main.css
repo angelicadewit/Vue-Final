@@ -150,24 +150,43 @@ body {
 }
 
 .wrapper {
-	width: 80%;
 	background: #F7A7BF;
 	margin: 0 auto;
 	font-family: "Montserrat";
 	font-size: 20px;
 }
 
+@media only screen and (min-width: 740px) {
+	.wrapper {
+		width: 80%;
+	}
+}
+
 .wrapper h1 {
 	font-family: "Princess Sofia";
-	font-size: 4em;
-	padding: 30px;
+	font-size: 2.5em;
+	padding: 0px 0px 30px;
+}
+
+@media only screen and (min-width: 740px) {
+	.wrapper h1 {
+		font-size: 4em;
+		padding: 30px;
+	}
 }
 
 .wrapper .logo {
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	background: #F1EDE3;
+}
+
+@media only screen and (min-width: 740px) {
+	.wrapper .logo {
+		flex-direction: row;
+	}
 }
 
 .wrapper .logo img {
@@ -180,26 +199,35 @@ body {
 	padding: 30px 0px;
 }
 
-#app .product-list {
-	display: flex;
-	justify-content: space-evenly;
+@media only screen and (min-width: 740px) {
+	#app .product-list {
+		display: flex;
+		justify-content: space-evenly;
+	}
 }
 
-#app .product-list .product-card {
-	padding: 15px;
-	margin: 15px;
+#app .product-card {
 	background: white;
 	display: flex;
-	flex-direction: column;
-	width: 30%;
+	flex-direction: row;
+	padding: 15px;
+	margin-bottom: 40px;
+	max-height: 1000px;
 }
 
-#app .product-list .active {
+@media only screen and (min-width: 740px) {
+	#app .product-card {
+		width: 30%;
+		flex-direction: column;
+	}
+}
+
+#app .active {
 	display: block;
 	height: auto;
 }
 
-#app .product-list h4 {
+#app h4 {
 	font-family: "Alegreya";
 	color: #295356;
 	font-size: 1.2em;
@@ -207,23 +235,23 @@ body {
 	padding-bottom: 10px;
 }
 
-#app .product-list .links {
+#app .links {
 	display: flex;
 	justify-content: space-around;
 	padding-bottom: 20px;
 }
 
-#app .product-list p {
+#app p {
 	padding: 0px 0px 10px;
 }
 
-#app .product-list a {
+#app a {
 	padding: 5px;
 	position: relative;
 	display: block;
 }
 
-#app .product-list .img-size {
+#app .img-size {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -232,18 +260,18 @@ body {
 	margin: auto;
 }
 
-#app .product-list .img-size img {
+#app .img-size img {
 	max-width: 100%;
 	max-height: 100%;
 }
 
-#app .product-list small {
+#app small {
 	padding: 5px 0px;
 	font-size: 12px;
 	font-family: verdana;
 }
 
-#app .product-list .btn-more-ingredients {
+#app .btn-more-ingredients {
 	width: fit-content;
 	padding: 10px 25px;
 	font-family: "raleway", sans-serif;
@@ -258,12 +286,12 @@ body {
 	bottom: 0px;
 }
 
-#app .product-list .btn-more-ingredients:hover {
+#app .btn-more-ingredients:hover {
 	background: #000;
 	color: #fff;
 }
 
-#app .product-list .card-link {
+#app .card-link {
 	position: relative;
 	display: inline-block;
 	font-size: 20px;
@@ -276,16 +304,16 @@ body {
 	width: fit-content;
 }
 
-#app .product-list .card-link:hover {
+#app .card-link:hover {
 	color: #f7a3c9;
 }
 
-#app .product-list .card-link:hover::after, #app .product-list .card-link:hover::before {
+#app .card-link:hover::after, #app .card-link:hover::before {
 	width: 100%;
 	left: 0;
 }
 
-#app .product-list .card-link::after, #app .product-list .card-link::before {
+#app .card-link::after, #app .card-link::before {
 	content: '';
 	position: absolute;
 	top: calc(100% + 5px);
@@ -294,61 +322,69 @@ body {
 	height: 3px;
 }
 
-#app .product-list .card-link::before {
+#app .card-link::before {
 	transition: width 0.4s cubic-bezier(0.51, 0.18, 0, 0.88) 0.1s;
 	background: #17eb21;
 }
 
-#app .product-list .card-link::after {
+#app .card-link::after {
 	transition: width 0.2s cubic-bezier(0.29, 0.18, 0.26, 0.83);
 	background: #17e1eb;
 }
 
-#app span {
+span {
 	text-decoration: underline;
 }
 
-#app p {
+p {
 	padding: .75em 30px;
+	line-height: 1.35em;
 }
 
-#app h2 {
+h2 {
 	font-family: "Alegreya";
 	color: #295356;
 	font-size: 3em;
-	padding: 30px;
 }
 
-#app h3 {
+@media only screen and (min-width: 740px) {
+	h2 {
+		padding: 30px;
+	}
+}
+
+h3 {
 	font-family: "Alegreya";
 	color: #295356;
 	font-size: 2em;
 	padding: 10px 30px 0px;
 }
 
-#app .bold {
+.bold {
 	font-weight: 900;
 }
 
-#app .fade-enter-active, #app .fade-leave-active {
+.fade-enter-active, .fade-leave-active {
+	transform: translateY(100%, 0);
 	transition-property: opacity;
 	transition-duration: .25s;
 }
 
-#app .fade-enter-active {
+.fade-enter-active {
 	transition-delay: .25s;
 }
 
-#app .fade-enter, #app .fade-leave-active {
+.fade-enter, .fade-leave-active {
+	transform: translateY(100%, 0);
 	opacity: 0;
 }
 
-#app .options {
+.options {
 	display: flex;
 	justify-content: space-around;
 }
 
-#app .select-style {
+.select-style {
 	display: block;
 	margin: 0 auto;
 	border: 2px solid black;
@@ -358,7 +394,7 @@ body {
 	background: transparent;
 }
 
-#app .select-style select {
+.select-style select {
 	padding: 5px 8px;
 	width: 100%;
 	border: none;
@@ -369,20 +405,28 @@ body {
 	font-size: 20px;
 }
 
-#app .select-style select:focus {
+.select-style select:focus {
 	outline: none;
 }
 
-#app .next, #app .previous {
-	justify-content: center;
-	align-self: center;
+.next, .previous {
+	position: relative;
+	left: 40%;
+	padding-bottom: 20px;
 }
 
-#app .next.disabled, #app .previous.disabled {
+@media only screen and (min-width: 900px) {
+	.next, .previous {
+		justify-content: center;
+		align-self: center;
+	}
+}
+
+.next.disabled, .previous.disabled {
 	visibility: hidden;
 }
 
-#app .next a, #app .previous a {
+.next a, .previous a {
 	font-size: 5em;
 	font-family: "Gloria Hallelujah";
 	cursor: pointer;
@@ -390,23 +434,23 @@ body {
 	color: black;
 }
 
-#app .next .next-span,
-#app .next .previous-span, #app .previous .next-span,
-#app .previous .previous-span {
+.next .next-span,
+.next .previous-span, .previous .next-span,
+.previous .previous-span {
 	font-size: 24px;
 	display: block;
 	text-decoration: none;
 }
 
-#app .next:hover {
+.next:hover {
 	animation: ani-move-right 1s .2s;
 }
 
-#app .previous:hover {
+.previous:hover {
 	animation: ani-move-left 1s .2s;
 }
 
-#app .buttons {
+.buttons {
 	padding-top: 20px;
 	width: 85%;
 	margin: auto;
@@ -415,7 +459,7 @@ body {
 	position: relative;
 }
 
-#app .home-component {
+.home-component {
 	color: #eb1777;
 	background: transparent;
 	border-width: 2px;
@@ -431,7 +475,7 @@ body {
 	font-size: 20px;
 }
 
-#app .home-component:before, #app .home-component:after {
+.home-component:before, .home-component:after {
 	content: '';
 	display: block;
 	position: absolute;
@@ -444,52 +488,52 @@ body {
 	cursor: pointer;
 }
 
-#app .home-component:before {
+.home-component:before {
 	top: -6px;
 	left: -6px;
 	border-width: 2px 0 0 2px;
 	z-index: 5;
 }
 
-#app .home-component:after {
+.home-component:after {
 	bottom: -6px;
 	right: -6px;
 	border-width: 0 2px 2px 0;
 }
 
-#app .home-component:hover:before, #app .home-component:hover:after {
+.home-component:hover:before, .home-component:hover:after {
 	width: calc(100% + 12px);
 	height: calc(100% + 12px);
 	border-color: #eb1777;
 }
 
-#app .home-component:hover {
+.home-component:hover {
 	color: #fff;
 	background-color: #eb1777;
 	border-color: #eb1777;
 }
 
-#app .home-component:disabled {
+.home-component:disabled {
 	opacity: 0.2;
 	border-color: black;
 	background-color: black;
 	color: white;
 }
 
-#app .home-component:disabled:disabled:before, #app .home-component:disabled:disabled:after {
+.home-component:disabled:disabled:before, .home-component:disabled:disabled:after {
 	width: calc(100% + 12px);
 	height: calc(100% + 12px);
 	border-color: black;
 	cursor: none;
 }
 
-#app h4 {
+h4 {
 	font-size: 2em;
 	text-align: center;
 	padding-bottom: 15px;
 }
 
-#app h4 a {
+h4 a {
 	text-decoration: none;
 	color: #eb1777;
 	font-family: "raleway";
@@ -502,37 +546,37 @@ body {
 	transition: all 0.4s ease-in-out 0s;
 }
 
-#app h4 a:hover {
+h4 a:hover {
 	box-shadow: inset 500px 0 0 0 #eb1777;
 	color: white;
 }
 
-#app .info-wrapper {
+.info-wrapper {
 	width: 80%;
 	margin: auto;
 }
 
-#app .first-cleanser {
+.info-wrapper .first-cleanser {
 	background: #F491AE;
 	padding-bottom: 20px;
 }
 
-#app .second-cleanser {
+.info-wrapper .second-cleanser {
 	background: #96DEC8;
 	padding-bottom: 20px;
 }
 
-#app .moisturizer {
+.info-wrapper .moisturizer {
 	background: #90E1F5;
 	padding-bottom: 20px;
 }
 
-#app .hydrating-toner {
+.info-wrapper .hydrating-toner {
 	background: #FFDB9A;
 	padding-bottom: 20px;
 }
 
-#app .sunscreen {
+.info-wrapper .sunscreen {
 	background: #B7A7F7;
 	padding-bottom: 20px;
 }
