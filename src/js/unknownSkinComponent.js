@@ -52,21 +52,22 @@ let unknownSkin = Vue.component('unknown-skin', {
                     <p>It's easier to fix dehydrated skin with a hydrating toner and moisturizer and then reassess what your skin type is.</p>
                 </li>
             </ul>
-        </div>
     
 
-        <h2>Ready to start?</h2>
-        <div class="select-style">
-            <select v-model="localSkinChosen">	
-                <option value="">Choose a skin type</option>
-                <option v-for="skin in skins" :value="skin"> {{ skin }} </option>
-            </select>
-        </div>
+            <h3>Ready to start?</h3>
+            <div class="select-style">
+                <select v-model="localSkinChosen">	
+                    <option value="">Choose a skin type</option>
+                    <option v-for="skin in skins" :value="skin"> {{ skin }} </option>
+                </select>
+            </div>
 
-        <div class="buttons">
-            <router-link to="/first-cleanser">
-                <button class="home-component" :disabled="localSkinChosen === ''">Let's Go</button>
-            </router-link>
+            <div class="buttons">
+                <router-link to="/first-cleanser">
+                    <button class="home-component" :disabled="localSkinChosen === ''">Let's Go</button>
+                </router-link>
+            </div>
+
         </div>
 	</div>
     `

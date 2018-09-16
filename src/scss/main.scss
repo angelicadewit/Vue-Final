@@ -97,9 +97,8 @@ $backgroundColor: #F1EDE3;
 	}
 }
 
-$tablet-breakpoint: 740px;
-$desktop-breakpoint: 900px;
-$bigger-desktop-breakpoint: 1200px;
+$tablet-breakpoint: 640px;
+$desktop-breakpoint: 1200px;
 
 
 @mixin tablet{
@@ -114,11 +113,11 @@ $bigger-desktop-breakpoint: 1200px;
 	}
 }
 
-@mixin bigger-desktop{
-	@media only screen and (min-width: $bigger-desktop-breakpoint){
-		@content;
-	}
-}
+// @mixin bigger-desktop{
+// 	@media only screen and (min-width: $bigger-desktop-breakpoint){
+// 		@content;
+// 	}
+// }
 
 
 
@@ -148,8 +147,12 @@ body {
 		padding: 0px 0px 30px;
 
 		@include tablet{
-			font-size: 4em;
+			font-size: 3em;
 			padding: 30px;
+		}
+
+		@include desktop{
+			font-size: 4em;
 		}
 	}
 
@@ -182,8 +185,7 @@ body {
 
 	.product-list{
 	
-
-		@include tablet{
+		@include desktop{
 			display: flex;
 			justify-content: space-evenly;
 		}
@@ -191,13 +193,12 @@ body {
 	
 		.product-card {
 			background: white;
-			display: flex;
-			flex-direction: row;
 			padding: 15px;
 			margin-bottom: 40px;
 			max-height: 1000px;
 
-			@include tablet{
+			@include desktop{
+				display: flex;
 				width: 30%;
 				flex-direction: column;
 			}
@@ -334,7 +335,7 @@ body {
 		
 
 		@include tablet{
-			padding: 30px;
+			padding: 30px 0px;
 		}
 	}
 
@@ -342,8 +343,14 @@ body {
 		font-family: $headerText;
 		color: $headerColor;
 		font-size: 2em;
-		padding: 10px 30px 0px;
+		text-align: center;
+
+		@include desktop{
+			padding: 10px 0px;
+			text-align: left;
+		}
 	}
+	
 
 	.bold{
 		font-weight: 900;
@@ -418,6 +425,7 @@ body {
 
 
 		@include desktop{
+			left: auto;
 			justify-content: center; 
 			align-self: center; 
 		}
@@ -455,9 +463,12 @@ body {
 		padding-top: 20px;
 		width: 85%;
 		margin: auto;
-		display: flex;
-		justify-content: flex-end;
 		position: relative;
+
+		@include desktop{
+			display: flex;
+			justify-content: flex-end;
+		}
 	}
 
 	.home-component {

@@ -30,8 +30,8 @@ let firstCleanser = Vue.component('first-cleanser', {
             </div>
         
             <ul class="product-list">
-            <div class="previous disabled">
-                <router-link to="/second-cleanser" active-class="active"><</router-link>
+            <div class="previous">
+                <router-link to="/unknown-skin" active-class="active"><<span class="previous-span">Change</span><span class="previous-span">Type</span></router-link>
             </div>
                 <product 
                     :product="product"
