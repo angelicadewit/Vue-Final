@@ -5,8 +5,6 @@ let moisturizer = Vue.component('moisturizer', {
             isActive: false,
         }
     },
-    watch: {
-    },
 	template: `
     <div class="moisturizer">
         <div class="info-wrapper">
