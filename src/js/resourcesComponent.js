@@ -33,7 +33,15 @@ let resources = Vue.component('resources', {
                             <p>Another popular blogger within the k-beauty community, Tracy has an excellent visual guide on the full 10-15 step routine as well as reviews and tips for oily-skinned girls</p>
                         </li>
                     </ol>
-                    </ol>
+                    <div class="buttons">
+                    <router-link to="/">
+                            <button class="home-component">Start Again</button>
+                        </router-link>
+        
+                        <router-link to="/resources">
+                            <button class="home-component">More Resources</button>
+                        </router-link>
+                    </div>
             </div>
         </div>
     `,

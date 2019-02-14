@@ -23,7 +23,6 @@ let home = Vue.component('home', {
 		</div>
 			<h2>Ready To Start?</h2>
 		
-
 		<h4>
 			<router-link to="/unknown-skin" class="unknown-skin-link">
 				I don't know my skin

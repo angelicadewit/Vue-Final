@@ -9,8 +9,8 @@ let moisturizer = Vue.component('moisturizer', {
     },
 	template: `
     <div class="moisturizer">
-        <div class="info-wrapper">
-            <h2>Moisturizers</h2>
+        <div class="info-wrapper info">
+            <h2>Moisturizers for <span>{{skinChosen}}</span> skin</h2>
             <p>
                 This step helps seal in the moisture you added back to you skin.
             </p>
@@ -26,8 +26,6 @@ let moisturizer = Vue.component('moisturizer', {
             <p>
                 Where to use in the routine: Third AM / Fourth PM
             </p>
-        
-            <p>So you have <span>{{skinChosen}}</span> skin. These were the recommended products:</p>
         </div>
 
         <ul class="product-list">

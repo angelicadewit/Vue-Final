@@ -158,7 +158,7 @@ body {
 	position: relative;
 }
 
-@media only screen and (min-width: 640px) {
+@media only screen and (min-width: 800px) {
 	.wrapper {
 		width: 95%;
 		display: flex;
@@ -168,14 +168,15 @@ body {
 .wrapper h1 {
 	font-family: "Princess Sofia";
 	font-size: 2.5em;
-	padding: 0px 0px 30px;
+	padding: 30px;
 }
 
-@media only screen and (min-width: 640px) {
+@media only screen and (min-width: 800px) {
 	.wrapper h1 {
 		font-size: 3em;
-		padding: 30px;
+		padding: 15px;
 		text-align: center;
+		border-right: 5px dotted #314755;
 	}
 }
 
@@ -192,7 +193,7 @@ body {
 	background: rgba(0, 0, 0, 0);
 }
 
-@media only screen and (min-width: 640px) {
+@media only screen and (min-width: 800px) {
 	.wrapper .logo {
 		position: fixed;
 		width: 25%;
@@ -205,6 +206,23 @@ body {
 	background: white;
 	border: 1px solid black;
 	border-radius: 50px;
+}
+
+@media only screen and (min-width: 800px) {
+	.wrapper .sidebar {
+		background: url(../img/polkadot.png) no-repeat;
+		background-size: cover;
+		color: black;
+		background-size: 50%;
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+	.wrapper .sidebar .sidebar-text {
+		background: white;
+		padding: 5px;
+		margin-left: 20px;
+		margin-top: -10%;
+	}
 }
 
 .borders {
@@ -270,7 +288,7 @@ body {
 	padding: 30px 0px;
 }
 
-@media only screen and (min-width: 640px) {
+@media only screen and (min-width: 800px) {
 	#app {
 		margin-left: 30%;
 		width: 65%;
@@ -287,10 +305,12 @@ body {
 #app .product-card {
 	background: white;
 	padding: 15px;
+	margin: 0 auto;
 	margin-bottom: 40px;
 	max-height: fit-content;
 	min-height: 500px;
 	border: 1px solid black;
+	width: 80%;
 }
 
 @media only screen and (min-width: 1240px) {
@@ -302,7 +322,7 @@ body {
 }
 
 #app .active {
-	display: block;
+	display: inline-block;
 	height: auto;
 }
 
@@ -430,12 +450,7 @@ h2 {
 	font-family: "Alegreya";
 	color: #4d5e55;
 	font-size: 2.5em;
-}
-
-@media only screen and (min-width: 640px) {
-	h2 {
-		padding: 30px 0px 30px 5%;
-	}
+	padding: 30px 0px 30px 5%;
 }
 
 h3 {
@@ -520,7 +535,6 @@ h3 a:hover {
 
 .next, .previous {
 	position: relative;
-	left: 40%;
 	padding-bottom: 20px;
 }
 
@@ -562,7 +576,6 @@ h3 a:hover {
 
 .buttons {
 	padding-top: 20px;
-	width: 85%;
 	margin: auto;
 	position: relative;
 }
@@ -650,7 +663,8 @@ h4 {
 
 h4 a {
 	text-decoration: none;
-	color: #eb1777;
+	background-color: black;
+	font-weight: bold;
 	font-family: "raleway";
 	font-size: 40px;
 	display: inline-block;
@@ -659,11 +673,18 @@ h4 a {
 	text-decoration: none;
 	box-shadow: inset 0 0 0 0 #eb1777;
 	transition: all 0.4s ease-in-out 0s;
+	background-image: -webkit-linear-gradient(left, #314755 15%, #26a0da 50%, transparent 50%);
+	background-position: 100% 0;
+	background-size: 200% 200%;
+	color: transparent;
+	-webkit-transition: .3s;
+	-webkit-background-clip: text;
 }
 
 h4 a:hover {
-	box-shadow: inset 0 100px 0 0 #eb1777;
-	color: white;
+	background-position: 0 0;
+	color: transparent;
+	transition: .4s 0;
 }
 
 .info-wrapper .first-cleanser {
@@ -692,10 +713,18 @@ h4 a:hover {
 }
 
 .info {
+	width: 80%;
+	margin: 0 auto;
 	background: rgba(255, 255, 255, 0.5);
 	border: 2px solid #348874;
-	margin-bottom: 30px;
+	margin-bottom: 5%;
 	box-shadow: 3px 3px #fff, 10px 10px #888;
+}
+
+@media only screen and (min-width: 800px) {
+	.info {
+		width: 100%;
+	}
 }
 
 /*# sourceMappingURL=main.css.map */
