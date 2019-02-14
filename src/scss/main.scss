@@ -45,9 +45,6 @@ $backgroundColor: rgba(0,0,0,0);
 	60%{
 		transform: translateX(10%);
 	}
-	70%{
-		transform: translateX(20%);
-	}
 	80%{
 		transform: translateX(0%);
 	}	
@@ -71,9 +68,6 @@ $backgroundColor: rgba(0,0,0,0);
 	}	
 	60%{
 		transform: translateX(-10%);
-	}
-	70%{
-		transform: translateX(-20%);
 	}
 	80%{
 		transform: translateX(0%);
@@ -333,7 +327,13 @@ body {
 		a{
 			padding: 5px;	
 			position: relative;
-			display: block;
+			display: inline-block;
+		}
+
+		.ingredients{
+			font-size: 15px;
+			line-height: 130%;
+			margin-top: 10px;
 		}
 
 		.img-size{
@@ -430,6 +430,21 @@ body {
 		text-decoration: underline;
 	}
 
+	.dotted{
+		@include tablet{
+			border-bottom: 5px dotted #314755;
+			width: 50%;
+			position: relative;
+			left: 45%;
+			margin-bottom: 30px;
+			height: 50px;
+			margin-top: -50px;
+		}
+	}
+
+	.dotted-paragraphs{
+		border-right: 5px dotted #314755;
+	}
 
 	p{
 		padding: .75em 30px;

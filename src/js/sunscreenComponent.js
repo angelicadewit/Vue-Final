@@ -20,6 +20,7 @@ let sunscreen = Vue.component('sunscreen', {
             </p>
             <p><span>Please wear sunscreen even though you live in a cloudy area. There are still UV rays even though there is no sun</span></p>
         </div>
+        <div class="dotted"></div>
         
         <ul class="product-list">
             <product 

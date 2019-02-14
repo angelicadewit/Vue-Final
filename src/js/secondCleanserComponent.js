@@ -10,7 +10,7 @@ let secondCleanser = Vue.component('second-cleanser', {
     template:
     `
         <div class="second-cleanser">
-            <div class="info-wrapper info">
+            <div class="info-wrapper">
                 <h2>Second Cleansers for <span>{{skinChosen}}</span> skin</h2>
                     <p>
                         The cleansers found in drugstores, skincare stores and the beauty sections in most department stores are these types of cleansers.
@@ -27,8 +27,9 @@ let secondCleanser = Vue.component('second-cleanser', {
                     <p>
                         Where to use in the routine: First AM / Second PM
                     </p>
-
             </div>
+
+            <div class="dotted"></div>
                 <ul class="product-list">
 
                     <product 

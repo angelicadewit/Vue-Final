@@ -87,9 +87,6 @@ table {
 	60% {
 		transform: translateX(10%);
 	}
-	70% {
-		transform: translateX(20%);
-	}
 	80% {
 		transform: translateX(0%);
 	}
@@ -113,9 +110,6 @@ table {
 	}
 	60% {
 		transform: translateX(-10%);
-	}
-	70% {
-		transform: translateX(-20%);
 	}
 	80% {
 		transform: translateX(0%);
@@ -347,7 +341,13 @@ body {
 #app a {
 	padding: 5px;
 	position: relative;
-	display: block;
+	display: inline-block;
+}
+
+#app .ingredients {
+	font-size: 15px;
+	line-height: 130%;
+	margin-top: 10px;
 }
 
 #app .img-size {
@@ -439,6 +439,22 @@ body {
 
 span {
 	text-decoration: underline;
+}
+
+@media only screen and (min-width: 800px) {
+	.dotted {
+		border-bottom: 5px dotted #314755;
+		width: 50%;
+		position: relative;
+		left: 45%;
+		margin-bottom: 30px;
+		height: 50px;
+		margin-top: -50px;
+	}
+}
+
+.dotted-paragraphs {
+	border-right: 5px dotted #314755;
 }
 
 p {

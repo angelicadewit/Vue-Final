@@ -10,7 +10,7 @@ let firstCleanser = Vue.component('first-cleanser', {
     template: 
     `
         <div class="first-cleanser">
-            <div class="info-wrapper info">
+            <div class="info-wrapper">
                 <h2>First Cleansers for <span>{{skinChosen}}</span> skin</h2>
                     <p>
                         One of the hallmarks of Asian Beauty is the idea of double cleansing.
@@ -26,8 +26,8 @@ let firstCleanser = Vue.component('first-cleanser', {
                     <p>
                         Where to use in the routine: No AM / First PM
                     </p>
-
             </div>
+            <div class="dotted"></div>
         
             <ul class="product-list">
 

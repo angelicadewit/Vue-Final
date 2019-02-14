@@ -28,7 +28,7 @@ let product = Vue.component('product', {
                 </button>
             </div>
             
-            <div v-if="product.isActive">
+            <div class="ingredients" v-if="product.isActive">
                 {{product.ingredients}}
             </div>
         </li>

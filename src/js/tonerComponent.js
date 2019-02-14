@@ -9,7 +9,7 @@ let hydratingToner = Vue.component('hydrating-toner', {
     },
 	template: `
     <div class="hydrating-toner">
-        <div class="info-wrapper info">
+        <div class="info-wrapper">
             <h2>Hydrating Toners for <span>{{skinChosen}}</span> skin</h2>
             <p>
                 If you are completely starting out a new routine, this would be the first step to introduce products.
@@ -22,7 +22,7 @@ let hydratingToner = Vue.component('hydrating-toner', {
                 Where to use in the routine: Second AM / Third PM
             </p>
         </div>
-    
+        <div class="dotted"></div>
         <ul class="product-list">
             <product 
                 :product="product"
