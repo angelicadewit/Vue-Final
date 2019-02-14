@@ -26,19 +26,22 @@ let hydratingToner = Vue.component('hydrating-toner', {
         </div>
     
         <ul class="product-list">
-            <div class="previous">
-                <router-link to="/second-cleanser" active-class="active"><<span class="previous-span">Second</span><span class="previous-span">Cleanser</span></router-link>
-            </div>
             <product 
                 :product="product"
                 v-if="product.skin.includes(skinChosen)"
                 v-for="product in products.hydratingToners"
             >
             </product>
-            <div class="next">
-                <router-link to="/moisturizer" active-class="active">><span class="next-span">Moisturizer</span></router-link>
-            </div>
         </ul>
+
+        <div class="steps-links">
+        <div class="previous">
+            <router-link to="/second-cleanser" active-class="active"><<span class="previous-span">Second</span><span class="previous-span">Cleanser</span></router-link>
+        </div>  
+        <div class="next">
+            <router-link to="/moisturizer" active-class="active">><span class="next-span">Moisturizer</span></router-link>
+        </div>
+        </div>
 	</div>
     `,
     methods: {

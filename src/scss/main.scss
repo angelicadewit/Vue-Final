@@ -20,10 +20,11 @@ TABLE OF CONTENTS:
 $headerText: "Alegreya";
 $bodyText: "Montserrat";
 $linkText: "Raleway";
-$headerColor: #295356;
+$headerColor: rgb(77, 94, 85);
 $wrapperColor: #F7A7BF;
 // $wrapperColor: #F5ABB4;
-$backgroundColor: #F1EDE3;
+// $backgroundColor: #f8f8ff;
+$backgroundColor: rgba(0,0,0,0);
 
 @keyframes ani-move-right{
 	0% {
@@ -98,7 +99,7 @@ $backgroundColor: #F1EDE3;
 }
 
 $tablet-breakpoint: 640px;
-$desktop-breakpoint: 1200px;
+$desktop-breakpoint: 1240px;
 
 
 @mixin tablet{
@@ -128,17 +129,22 @@ $desktop-breakpoint: 1200px;
 }
 
 body {
-	background: $backgroundColor;
+	// background: $backgroundColor;
+	background: url(../img/background.png);
+	background-attachment: fixed;
+
 }
 
 .wrapper{
-	background: $wrapperColor;
-	margin: 0 auto;
+	background: $backgroundColor;
+	margin: 3% auto;
 	font-family: $bodyText;
 	font-size: 20px;
+	position: relative;
 
 	@include tablet{
-		width: 80%;	
+		width: 95%;	
+		display: flex;
 	}
 
 	h1{
@@ -149,6 +155,7 @@ body {
 		@include tablet{
 			font-size: 3em;
 			padding: 30px;
+			text-align: center;
 		}
 
 		@include desktop{
@@ -159,21 +166,88 @@ body {
 	.logo{
 		display: flex;
 		flex-direction: column;
-		justify-content: center;
 		align-items: center;
 		background: $backgroundColor;
 
 		@include tablet{
-			flex-direction: row;	
+			position: fixed;
+			width: 25%;
 		}
 
 		img{
-			max-width: 100%;
-			max-height: 100%;
+			width: 181px;
+			height: 177px;
+			background: white;
+			border: 1px solid black;
+			border-radius: 50px;
 		}
 	}
 }
 
+.borders{
+	width: 100%;
+	height: 100%;
+}
+
+.border{
+	
+	&.top{
+		left: 0px;
+		position: fixed;
+		background-image: linear-gradient(#009FFF 30%, #6c34e3 95%);
+		width: 30px;
+		top: 0px;
+		height: 100vh;
+		bottom: 0;
+		z-index: 25;
+	}
+
+	&.right{
+		right: 0px;
+		position: fixed;
+		background-image: linear-gradient(#dc50ae 30%, #ec2F4B 90%);
+		width: 30px;
+		top: 0px;
+		height: 100vh;
+		bottom: 0;
+		
+	}
+
+	&.left{
+		top: 0px;
+		position: fixed;
+		background-image: linear-gradient(to right, #009FFF 30%, #dc50ae);
+		width: 100vw;
+		height: 30px;
+		left: 0;
+		right: 0;
+	
+	}
+
+	&.bottom{
+		bottom: 0px;
+		position: fixed;
+		background-image: linear-gradient(to left, #ec2F4B 30%, #6c34e3 60%);
+		z-index: 20;
+		width: 100vw;
+		height: 30px;
+		left: 0;
+		right: 0;
+	
+	}
+}
+
+.triangle{
+	position: fixed;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 100vh 0 0 100vw;
+    border-color: transparent transparent transparent #EE93A9;
+    // z-index: 1;
+}
 
 
 
@@ -182,6 +256,11 @@ body {
 
 #app {
 	padding: 30px 0px;
+
+	@include tablet{
+		margin-left: 30%;
+		width: 65%;
+	}
 
 	.product-list{
 	
@@ -195,11 +274,13 @@ body {
 			background: white;
 			padding: 15px;
 			margin-bottom: 40px;
-			max-height: 1000px;
+			max-height: fit-content;
+			min-height: 500px;
+			border: 1px solid black;
 
 			@include desktop{
 				display: flex;
-				width: 30%;
+				width: 35%;
 				flex-direction: column;
 			}
 		}
@@ -224,7 +305,7 @@ body {
 		}
 
 		p{
-			padding: 0px 0px 10px;
+			padding: 0px 10% 2%;
 		}
 
 		a{
@@ -254,10 +335,9 @@ body {
 		}
 
 		.btn-more-ingredients {
-			width: fit-content;
+			width: 100%;
 			padding: 10px 25px;
 			font-family: "raleway", sans-serif;
-			margin: 10px;
 			background: transparent;
 			cursor: pointer;
 			transition: all 0.3s ease;
@@ -266,6 +346,11 @@ body {
 			border: 2px solid #000;
 			font-size: 18px;
 			bottom: 0px;
+
+			@include desktop{
+				align-self: flex-end;
+			}
+			
 			
 	
 			&:hover {
@@ -304,6 +389,7 @@ body {
 				width: 0;
 				right: 0;
 				height: 3px;
+				z-index: 2;
 			}
 	
 			&::before {
@@ -331,10 +417,10 @@ body {
 	h2{
 		font-family: $headerText;
 		color: $headerColor;
-		font-size: 3em;
+		font-size: 2.5em;
 		
 		@include tablet{
-			padding: 30px 0px;
+			padding: 30px 0px 30px 5%;
 		}
 	}
 
@@ -345,7 +431,7 @@ body {
 		text-align: center;
 
 		@include desktop{
-			padding: 10px 0px;
+			padding: 30px 0px 30px 5%;
 			text-align: left;
 		}
 
@@ -428,8 +514,12 @@ body {
 		}
 	}
 
-	.next, .previous{
+	.steps-links{
+		display: flex;
+		justify-content: space-around;
+	}
 
+	.next, .previous{
 		position: relative;
 		left: 40%;
 		padding-bottom: 20px;
@@ -573,9 +663,6 @@ body {
 	}
 	
 	.info-wrapper{
-		width: 80%;
-		margin: auto;
-	
 
 	.first-cleanser{
 		background: #F491AE;
@@ -601,5 +688,12 @@ body {
 		background: #B7A7F7;
 		padding-bottom: 20px;
 	}
+}
+
+.info{
+	background: rgba(255,255,255,0.5);
+	border: 2px solid rgb(52, 136, 116);
+	margin-bottom: 30px;
+	box-shadow: 3px 3px #fff, 10px 10px #888;
 }
 

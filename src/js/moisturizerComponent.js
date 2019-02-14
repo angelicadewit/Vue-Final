@@ -31,9 +31,6 @@ let moisturizer = Vue.component('moisturizer', {
         </div>
 
         <ul class="product-list">
-            <div class="previous">
-                <router-link to="/hydrating-toner"><<span class="previous-span">Hydrating</span><span class="previous-span">Toner</span></router-link></router-link>
-            </div>
             <product 
                 :product="product"
                 v-if="product.skin.includes(skinChosen)"
@@ -41,10 +38,17 @@ let moisturizer = Vue.component('moisturizer', {
             >
             </product>
 
+
+        </ul>
+        <div class="steps-links">
+            <div class="previous">
+                <router-link to="/hydrating-toner"><<span class="previous-span">Hydrating</span><span class="previous-span">Toner</span></router-link></router-link>
+            </div>
+            
             <div class="next">
                 <router-link to="/sunscreen" active-class="active">><span class="next-span">Sunscreen</span></router-link>
             </div>
-        </ul>
+        </div>
 
 	</div>
     `,

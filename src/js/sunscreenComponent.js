@@ -24,19 +24,22 @@ let sunscreen = Vue.component('sunscreen', {
         </div>
         
         <ul class="product-list">
-        <div class="previous">
-            <router-link to="/moisturizer"><<span class="previous-span">Moisturizer</span></router-link>
-        </div>
             <product 
                 :product="product"
                 v-if="product.skin.includes(skinChosen)"
                 v-for="product in products.sunscreen"
             >
             </product>
-            <div class="next">
-                <router-link to="/tldr">><span class="next-span">products</span><span class="next-span">list</span></router-link>
-            </div>
+
         </ul>
+        <div class="steps-links">
+        <div class="previous">
+            <router-link to="/moisturizer"><<span class="previous-span">Moisturizer</span></router-link>
+        </div>
+        <div class="next">
+            <router-link to="/tldr">><span class="next-span">products</span><span class="next-span">list</span></router-link>
+        </div>
+        </div>
 
 	</div>
     `,

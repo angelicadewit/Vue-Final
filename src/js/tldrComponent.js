@@ -84,8 +84,12 @@ let tldr = Vue.component('tdlr', {
             </ol>
 
             <div class="buttons">
+            <router-link to="/">
+                    <button class="home-component">Start Again</button>
+                </router-link>
+
                 <router-link to="/resources">
-                    <button class="home-component">Lets Check Out More Resources</button>
+                    <button class="home-component">More Resources</button>
                 </router-link>
             </div>
         </div>

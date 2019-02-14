@@ -30,9 +30,7 @@ let firstCleanser = Vue.component('first-cleanser', {
             </div>
         
             <ul class="product-list">
-            <div class="previous">
-                <router-link to="/unknown-skin" active-class="active"><<span class="previous-span">Change</span><span class="previous-span">Type</span></router-link>
-            </div>
+
                 <product 
                     :product="product"
                     v-if="product.skin.includes(skinChosen)"
@@ -41,14 +39,20 @@ let firstCleanser = Vue.component('first-cleanser', {
                 </product>
 
                 </li>
-                <div class="next">
-                    <router-link 
-                        to="/second-cleanser"
-                        active-class="active"
-                        > ><span class="next-span">Second</span><span class="next-span">Cleanser</span>
-                    </router-link>
-                </div>
+
             </ul>
+            <div class="steps-links">
+            <div class="previous">
+                <router-link to="/unknown-skin" active-class="active"><<span class="previous-span">Change</span><span class="previous-span">Type</span></router-link>
+            </div>
+            <div class="next">
+                <router-link 
+                    to="/second-cleanser"
+                    active-class="active"
+                    > ><span class="next-span">Second</span><span class="next-span">Cleanser</span>
+                </router-link>
+            </div>
+            </div>
         </div>
     `,
 })

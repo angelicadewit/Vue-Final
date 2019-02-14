@@ -30,9 +30,6 @@ let secondCleanser = Vue.component('second-cleanser', {
                     <p>So you have <span>{{skinChosen}}</span> skin. These were the recommended products:</p>
             </div>
                 <ul class="product-list">
-                    <div class="previous">
-                        <router-link to="/first-cleanser" active-class="active"><<span class="previous-span">First</span><span class="previous-span">Cleanser</span></router-link>
-                    </div>
 
                     <product 
                         :product="product"
@@ -40,10 +37,15 @@ let secondCleanser = Vue.component('second-cleanser', {
                         v-for="product in products.secondCleansers"
                     >
                     </product>
-                    <div class="next">
-                        <router-link to="/hydrating-toner" active-class="active">><span class="next-span">Hydrating</span><span class="next-span">Toner</span></router-link>
-                    </div>
                 </ul>
+                <div class="steps-links">
+                <div class="previous">
+                    <router-link to="/first-cleanser" active-class="active"><<span class="previous-span">First</span><span class="previous-span">Cleanser</span></router-link>
+                </div>
+                <div class="next">
+                        <router-link to="/hydrating-toner" active-class="active">><span class="next-span">Hydrating</span><span class="next-span">Toner</span></router-link>
+                </div>
+                </div>
         </div>
     `,
 })
