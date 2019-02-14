@@ -595,14 +595,8 @@ body {
 	}
 
 	.buttons{
-		padding-top: 20px;
-		margin: auto;
-		position: relative;
-
-		@include desktop{
 			display: flex;
 			justify-content: flex-end;
-		}
 	}
 
 	.home-component {

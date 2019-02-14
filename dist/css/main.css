@@ -591,16 +591,8 @@ h3 a:hover {
 }
 
 .buttons {
-	padding-top: 20px;
-	margin: auto;
-	position: relative;
-}
-
-@media only screen and (min-width: 1240px) {
-	.buttons {
-		display: flex;
-		justify-content: flex-end;
-	}
+	display: flex;
+	justify-content: flex-end;
 }
 
 .home-component {

@@ -5,8 +5,6 @@ let firstCleanser = Vue.component('first-cleanser', {
             isActive: false,
         }
     },
-    watch: {
-    },
     template: 
     `
         <div class="first-cleanser">

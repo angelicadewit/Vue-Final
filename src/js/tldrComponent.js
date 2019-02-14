@@ -5,15 +5,15 @@ let tldr = Vue.component('tdlr', {
             isActive: false,
             button: {
                 text: 'Show More'
-                },
+            },
         }
     },
 	template: `
     <div>
-    <div class="info-wrapper">
-        <h2>Recommended {{skinChosen}} skin products</h2>
-        <p>Please practice YMMV (Your mileage may vary). Every skin is unique and just because these products are popular for {{skinChosen}} skin based on replies from the Asian Beauty subreddit, it doesnt mean that it's guaranteed to work for you.</p>
-        <div class="dotted"></div>
+        <div class="info-wrapper">
+            <h2>Recommended {{skinChosen}} skin products</h2>
+            <p>Please practice YMMV (Your mileage may vary). Every skin is unique and just because these products are popular for {{skinChosen}} skin based on replies from the Asian Beauty subreddit, it doesnt mean that it's guaranteed to work for you.</p>
+            <div class="dotted"></div>
             <ol>
                 <li class="header">
                     <h3>First Cleanser</h3>
@@ -85,7 +85,7 @@ let tldr = Vue.component('tdlr', {
             </ol>
 
             <div class="buttons">
-            <router-link to="/">
+                <router-link to="/">
                     <button class="home-component">Start Again</button>
                 </router-link>
 
@@ -94,6 +94,7 @@ let tldr = Vue.component('tdlr', {
                 </router-link>
             </div>
         </div>
+    </div>
 
     
     `,

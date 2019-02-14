@@ -5,8 +5,6 @@ let hydratingToner = Vue.component('hydrating-toner', {
             isActive: false,
         }
     },
-    watch: {
-    },
 	template: `
     <div class="hydrating-toner">
         <div class="info-wrapper">

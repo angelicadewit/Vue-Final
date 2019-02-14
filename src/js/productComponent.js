@@ -1,8 +1,7 @@
 let product = Vue.component('product', {
     props: ["product"],
     data: function () {
-        return {
-        }
+        return {}
     },
     template: `
         <li 

@@ -5,8 +5,6 @@ let sunscreen = Vue.component('sunscreen', {
             isActive: false,
         }
     },
-    watch: {
-    },
 	template: `
 	<div class="sunscreen">
         <div class="info-wrapper info">
